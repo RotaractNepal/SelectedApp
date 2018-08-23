@@ -11,7 +11,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/infoPre"
+                android:id="@+id/infoClubSer"
                 android:layout_width="100dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="5dp"
@@ -21,17 +21,17 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/president"
+                android:text="@string/clubser"
                 android:gravity="center"
                 android:layout_marginLeft="5dp"
-                android:layout_alignBaseline="@id/infoPre"
-                android:layout_below="@id/infoPre"/>
+                android:layout_alignBaseline="@id/infoClubSer"
+                android:layout_below="@id/infoClubSer"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/infoIPP"
+                android:id="@+id/infoIntSer"
                 android:layout_width="100dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="5dp"
@@ -41,17 +41,17 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/ipp"
+                android:text="@string/intser"
                 android:gravity="center"
                 android:layout_marginLeft="5dp"
-                android:layout_alignBaseline="@id/infoIPP"
-                android:layout_below="@id/infoIPP"/>
+                android:layout_alignBaseline="@id/infoIntSer"
+                android:layout_below="@id/infoIntSer"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/infoVicePre"
+                android:id="@+id/infoComSer"
                 android:layout_width="100dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="5dp"
@@ -61,17 +61,17 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/vicepresident"
+                android:text="@string/comser"
                 android:gravity="center"
                 android:layout_marginLeft="5dp"
-                android:layout_alignBaseline="@id/infoVicePre"
-                android:layout_below="@id/infoVicePre"/>
+                android:layout_alignBaseline="@id/infoComSer"
+                android:layout_below="@id/infoComSer"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/infoSec"
+                android:id="@+id/infoProDev"
                 android:layout_width="100dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="5dp"
@@ -81,33 +81,12 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/secretary"
+                android:text="@string/prodev"
                 android:gravity="center"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:layout_alignBaseline="@id/infoSec"
-                android:layout_below="@id/infoSec"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/infoTre"
-                android:layout_width="100dp"
-                android:layout_height="110dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/rect_btn"
-                android:src="@drawable/ic_bod"/>
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/treasurer"
-                android:gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_alignBaseline="@id/infoTre"
-                android:layout_below="@id/infoTre"/>
+                android:layout_alignBaseline="@id/infoProDev"
+                android:layout_below="@id/infoProDev"/>
         </RelativeLayout>
     </LinearLayout>
 </HorizontalScrollView>

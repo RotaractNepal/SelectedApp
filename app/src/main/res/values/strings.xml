@@ -11,6 +11,8 @@
     <string name="fab3">Chat</string>
     <string name="information">Introduction</string>
     <string name="bod">Board of Director</string>
+    <string name="committees">Club Committees and Directors</string>
+    <string name="appointed">Appointed Position</string>
     <string name="rotary">Rotary</string>
     <string name="rotaract">Rotaract</string>
     <string name="intaract">Intaract</string>
@@ -19,4 +21,17 @@
     <string name="president">President</string>
     <string name="vicepresident">Vice. Pres.</string>
     <string name="secretary">Secretary</string>
+    <string name="treasurer">Treasurer</string>
+    <string name="clubser">Club Ser.</string>
+    <string name="intser">Int. Ser.</string>
+    <string name="comser">Comm. Ser.</string>
+    <string name="prodev">Pro. Dev.</string>
+    <string name="assdiroff">Ass. Dir.</string>
+    <string name="sergeant">Sergeant</string>
+    <string name="funchair">Fun. Chair</string>
+    <string name="pubreloff">Pub. Rel.</string>
+    <string name="itoff">IT officer</string>
+    <string name="aboutbod"><u>About BOD Members...</u></string>
+    <string name="aboutcommittees"><u>About Committees and Directors...</u></string>
+    <string name="aboutappointed"><u>About Appointed Positions...</u></string>
 </resources>
