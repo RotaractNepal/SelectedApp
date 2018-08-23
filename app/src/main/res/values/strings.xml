@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Rotaract Nepal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Rotaract Nepal</string>
+    <string name="nav_header_subtitle">rotaractnepalapp@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Log Out</string>
+    <string name="fab1">News</string>
+    <string name="fab2">Events</string>
+    <string name="fab3">Chat</string>
+    <string name="information">Information</string>
+    <string name="rotary">Rotary</string>
+    <string name="rotaract">Rotaract</string>
+    <string name="intaract">Intaract</string>
+    <string name="joinus">How to Join ?</string>
+</resources>
