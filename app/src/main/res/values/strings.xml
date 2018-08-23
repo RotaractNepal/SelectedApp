@@ -9,9 +9,14 @@
     <string name="fab1">News</string>
     <string name="fab2">Events</string>
     <string name="fab3">Chat</string>
-    <string name="information">Information</string>
+    <string name="information">Introduction</string>
+    <string name="bod">Board of Director</string>
     <string name="rotary">Rotary</string>
     <string name="rotaract">Rotaract</string>
     <string name="intaract">Intaract</string>
     <string name="joinus">How to Join ?</string>
+    <string name="ipp">IPP</string>
+    <string name="president">President</string>
+    <string name="vicepresident">Vice. Pres.</string>
+    <string name="secretary">Secretary</string>
 </resources>

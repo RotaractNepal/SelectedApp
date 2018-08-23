@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,47 +7,77 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main"
-    android:background="@color/colorBaseBackground">
-    <android.support.v4.view.ViewPager
+    android:background="@color/colorBaseBackground"
+    android:scrollbars="none">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:id="@+id/imageSlider"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@color/colorPrimaryLight">
-    </android.support.v4.view.ViewPager>
-    <LinearLayout
-        android:id="@+id/sliderDots"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageSlider"
-        android:layout_marginTop="4dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="horizontal"></LinearLayout>
-    <TextView
-        android:id="@+id/infoTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="14dp"
-        android:text="@string/information"
-        android:layout_below="@id/sliderDots"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"/>
-    <View
-        android:id="@+id/infoUnderLine"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="55dp"
-        android:background="@color/colorPrimaryLight"
-        android:layout_below="@id/infoTitle"/>
-    <include layout="@layout/info_layout"
-        android:layout_below="@id/infoUnderLine"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"/>
-
-
-</RelativeLayout>
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/imageSlider"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimaryLight">
+        </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/sliderDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSlider"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"></LinearLayout>
+        <TextView
+            android:id="@+id/infoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="@string/information"
+            android:layout_below="@id/sliderDots"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+        <View
+            android:id="@+id/infoUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="55dp"
+            android:background="@color/colorPrimaryLight"
+            android:layout_below="@id/infoTitle"/>
+        <include
+            android:id="@+id/infoLayoutInclude"
+            layout="@layout/info_layout"
+            android:layout_below="@id/infoUnderLine"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id="@+id/infoBOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="@string/bod"
+            android:layout_below="@id/infoLayoutInclude"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+        <View
+            android:id="@+id/infoBODUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="55dp"
+            android:background="@color/colorPrimaryLight"
+            android:layout_below="@id/infoBOD"/>
+        <include
+            android:id="@+id/infoBODLayoutInclude"
+            layout="@layout/bod_mem_layout"
+            android:layout_below="@id/infoBODUnderLine"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>
