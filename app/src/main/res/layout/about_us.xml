@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_margin="20dp">
+    android:layout_margin="10dp"
+    android:background="@drawable/pro_bg"
+    android:padding="7dp">
     <ImageView
         android:id="@+id/profile"
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:src="@drawable/keshab"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/keshabName"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name"
+            android:layout_alignStart="@id/name"
+            android:layout_below="@id/name"
+            android:text="@string/keshabProfession"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,6 +57,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/keshabContact"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_email"
+            android:tint="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/emailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keshabEmail"
             android:layout_gravity="center"
             android:textSize="16dp"
             android:textStyle="bold"

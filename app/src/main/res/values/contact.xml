@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="keshabContact">+977 - 9841803337, +977 - 9813254347</string>
+    <string name="keshabName">Rtr. Keshab Bahadur Sunari</string>
+    <string name="keshabProfession">Android App Developer</string>
+    <string name="keshabContact">+977 - 9841803337</string>
+    <string name="keshabEmail">070bct515@ioe.edu.np</string>
 </resources>
