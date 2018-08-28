@@ -1,9 +1,9 @@
 package np.com.rotaractnepalapp.rotaract;
 
-import android.content.Context;
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -20,6 +20,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.codesgood.views.JustifiedTextView;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -31,7 +33,14 @@ public class MainActivity extends AppCompatActivity
     LinearLayout sliderDotsPlaner;
     private int dotcount;
     private ImageView[] dots;
-    private ImageView imgRotary, imgRotaract, imgIntaract, imgJoinUs;
+    private ImageView imgRotary, imgRotaract, imgIntaract, imgJoinUs, imgLogo;
+    private ImageView imgPresident, imgIPP, imgVicePre, imgSec, imgTreas;
+    private ImageView imgClubSer, imgIntSer, imgCommSer, imgProDev;
+    private ImageView imgAssDir, imgSergeant, imgFundChair, imgPubRelOfficer, imgITOfficer;
+    private ImageView imgAboutUs01, imgAboutUs02;
+    Dialog Introduction;
+    private TextView textClose, textTitle, textDistrictNo, textWebsite, textDesignation;
+    JustifiedTextView textIntroductionOne, textIndroductionDesOne;
 
 
     @Override
@@ -41,36 +50,153 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Introduction = new Dialog(this);
+
         imgRotary = (ImageView) findViewById(R.id.infoRotary);
         imgRotaract = (ImageView) findViewById(R.id.infoRotaract);
         imgIntaract = (ImageView) findViewById(R.id.infoIntaract);
         imgJoinUs = (ImageView) findViewById(R.id.infoJoinUs);
 
+        imgPresident = (ImageView) findViewById(R.id.infoPre);
+        imgIPP = (ImageView) findViewById(R.id.infoIPP);
+        imgVicePre = (ImageView) findViewById(R.id.infoVicePre);
+        imgSec = (ImageView) findViewById(R.id.infoSec);
+        imgTreas = (ImageView) findViewById(R.id.infoTre);
+
+        imgClubSer = (ImageView) findViewById(R.id.infoClubSer);
+        imgIntSer = (ImageView) findViewById(R.id.infoIntSer);
+        imgCommSer = (ImageView) findViewById(R.id.infoComSer);
+        imgProDev = (ImageView) findViewById(R.id.infoProDev);
+
+        imgAssDir = (ImageView) findViewById(R.id.infoAssDirOff);
+        imgSergeant = (ImageView) findViewById(R.id.infoSerg);
+        imgFundChair = (ImageView) findViewById(R.id.infoFunCha);
+        imgPubRelOfficer = (ImageView) findViewById(R.id.infoPubRelOff);
+        imgITOfficer = (ImageView) findViewById(R.id.infoITOff);
+
+        imgAssDir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                assDirOffIntroPopup(view);
+            }
+        });
+
+        imgSergeant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sergIntroPopup(view);
+            }
+        });
+
+        imgFundChair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                funRaiseChairIntroPopup(view);
+            }
+        });
+
+        imgPubRelOfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pubRelOfficerIntroPopup(view);
+            }
+        });
+
+        imgITOfficer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                itOfficerIntroPopup(view);
+            }
+        });
+
+        imgClubSer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clubSerIntroPopup(view);
+            }
+        });
+
+        imgIntSer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intSerIntroPopup(view);
+            }
+        });
+
+        imgCommSer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                commSerIntroPopup(view);
+            }
+        });
+
+        imgProDev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                proDevIntroPopup(view);
+            }
+        });
+
+        imgPresident.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                presidentIntroPopup(view);
+            }
+        });
+
+        imgIPP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ippIntroPopup(view);
+            }
+        });
+
+        imgVicePre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                vicePreIntroPopup(view);
+            }
+        });
+
+        imgSec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                secIntroPopup(view);
+            }
+        });
+
+        imgTreas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                treIntroPopup(view);
+            }
+        });
+
         imgRotary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Rotary Information", Toast.LENGTH_LONG).show();
+                rotaryIntroductionPopup(view);
             }
         });
 
         imgRotaract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Rotaract Information", Toast.LENGTH_LONG).show();
+                rotaractIntroductionPopup(view);
             }
         });
 
         imgIntaract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Intaract Information", Toast.LENGTH_LONG).show();
+                intaractIntroductionPopup(view);
             }
         });
 
         imgJoinUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "How to Join ?", Toast.LENGTH_LONG).show();
+                howDoIJoinPopup(view);
             }
         });
 
@@ -160,6 +286,464 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    public void rotaryIntroductionPopup(View v){
+        Introduction.setContentView(R.layout.info_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
+        imgLogo.setImageResource(R.drawable.rotary);
+
+        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
+        textTitle.setText(getString(R.string.rotarytitle));
+
+        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
+        textDistrictNo.setText(getString(R.string.districtno));
+
+        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
+        textWebsite.setText(getString(R.string.websiterotary));
+
+        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
+        textIntroductionOne.setText(getString(R.string.rotaryIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void rotaractIntroductionPopup(View v) {
+        Introduction.setContentView(R.layout.info_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
+        imgLogo.setImageResource(R.drawable.rotaract);
+
+        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
+        textTitle.setText(getString(R.string.rotaracttitle));
+
+        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
+        textDistrictNo.setText(getString(R.string.districtno));
+
+        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
+        textWebsite.setText(getString(R.string.websiterotary));
+
+        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
+        textIntroductionOne.setText(getString(R.string.rotaractIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void intaractIntroductionPopup(View v){
+        Introduction.setContentView(R.layout.info_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
+        imgLogo.setImageResource(R.drawable.intaract);
+
+        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
+        textTitle.setText(getString(R.string.intaracttitle));
+
+        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
+        textDistrictNo.setText(getString(R.string.districtno));
+
+        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
+        textWebsite.setText(getString(R.string.websiterotary));
+
+        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
+        textIntroductionOne.setText(getString(R.string.intaractIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void howDoIJoinPopup(View v){
+        Introduction.setContentView(R.layout.info_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
+        imgLogo.setImageResource(R.drawable.end_polio);
+
+        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
+        textTitle.setText(getString(R.string.joinus));
+
+        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
+        textDistrictNo.setText(getString(R.string.districtno));
+
+        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
+        textWebsite.setText(getString(R.string.websiterotary));
+
+        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
+        textIntroductionOne.setText(getString(R.string.howdoijoin));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+
+    }
+
+    public void presidentIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.president));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.presidentIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+
+    }
+
+    public void ippIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.ipp));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.ippIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void vicePreIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.vicepre));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.vicepreIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void secIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.secretary));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.secIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void treIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.treasurer));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.treasIntroduction));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void clubSerIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.clubservice));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.clubSerIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void intSerIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.internationalservice));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.interSerIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void commSerIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.communityservice));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.commSerIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void proDevIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.professionaldevelopment));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.proDevIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void assDirOffIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.assdirofficers));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.assDirectorIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void sergIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.sergeantatarms));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.sergeantIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void funRaiseChairIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.fundchair));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.fundChairIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void pubRelOfficerIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.publicrelationofficer));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.pubRelOffIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
+    public void itOfficerIntroPopup(View v){
+        Introduction.setContentView(R.layout.designation_intro_layout);
+
+        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
+
+        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
+        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
+
+        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
+        textDesignation.setText(getString(R.string.itofficers));
+
+        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
+        textIndroductionDesOne.setText(getString(R.string.itOfficerIntro));
+
+        textClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Introduction.dismiss();
+            }
+        });
+        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Introduction.show();
+    }
+
     public class ImageSliderTask extends TimerTask{
 
         @Override
@@ -240,7 +824,15 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_chat) {
             Toast.makeText(MainActivity.this, "Chat", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_about_us){
-            Toast.makeText(MainActivity.this, "About Us", Toast.LENGTH_LONG).show();
+            //Toast.makeText(MainActivity.this, "About Us", Toast.LENGTH_LONG).show();
+
+            Introduction.setContentView(R.layout.about_us);
+            imgAboutUs01 = (ImageView) Introduction.findViewById(R.id.profile);
+            imgAboutUs01.setImageResource(R.drawable.keshab);
+
+            Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            Introduction.show();
+
         } else if (id == R.id.nav_feed_back){
             Toast.makeText(MainActivity.this, "Feedback", Toast.LENGTH_LONG).show();
         }

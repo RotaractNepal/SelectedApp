@@ -8,7 +8,8 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main"
     android:background="@color/colorBaseBackground"
-    android:scrollbars="none">
+    android:scrollbars="none"
+    android:layout_marginBottom="10dp">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -153,5 +154,38 @@
             android:text="@string/aboutappointed"
             android:layout_marginLeft="8dp"
             android:layout_below="@id/infoAppointedLayoutInclude"/>
+        <TextView
+            android:id="@+id/infoEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="@string/events"
+            android:layout_below="@id/aboutappointed"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+        <View
+            android:id="@+id/infoEventsUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="55dp"
+            android:background="@color/colorPrimaryLight"
+            android:layout_below="@id/infoEvents"/>
+        <include
+            android:id="@+id/infoEventsInclude"
+            layout="@layout/event_layout"
+            android:layout_below="@id/infoEventsUnderLine"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id="@+id/aboutevents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/aboutappointed"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/infoEventsInclude"/>
     </RelativeLayout>
 </ScrollView>
