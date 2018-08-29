@@ -12,22 +12,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-50dp"
         android:layout_marginBottom="5dp">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/rotaractnepalapp"
+            android:layout_marginLeft="10dp"/>
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/name01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="65dp"
             android:text="@string/keshabName"
             android:textColor="@android:color/white"
             android:textSize="16dp"
             android:textStyle="bold" />
         <TextView
-            android:id="@+id/profession"
+            android:id="@+id/profession01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/name"
-            android:layout_alignStart="@id/name"
-            android:layout_below="@id/name"
+            android:layout_alignLeft="@id/name01"
+            android:layout_alignStart="@id/name01"
+            android:layout_below="@id/name01"
             android:text="@string/keshabProfession"
             android:textColor="@android:color/white"
             android:textSize="16dp"
@@ -39,15 +44,15 @@
         android:orientation="horizontal"
         android:background="@android:color/white">
         <ImageView
-            android:id="@+id/call"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/call01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_call"
             android:tint="@color/colorPrimary"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="15dp"
             android:padding="5dp"/>
         <TextView
-            android:id="@+id/contactNo"
+            android:id="@+id/contactNo01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/keshabContact"
@@ -63,15 +68,15 @@
         android:orientation="horizontal"
         android:background="@android:color/white">
         <ImageView
-            android:id="@+id/email"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/email01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_email"
             android:tint="@color/colorPrimary"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="15dp"
             android:padding="5dp"/>
         <TextView
-            android:id="@+id/emailID"
+            android:id="@+id/emailID01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/keshabEmail"

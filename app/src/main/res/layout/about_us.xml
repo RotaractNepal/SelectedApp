@@ -11,8 +11,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <include
+            android:id="@+id/keshab"
             layout="@layout/keshab_info"/>
         <include
+            android:id="@+id/Suresh"
             layout="@layout/shresh_info"/>
     </LinearLayout>
 </HorizontalScrollView>
