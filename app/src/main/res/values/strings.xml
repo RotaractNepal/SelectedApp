@@ -45,7 +45,7 @@
     <string name="intaracttitle"><u>Intaract Club</u></string>
     <string name="websiterotary">https://www.rotaractnepal.org/</string>
     <string name="districtno">District 3292 Nepal-Bhutan</string>
-    <string name="title">Title</string>
+    <string name="cusHeadtitle">Title</string>
     <string name="district_no">District_No</string>
     <string name="website">Website</string>
     <string name="introduction_one">Introduction_One</string>
@@ -61,4 +61,6 @@
     <string name="publicrelationofficer">Public Relations Officer</string>
     <string name="sergeantatarms">Sergeant-at-Arms</string>
     <string name="itofficers">Information Technology</string>
+    <string name="title">Title</string>
+    <string name="cusHeadFeedTitle">Your Feedback</string>
 </resources>

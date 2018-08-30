@@ -37,9 +37,10 @@ public class MainActivity extends AppCompatActivity
     private ImageView imgPresident, imgIPP, imgVicePre, imgSec, imgTreas;
     private ImageView imgClubSer, imgIntSer, imgCommSer, imgProDev;
     private ImageView imgAssDir, imgSergeant, imgFundChair, imgPubRelOfficer, imgITOfficer;
-    private ImageView imgAboutUs01, imgAboutUs02;
+    private ImageView imgAboutUs01, imgCusHeadLogo;
     Dialog Introduction;
     private TextView textClose, textTitle, textDistrictNo, textWebsite, textDesignation;
+    private TextView textFeebBackClose, textCusHeadTitle;
     JustifiedTextView textIntroductionOne, textIndroductionDesOne;
 
 
@@ -834,7 +835,26 @@ public class MainActivity extends AppCompatActivity
             Introduction.show();
 
         } else if (id == R.id.nav_feed_back){
-            Toast.makeText(MainActivity.this, "Feedback", Toast.LENGTH_LONG).show();
+            Introduction.setContentView(R.layout.feedback_layout);
+
+            imgCusHeadLogo = (ImageView) Introduction.findViewById(R.id.cusHeaderLogo);
+            imgCusHeadLogo.setImageResource(R.drawable.feedback);
+
+            textCusHeadTitle = (TextView) Introduction.findViewById(R.id.cusHeaderTitle);
+            textCusHeadTitle.setText(getString(R.string.cusHeadFeedTitle));
+
+            textFeebBackClose = (TextView) Introduction.findViewById(R.id.txtFeebBackClose);
+            textFeebBackClose.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Introduction.dismiss();
+                }
+            });
+
+            Introduction.setCanceledOnTouchOutside(false);
+            Introduction.setCancelable(false);
+            Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+            Introduction.show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
