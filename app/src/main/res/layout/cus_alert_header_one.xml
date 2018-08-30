@@ -5,12 +5,12 @@
     android:background="@color/colorPrimary"
     android:padding="10dp">
     <ImageView
-        android:id="@+id/cusHeaderLogo"
+        android:id="@+id/cusHeaderLogoOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/about_us" />
     <TextView
-        android:id="@+id/cusHeaderTitle"
+        android:id="@+id/cusHeaderTitleOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/about_us_title"
@@ -19,15 +19,4 @@
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="30dp"/>
-    <TextView
-        android:id="@+id/txtFeebBackClose"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:textColor="@android:color/white"
-        android:text="X"
-        android:textStyle="bold"
-        android:layout_gravity="center|end"
-        android:gravity="center"
-        android:layout_marginLeft="-25dp"
-        android:background="@drawable/circlebackground"/>
 </LinearLayout>

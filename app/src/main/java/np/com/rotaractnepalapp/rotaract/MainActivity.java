@@ -828,8 +828,17 @@ public class MainActivity extends AppCompatActivity
             //Toast.makeText(MainActivity.this, "About Us", Toast.LENGTH_LONG).show();
 
             Introduction.setContentView(R.layout.about_us);
-            imgAboutUs01 = (ImageView) Introduction.findViewById(R.id.profile);
-            imgAboutUs01.setImageResource(R.drawable.keshab);
+
+            textFeebBackClose = (TextView) Introduction.findViewById(R.id.txtFeebBackClose);
+            textFeebBackClose.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Introduction.dismiss();
+                }
+            });
+
+            Introduction.setCanceledOnTouchOutside(false);
+            Introduction.setCancelable(false);
 
             Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             Introduction.show();
