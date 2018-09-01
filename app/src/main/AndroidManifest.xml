@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".News" />
+        <activity android:name=".Events" />
+        <activity android:name=".ClubReview" />
+        <activity android:name=".Gallery" />
+        <activity android:name=".Chat"></activity>
     </application>
 
 </manifest>

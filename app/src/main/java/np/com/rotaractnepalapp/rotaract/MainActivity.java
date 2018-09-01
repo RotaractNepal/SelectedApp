@@ -1,11 +1,13 @@
 package np.com.rotaractnepalapp.rotaract;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -815,17 +817,26 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Intent intent;
 
-        if (id == R.id.nav_news) {
-            Toast.makeText(MainActivity.this, "News", Toast.LENGTH_LONG).show();
+        if (id == R.id.nave_home){
+            intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_news) {
+            intent = new Intent(this, News.class);
+            startActivity(intent);
         } else if (id == R.id.nav_today_event) {
-            Toast.makeText(MainActivity.this, "Todays Event", Toast.LENGTH_LONG).show();
+            intent = new Intent(this, Events.class);
+            startActivity(intent);
         } else if (id == R.id.nav_club_review) {
-            Toast.makeText(MainActivity.this, "Club Review", Toast.LENGTH_LONG).show();
+            intent = new Intent(this, ClubReview.class);
+            startActivity(intent);
         } else if (id == R.id.nav_gallery) {
-            Toast.makeText(MainActivity.this, "Gallery", Toast.LENGTH_LONG).show();
+            intent = new Intent(this, Gallery.class);
+            startActivity(intent);
         } else if (id == R.id.nav_chat) {
-            Toast.makeText(MainActivity.this, "Chat", Toast.LENGTH_LONG).show();
+            intent = new Intent(this, Chat.class);
+            startActivity(intent);
         } else if (id == R.id.nav_about_us){
             //Toast.makeText(MainActivity.this, "About Us", Toast.LENGTH_LONG).show();
 
