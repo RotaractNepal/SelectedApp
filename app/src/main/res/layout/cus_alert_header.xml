@@ -20,7 +20,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="30dp"/>
     <TextView
-        android:id="@+id/txtFeebBackClose"
+        android:id="@+id/txtAlertClose"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:textColor="@android:color/white"

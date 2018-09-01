@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.codesgood.views.JustifiedTextView;
+import com.rey.material.widget.Button;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -40,8 +41,9 @@ public class MainActivity extends AppCompatActivity
     private ImageView imgAboutUs01, imgCusHeadLogo;
     Dialog Introduction;
     private TextView textClose, textTitle, textDistrictNo, textWebsite, textDesignation;
-    private TextView textFeebBackClose, textCusHeadTitle;
+    private TextView textAlertClose, textCusHeadTitle;
     JustifiedTextView textIntroductionOne, textIndroductionDesOne;
+    private Button submitBtn;
 
 
     @Override
@@ -829,8 +831,8 @@ public class MainActivity extends AppCompatActivity
 
             Introduction.setContentView(R.layout.about_us);
 
-            textFeebBackClose = (TextView) Introduction.findViewById(R.id.txtFeebBackClose);
-            textFeebBackClose.setOnClickListener(new View.OnClickListener() {
+            textAlertClose = (TextView) Introduction.findViewById(R.id.txtAlertClose);
+            textAlertClose.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Introduction.dismiss();
@@ -852,8 +854,16 @@ public class MainActivity extends AppCompatActivity
             textCusHeadTitle = (TextView) Introduction.findViewById(R.id.cusHeaderTitle);
             textCusHeadTitle.setText(getString(R.string.cusHeadFeedTitle));
 
-            textFeebBackClose = (TextView) Introduction.findViewById(R.id.txtFeebBackClose);
-            textFeebBackClose.setOnClickListener(new View.OnClickListener() {
+            submitBtn = (Button) Introduction.findViewById(R.id.submitBtn);
+            submitBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(MainActivity.this, "Submitted", Toast.LENGTH_LONG).show();
+                }
+            });
+
+            textAlertClose = (TextView) Introduction.findViewById(R.id.txtAlertClose);
+            textAlertClose.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Introduction.dismiss();
