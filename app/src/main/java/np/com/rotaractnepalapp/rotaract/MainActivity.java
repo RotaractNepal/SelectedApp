@@ -2,10 +2,10 @@ package np.com.rotaractnepalapp.rotaract;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -858,7 +858,10 @@ public class MainActivity extends AppCompatActivity
             call.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, "Call Pressed", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(MainActivity.this, "Call Pressed", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:9841803337"));
+                    startActivity(intent);
                 }
             });
 
@@ -914,4 +917,5 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
