@@ -40,53 +40,8 @@
             android:textSize="16dp"
             android:textStyle="bold" />
     </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
+    <include layout="@layout/cust_alert_butttom_layout"
+        android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@android:color/white"
-        android:layout_marginTop="5dp">
-        <ImageView
-            android:id="@+id/call01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_call"
-            android:tint="@color/colorPrimary"
-            android:layout_marginLeft="15dp"
-            android:padding="5dp"/>
-        <TextView
-            android:id="@+id/contactNo01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/keshabContact"
-            android:layout_gravity="center"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginLeft="10dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@android:color/white">
-        <ImageView
-            android:id="@+id/email01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_email"
-            android:tint="@color/colorPrimary"
-            android:layout_marginLeft="15dp"
-            android:padding="5dp"/>
-        <TextView
-            android:id="@+id/emailID01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/keshabEmail"
-            android:layout_gravity="center"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginLeft="10dp"/>
-    </LinearLayout>
+        android:layout_width="300dp"/>
 </LinearLayout>

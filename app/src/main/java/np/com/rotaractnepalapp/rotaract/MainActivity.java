@@ -2,6 +2,7 @@ package np.com.rotaractnepalapp.rotaract;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -864,6 +865,27 @@ public class MainActivity extends AppCompatActivity
             builder.setView(dialogView);
 
             AlertDialog dialog = builder.create();
+
+            /*dialog.setButton(AlertDialog.BUTTON_POSITIVE, "Thank You", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Toast.makeText(MainActivity.this, "Thank You", Toast.LENGTH_LONG).show();
+                }
+            });
+
+            dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Email Us", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Toast.makeText(MainActivity.this, "Email Us", Toast.LENGTH_LONG).show();
+                }
+            });
+
+            dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Call Us", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Toast.makeText(MainActivity.this, "Call Us", Toast.LENGTH_LONG).show();
+                }
+            });*/
 
             dialog.show();
 

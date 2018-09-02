@@ -38,53 +38,9 @@
             android:textSize="16dp"
             android:textStyle="bold" />
     </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
+    <include layout="@layout/cust_alert_butttom_layout"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="100dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@android:color/white"
-        android:layout_marginTop="5dp">
-        <ImageView
-            android:id="@+id/call02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_call"
-            android:tint="@color/colorPrimary"
-            android:layout_marginLeft="115dp"
-            android:padding="5dp"/>
-        <TextView
-            android:id="@+id/contactNo02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/shreshContact"
-            android:layout_gravity="center"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginLeft="10dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@android:color/white">
-        <ImageView
-            android:id="@+id/email02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_email"
-            android:tint="@color/colorPrimary"
-            android:padding="5dp"
-            android:layout_marginLeft="115dp"/>
-        <TextView
-            android:id="@+id/emailID02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/shreshEmail"
-            android:layout_gravity="center"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginLeft="10dp"/>
-    </LinearLayout>
+        android:layout_width="300dp"/>
 </LinearLayout>
