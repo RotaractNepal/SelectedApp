@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity
     private TextView textAlertClose, textCusHeadTitle;
     JustifiedTextView textIntroductionOne, textIndroductionDesOne;
     private Button submitBtn;
+    private ImageView call, email, cancel;
 
 
     @Override
@@ -840,23 +841,6 @@ public class MainActivity extends AppCompatActivity
             intent = new Intent(this, Chat.class);
             startActivity(intent);
         } else if (id == R.id.nav_about_us){
-            //Toast.makeText(MainActivity.this, "About Us", Toast.LENGTH_LONG).show();
-
-           /* Introduction.setContentView(R.layout.about_us);
-
-            textAlertClose = (TextView) Introduction.findViewById(R.id.txtAlertClose);
-            textAlertClose.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Introduction.dismiss();
-                }
-            });
-
-            Introduction.setCanceledOnTouchOutside(false);
-            Introduction.setCancelable(false);
-
-            Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            Introduction.show();*/
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
             LayoutInflater inflater = getLayoutInflater();
@@ -864,28 +848,34 @@ public class MainActivity extends AppCompatActivity
 
             builder.setView(dialogView);
 
-            AlertDialog dialog = builder.create();
+            call = (ImageView) dialogView.findViewById(R.id.call);
+            email = (ImageView) dialogView.findViewById(R.id.email);
+            cancel = (ImageView) dialogView.findViewById(R.id.cancel);
 
-            /*dialog.setButton(AlertDialog.BUTTON_POSITIVE, "Thank You", new DialogInterface.OnClickListener() {
+            final AlertDialog dialog = builder.create();
+
+
+            call.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(MainActivity.this, "Thank You", Toast.LENGTH_LONG).show();
+                public void onClick(View v) {
+                    Toast.makeText(MainActivity.this, "Call Pressed", Toast.LENGTH_SHORT).show();
                 }
             });
 
-            dialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Email Us", new DialogInterface.OnClickListener() {
+            email.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(MainActivity.this, "Email Us", Toast.LENGTH_LONG).show();
+                public void onClick(View v) {
+                    Toast.makeText(MainActivity.this, "Email Pressed", Toast.LENGTH_SHORT).show();
                 }
             });
 
-            dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Call Us", new DialogInterface.OnClickListener() {
+            cancel.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(MainActivity.this, "Call Us", Toast.LENGTH_LONG).show();
+                public void onClick(View v) {
+                    dialog.cancel();
                 }
-            });*/
+            });
+
 
             dialog.show();
 

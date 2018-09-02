@@ -8,18 +8,21 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:gravity="center_vertical|center_horizontal">
-        <ImageView
+        <ImageButton
             android:id="@+id/call"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
             android:tint="@color/colorPrimary"
-            android:src="@drawable/ic_call"/>
+            android:src="@drawable/ic_call"
+            android:clickable="true"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/call"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
+            android:gravity="center"
             android:text="@string/call"/>
     </RelativeLayout>
     <RelativeLayout
@@ -28,17 +31,18 @@
         android:gravity="center_vertical|center_horizontal">
         <ImageView
             android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
             android:tint="@color/colorPrimary"
             android:src="@drawable/ic_email"
-            android:layout_marginLeft="5dp"/>
+            android:clickable="true"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/email"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
+            android:gravity="center"
             android:text="@string/email"/>
     </RelativeLayout>
     <RelativeLayout
@@ -47,17 +51,18 @@
         android:gravity="center_vertical|center_horizontal">
         <ImageView
             android:id="@+id/cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
             android:tint="@color/colorPrimary"
             android:src="@drawable/ic_cancel"
-            android:layout_marginLeft="5dp"/>
+            android:clickable="true"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimary"
             android:layout_below="@id/cancel"
             android:textStyle="bold"
+            android:gravity="center"
             android:text="Close"/>
     </RelativeLayout>
 </LinearLayout>
