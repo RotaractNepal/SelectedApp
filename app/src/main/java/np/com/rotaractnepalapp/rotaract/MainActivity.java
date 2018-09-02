@@ -1,5 +1,6 @@
 package np.com.rotaractnepalapp.rotaract;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -840,7 +841,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_about_us){
             //Toast.makeText(MainActivity.this, "About Us", Toast.LENGTH_LONG).show();
 
-            Introduction.setContentView(R.layout.about_us);
+           /* Introduction.setContentView(R.layout.about_us);
 
             textAlertClose = (TextView) Introduction.findViewById(R.id.txtAlertClose);
             textAlertClose.setOnClickListener(new View.OnClickListener() {
@@ -854,7 +855,17 @@ public class MainActivity extends AppCompatActivity
             Introduction.setCancelable(false);
 
             Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            Introduction.show();
+            Introduction.show();*/
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+            LayoutInflater inflater = getLayoutInflater();
+            View dialogView = inflater.inflate(R.layout.about_us,null);
+
+            builder.setView(dialogView);
+
+            AlertDialog dialog = builder.create();
+
+            dialog.show();
 
         } else if (id == R.id.nav_feed_back){
             Introduction.setContentView(R.layout.feedback_layout);
