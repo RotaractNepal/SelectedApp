@@ -42,25 +42,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/clubITOfficer"
-                android:layout_width="120dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/rect_btn"
-                android:src="@drawable/keshab"/>
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="@string/itoff"
-                android:gravity="center"
-                android:layout_alignStart="@+id/clubITOfficer"
-                android:layout_alignBaseline="@id/clubITOfficer"
-                android:layout_below="@id/clubITOfficer"
-                android:layout_alignLeft="@+id/clubITOfficer"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"/>
+            <include layout="@layout/club_mem_layout"/>
         </RelativeLayout>
     </LinearLayout>
 </HorizontalScrollView>
