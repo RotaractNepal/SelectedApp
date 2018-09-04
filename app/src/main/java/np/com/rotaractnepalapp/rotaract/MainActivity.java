@@ -820,7 +820,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        Intent intent;
+        Intent intent=null, chooser =null;
 
         if (id == R.id.nave_home){
             intent = new Intent(this, MainActivity.class);
@@ -868,7 +868,16 @@ public class MainActivity extends AppCompatActivity
             email.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, "Email Pressed", Toast.LENGTH_SHORT).show();
+                    Intent intenEmail=null, chooserEmail=null;
+                    intenEmail = new Intent(Intent.ACTION_SEND);
+                    intenEmail.setData(Uri.parse("mailto:"));
+                    String[] to = {"070bct515@ioe.edu.np"};
+                    intenEmail.putExtra(Intent.EXTRA_EMAIL, to);
+                    intenEmail.putExtra(Intent.EXTRA_SUBJECT, "Sent From Rotaract Nepal App");
+                    intenEmail.putExtra(Intent.EXTRA_TEXT, "Hellow Sir");
+                    intenEmail.setType("message/rfc822");
+                    chooserEmail = intenEmail.createChooser(intenEmail,"Send Email");
+                    startActivity(chooserEmail);
                 }
             });
 
@@ -883,34 +892,15 @@ public class MainActivity extends AppCompatActivity
             dialog.show();
 
         } else if (id == R.id.nav_feed_back){
-            Introduction.setContentView(R.layout.feedback_layout);
-
-            imgCusHeadLogo = (ImageView) Introduction.findViewById(R.id.cusHeaderLogo);
-            imgCusHeadLogo.setImageResource(R.drawable.feedback);
-
-            textCusHeadTitle = (TextView) Introduction.findViewById(R.id.cusHeaderTitle);
-            textCusHeadTitle.setText(getString(R.string.cusHeadFeedTitle));
-
-            submitBtn = (Button) Introduction.findViewById(R.id.submitBtn);
-            submitBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, "Submitted", Toast.LENGTH_LONG).show();
-                }
-            });
-
-            textAlertClose = (TextView) Introduction.findViewById(R.id.txtAlertClose);
-            textAlertClose.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Introduction.dismiss();
-                }
-            });
-
-            Introduction.setCanceledOnTouchOutside(false);
-            Introduction.setCancelable(false);
-            Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
-            Introduction.show();
+            intent = new Intent(Intent.ACTION_SEND);
+            intent.setData(Uri.parse("mailto:"));
+            String[] to = {"rotaractnepalapp@gmail.com"};
+            intent.putExtra(Intent.EXTRA_EMAIL, to);
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Sent From Rotaract Nepal App");
+            intent.putExtra(Intent.EXTRA_TEXT, "Your Feedback");
+            intent.setType("message/rfc822");
+            chooser = intent.createChooser(intent,"Send Feedback");
+            startActivity(chooser);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
