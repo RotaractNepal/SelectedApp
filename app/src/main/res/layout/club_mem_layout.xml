@@ -81,8 +81,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/rotaractnepalapp"
-            android:tint="@color/colorPrimary"/>
+            android:src="@drawable/rackne_secretary"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -191,7 +190,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/clubProfessionalDevelopment"
+            android:id="@+id/clubProfessionalDeveloper"
             android:layout_width="120dp"
             android:layout_height="130dp"
             android:layout_marginTop="5dp"
@@ -203,10 +202,10 @@
             android:layout_height="wrap_content"
             android:text="@string/prodev"
             android:gravity="center"
-            android:layout_alignStart="@+id/clubProfessionalDevelopment"
-            android:layout_alignBaseline="@id/clubProfessionalDevelopment"
-            android:layout_below="@id/clubProfessionalDevelopment"
-            android:layout_alignLeft="@+id/clubProfessionalDevelopment"
+            android:layout_alignStart="@+id/clubProfessionalDeveloper"
+            android:layout_alignBaseline="@id/clubProfessionalDeveloper"
+            android:layout_below="@id/clubProfessionalDeveloper"
+            android:layout_alignLeft="@+id/clubProfessionalDeveloper"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"/>
     </RelativeLayout>

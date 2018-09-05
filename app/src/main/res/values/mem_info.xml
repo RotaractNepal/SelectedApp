@@ -5,7 +5,7 @@
     <string name="preRACKNEContact">9840062003</string>
     <string name="preRACKNEEmail">wagleaasish@gmail.com</string>
 
-    <string name="ippRACKNEName">Rtr. Shrawan BK</string>
+    <string name="ippRACKNEName">Rtr. Shrawan Bishowkarma</string>
     <string name="ippRACKNEDesignation">Immediate Past President</string>
     <string name="ippRACKNEContact">9841704762</string>
     <string name="ippRACKNEEmail">bkshrawanbk@gmail.com</string>
@@ -14,6 +14,56 @@
     <string name="vicePreRACKNEDesignation">Vice President</string>
     <string name="vicePreRACKNEContact">9849994917</string>
     <string name="vicePreRACKNEEmail">osimumashma@gmail.com</string>
+
+    <string name="secretaryRACKNEName">Rtr. Shrishti Maharjan</string>
+    <string name="secretaryRACKNEDesignation">Secretary</string>
+    <string name="secretaryRACKNEContact">9849163469</string>
+    <string name="secretaryRACKNEEmail">shreshti.s@gmail.com</string>
+
+    <string name="treasurerRACKNEName">Rtr. Saroj BK</string>
+    <string name="treasurerRACKNEDesignation">Treasurer</string>
+    <string name="treasurerRACKNEContact">9813590712</string>
+    <string name="treasurerRACKNEEmail">Sarojorasbk@gmail.com</string>
+
+    <string name="clubServiceRACKNEName">Rtr. Sovit Sharma</string>
+    <string name="clubServiceRACKNEDesignation">Club Service Director</string>
+    <string name="clubServiceRACKNEContact">9849912730</string>
+    <string name="clubServiceRACKNEEmail">sovitsharma33@gmail.com</string>
+
+    <string name="internationalServiceRACKNEName">Rtr. Susmita Adhikari</string>
+    <string name="internationalServiceRACKNEDesignation">International Service Director</string>
+    <string name="internationalServiceRACKNEContact">9843172172</string>
+    <string name="internationalServiceRACKNEEmail">susmitaadhikari73@gmail.com</string>
+
+    <string name="communityServiceRACKNEName">Rtr. Sagun Pudasaini</string>
+    <string name="communityServiceRACKNEDesignation">Community Service Director</string>
+    <string name="communityServiceRACKNEContact">9861041339</string>
+    <string name="communityServiceRACKNEEmail"></string>
+
+    <string name="professionalDeveloperRACKNEName">Rtr.</string>
+    <string name="professionalDeveloperRACKNEDesignation">Professional Developer</string>
+    <string name="professionalDeveloperRACKNEContact"></string>
+    <string name="professionalDeveloperRACKNEEmail"></string>
+
+    <string name="assistantDirectorRACKNEName">Rtr.</string>
+    <string name="assistantDirectorRACKNEDesignation">Assistant Director</string>
+    <string name="assistantDirectorRACKNEContact"></string>
+    <string name="assistantDirectorRACKNEEmail"></string>
+
+    <string name="sergeantRACKNEName">Rtr.</string>
+    <string name="sergeantRACKNEDesignation">Sergeant At Arms</string>
+    <string name="sergeantRACKNEContact"></string>
+    <string name="sergeantRACKNEEmail"></string>
+
+    <string name="fundraisingChairRACKNEName">Rtr.</string>
+    <string name="fundraisingChairRACKNEDesignation">Fundraising Chair</string>
+    <string name="fundraisingChairRACKNEContact"></string>
+    <string name="fundraisingChairRACKNEEmail"></string>
+
+    <string name="publicRelationsOfficerRACKNEName">Rtr.</string>
+    <string name="publicRelationsOfficerRACKNEDesignation">Public Relations Officer</string>
+    <string name="publicRelationsOfficerRACKNEContact"></string>
+    <string name="publicRelationsOfficerRACKNEEmail"></string>
 
     <string name="itofficerRACKNEName">Rtr. Keshab Bahadur Sunari</string>
     <string name="itofficerRACKNEDesignation">IT Officer</string>
