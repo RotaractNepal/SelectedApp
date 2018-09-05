@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="preRCNEName">Rtr. Aasish Wagle</string>
-    <string name="preRCNEDesignation">President</string>
-    <string name="preRCNEContact">9840062003</string>
-    <string name="preRCNEEmail">wagleaasish@gmail.com</string>
+    <string name="preRACKNEName">Rtr. Aasish Wagle</string>
+    <string name="preRACKNEDesignation">President</string>
+    <string name="preRACKNEContact">9840062003</string>
+    <string name="preRACKNEEmail">wagleaasish@gmail.com</string>
 
-    <string name="ippRCNEName">Rtr. Shrawan BK</string>
-    <string name="ippRCNEDesignation">Immediate Past President</string>
-    <string name="ippRCNEContact">9841704762</string>
-    <string name="ippRCNEEmail">bkshrawanbk@gmail.com</string>
+    <string name="ippRACKNEName">Rtr. Shrawan BK</string>
+    <string name="ippRACKNEDesignation">Immediate Past President</string>
+    <string name="ippRACKNEContact">9841704762</string>
+    <string name="ippRACKNEEmail">bkshrawanbk@gmail.com</string>
 
-    <string name="vicePreRCNEName">Rtr. Ashma Neupane</string>
-    <string name="vicePreRCNEDesignation">Vice President</string>
-    <string name="vicePreRCNEContact">9849994917</string>
-    <string name="vicePreRCNEEmail">osimumashma@gmail.com</string>
+    <string name="vicePreRACKNEName">Rtr. Ashma Neupane</string>
+    <string name="vicePreRACKNEDesignation">Vice President</string>
+    <string name="vicePreRACKNEContact">9849994917</string>
+    <string name="vicePreRACKNEEmail">osimumashma@gmail.com</string>
 
-    <string name="itoffficerName">Rtr. Keshab Bahadur Sunari</string>
-    <string name="itoffficerDesignation">IT Officer</string>
-    <string name="itoffficerContact">9841803337</string>
-    <string name="itoffficerEmail">070bct515@ioe.edu.np</string>
+    <string name="itofficerRACKNEName">Rtr. Keshab Bahadur Sunari</string>
+    <string name="itofficerRACKNEDesignation">IT Officer</string>
+    <string name="itofficerRACKNEContact">9841803337</string>
+    <string name="itofficerRACKNEEmail">070bct515@ioe.edu.np</string>
 
 
 </resources>

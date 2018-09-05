@@ -67,4 +67,6 @@
     <string name="call">Call</string>
     <string name="email">Email</string>
     <string name="thanks">We would like to said that thanks for using our Rotaract Nepal App.</string>
+    <string name="rtr_name">Rtr_Name</string>
+    <string name="rtr_designation">Rtr_Designation</string>
 </resources>

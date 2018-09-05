@@ -12,7 +12,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/president"/>
+            android:src="@drawable/rackne_president"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/ipp"/>
+            android:src="@drawable/rackne_ipp"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/vicepre"/>
+            android:src="@drawable/rackne_vicepre"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/treasurer"/>
+            android:src="@drawable/rackne_treasurer"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/clubservice"/>
+            android:src="@drawable/rackne_clubservice"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -151,7 +151,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/international"/>
+            android:src="@drawable/rackne_international"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/community"/>
+            android:src="@drawable/rackne_community"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/professional"/>
+            android:src="@drawable/rackne_professional"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -244,7 +244,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/sergeant"/>
+            android:src="@drawable/rackne_sergeant"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
@@ -315,7 +315,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:background="@drawable/rect_btn"
-            android:src="@drawable/keshab"/>
+            android:src="@drawable/rackne_itofficer"/>
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"

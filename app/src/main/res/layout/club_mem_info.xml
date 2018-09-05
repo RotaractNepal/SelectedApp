@@ -9,7 +9,7 @@
         android:id="@+id/clubBODprofile"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:src="@drawable/keshab"/>
+        android:src="@drawable/rotaract"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,14 +19,14 @@
             android:id="@+id/bodClubLogo"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:src="@drawable/ic_rckne"
+            android:src="@drawable/rotaract"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/clubBODname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="65dp"
-            android:text="@string/keshabName"
+            android:text="@string/rtr_name"
             android:textColor="@android:color/white"
             android:textSize="16dp"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
             android:layout_alignLeft="@id/clubBODname"
             android:layout_alignStart="@id/clubBODname"
             android:layout_below="@id/clubBODname"
-            android:text="@string/itoff"
+            android:text="@string/rtr_designation"
             android:textColor="@android:color/white"
             android:textSize="16dp"
             android:textStyle="bold" />
