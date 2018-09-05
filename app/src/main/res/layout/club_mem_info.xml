@@ -9,7 +9,8 @@
         android:id="@+id/clubBODprofile"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:src="@drawable/rotaract"/>
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/colorlogo_rotaractnepalapp"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,7 +20,7 @@
             android:id="@+id/bodClubLogo"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:src="@drawable/rotaract"
+            android:src="@drawable/colorlogo_rotaractnepalapp"
             android:layout_marginLeft="10dp"/>
         <TextView
             android:id="@+id/clubBODname"

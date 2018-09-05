@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class ClubReview extends AppCompatActivity {
 
-    private ImageView ITofficer,President;
+    private ImageView ITofficer,President, IPP, VicePre, Secretary, Treasurer, ClubSer, IntSer, CommSer, ProDev, AssDir, Sergeant;
     private ImageView clubBODProfile, bodClubLogo;
     private TextView clubBODName, clubBODDes;
     private ImageView memCall, memEmail, memClose;
