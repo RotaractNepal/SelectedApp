@@ -3,7 +3,7 @@
     <string name="preRACKNEName">Rtr. Aasish Wagle</string>
     <string name="preRACKNEDesignation">President</string>
     <string name="preRACKNEContact">9840062003</string>
-    <string name="preRACKNEEmail">wagleaasish@gmail.com</string>
+    <string name="preRACKNEEmail">president1819rackne@gmail.com</string>
 
     <string name="ippRACKNEName">Rtr. Shrawan Bishowkarma</string>
     <string name="ippRACKNEDesignation">Immediate Past President</string>
@@ -13,14 +13,14 @@
     <string name="vicePreRACKNEName">Rtr. Ashma Neupane</string>
     <string name="vicePreRACKNEDesignation">Vice President</string>
     <string name="vicePreRACKNEContact">9849994917</string>
-    <string name="vicePreRACKNEEmail">osimumashma@gmail.com</string>
+    <string name="vicePreRACKNEEmail">Osimumashma@gmail.com</string>
 
     <string name="secretaryRACKNEName">Rtr. Shrishti Maharjan</string>
     <string name="secretaryRACKNEDesignation">Secretary</string>
     <string name="secretaryRACKNEContact">9849163469</string>
     <string name="secretaryRACKNEEmail">shreshti.s@gmail.com</string>
 
-    <string name="treasurerRACKNEName">Rtr. Saroj BK</string>
+    <string name="treasurerRACKNEName">Rtr. Saroj Bishwakarma</string>
     <string name="treasurerRACKNEDesignation">Treasurer</string>
     <string name="treasurerRACKNEContact">9813590712</string>
     <string name="treasurerRACKNEEmail">Sarojorasbk@gmail.com</string>
@@ -38,7 +38,7 @@
     <string name="communityServiceRACKNEName">Rtr. Sagun Pudasaini</string>
     <string name="communityServiceRACKNEDesignation">Community Service Director</string>
     <string name="communityServiceRACKNEContact">9861041339</string>
-    <string name="communityServiceRACKNEEmail"></string>
+    <string name="communityServiceRACKNEEmail">Shagoonpudasaini@gmail.com</string>
 
     <string name="professionalDeveloperRACKNEName">Rtr.</string>
     <string name="professionalDeveloperRACKNEDesignation">Professional Developer</string>
@@ -50,10 +50,10 @@
     <string name="assistantDirectorRACKNEContact"></string>
     <string name="assistantDirectorRACKNEEmail"></string>
 
-    <string name="sergeantRACKNEName">Rtr.</string>
+    <string name="sergeantRACKNEName">Rtr. Shrija Thapa</string>
     <string name="sergeantRACKNEDesignation">Sergeant At Arms</string>
-    <string name="sergeantRACKNEContact"></string>
-    <string name="sergeantRACKNEEmail"></string>
+    <string name="sergeantRACKNEContact">9803922091</string>
+    <string name="sergeantRACKNEEmail">tshrija11@gmail.com</string>
 
     <string name="fundraisingChairRACKNEName">Rtr.</string>
     <string name="fundraisingChairRACKNEDesignation">Fundraising Chair</string>
