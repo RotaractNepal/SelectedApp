@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class ClubReview extends AppCompatActivity {
 
-    private ImageView ITofficer,President, IPP, VicePre, Secretary, Treasurer, ClubSer, IntSer, CommSer, ProDev, AssDir, Sergeant;
+    private ImageView rackne_ITofficer, rackne_President, rackne_IPP, rackne_VicePre, rackne_Secretary, rackne_Treasurer, rackne_ClubSer, rackne_IntSer, rackne_CommSer, rackne_ProDev, rackne_AssDir, rackne_Sergeant, rackne_FundChair, rackne_PubRel;
     private ImageView clubBODProfile, bodClubLogo;
     private TextView clubBODName, clubBODDes;
     private ImageView memCall, memEmail, memClose;
@@ -29,20 +29,149 @@ public class ClubReview extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        President = (ImageView) findViewById(R.id.clubPresident);
-        IPP = (ImageView) findViewById(R.id.clubIPP);
-        ITofficer = (ImageView) findViewById(R.id.clubITOfficer);
-        VicePre = (ImageView) findViewById(R.id.clubVicePresident);
-        ClubSer = (ImageView) findViewById(R.id.clubClubService);
-        Secretary = (ImageView) findViewById(R.id.clubSecretary);
-        Treasurer = (ImageView) findViewById(R.id.clubTreasurer);
-        IntSer = (ImageView) findViewById(R.id.clubInternationalService);
-        CommSer = (ImageView) findViewById(R.id.clubCommunityService);
-        ProDev = (ImageView) findViewById(R.id.clubProfessionalDeveloper);
-        AssDir = (ImageView) findViewById(R.id.clubAssistantDirector);
-        Sergeant = (ImageView) findViewById(R.id.clubSergeant);
+        RotaractClubOfKathmanduNorthEast();
 
-        Sergeant.setOnClickListener(new View.OnClickListener() {
+    }
+
+    public void RotaractClubOfKathmanduNorthEast(){
+        rackne_President = (ImageView) findViewById(R.id.clubPresident);
+        rackne_IPP = (ImageView) findViewById(R.id.clubIPP);
+        rackne_ITofficer = (ImageView) findViewById(R.id.clubITOfficer);
+        rackne_VicePre = (ImageView) findViewById(R.id.clubVicePresident);
+        rackne_ClubSer = (ImageView) findViewById(R.id.clubClubService);
+        rackne_Secretary = (ImageView) findViewById(R.id.clubSecretary);
+        rackne_Treasurer = (ImageView) findViewById(R.id.clubTreasurer);
+        rackne_IntSer = (ImageView) findViewById(R.id.clubInternationalService);
+        rackne_CommSer = (ImageView) findViewById(R.id.clubCommunityService);
+        rackne_ProDev = (ImageView) findViewById(R.id.clubProfessionalDeveloper);
+        rackne_AssDir = (ImageView) findViewById(R.id.clubAssistantDirector);
+        rackne_Sergeant = (ImageView) findViewById(R.id.clubSergeant);
+        rackne_FundChair = (ImageView) findViewById(R.id.clubFundraisingChair);
+        rackne_PubRel = (ImageView) findViewById(R.id.clubPublicRelationsOfficer);
+
+        rackne_PubRel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
+
+                LayoutInflater inflater = getLayoutInflater();
+                View dialogView = inflater.inflate(R.layout.club_mem_info,null);
+
+                builder.setView(dialogView);
+
+                memCall = (ImageView) dialogView.findViewById(R.id.call);
+                memEmail = (ImageView) dialogView.findViewById(R.id.email);
+                memClose = (ImageView) dialogView.findViewById(R.id.cancel);
+
+                clubBODProfile = (ImageView) dialogView.findViewById(R.id.clubBODprofile);
+                clubBODProfile.setImageResource(R.drawable.colorlogo_rotaractnepalapp);
+
+                bodClubLogo = (ImageView) dialogView.findViewById(R.id.bodClubLogo);
+                bodClubLogo.setImageResource(R.drawable.ic_rckne);
+
+                clubBODName = (TextView) dialogView.findViewById(R.id.clubBODname);
+                clubBODName.setText(getString(R.string.publicRelationsOfficerRACKNEName));
+
+                clubBODDes = (TextView) dialogView.findViewById(R.id.clubBODdes);
+                clubBODDes.setText(getString(R.string.publicRelationsOfficerRACKNEDesignation));
+
+                final AlertDialog dialog = builder.create();
+
+                memCall.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        String contactNo = getString(R.string.publicRelationsOfficerRACKNEContact);
+                        clubMemCall(v, contactNo);
+
+                    }
+                });
+
+                memEmail.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        String[] to = {getString(R.string.publicRelationsOfficerRACKNEEmail)};
+                        clubMemEmail(v, to);
+
+                    }
+                });
+
+                memClose.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.cancel();
+                    }
+                });
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
+
+                dialog.show();
+            }
+        });
+
+        rackne_FundChair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
+
+                LayoutInflater inflater = getLayoutInflater();
+                View dialogView = inflater.inflate(R.layout.club_mem_info,null);
+
+                builder.setView(dialogView);
+
+                memCall = (ImageView) dialogView.findViewById(R.id.call);
+                memEmail = (ImageView) dialogView.findViewById(R.id.email);
+                memClose = (ImageView) dialogView.findViewById(R.id.cancel);
+
+                clubBODProfile = (ImageView) dialogView.findViewById(R.id.clubBODprofile);
+                clubBODProfile.setImageResource(R.drawable.colorlogo_rotaractnepalapp);
+
+                bodClubLogo = (ImageView) dialogView.findViewById(R.id.bodClubLogo);
+                bodClubLogo.setImageResource(R.drawable.ic_rckne);
+
+                clubBODName = (TextView) dialogView.findViewById(R.id.clubBODname);
+                clubBODName.setText(getString(R.string.fundraisingChairRACKNEName));
+
+                clubBODDes = (TextView) dialogView.findViewById(R.id.clubBODdes);
+                clubBODDes.setText(getString(R.string.fundraisingChairRACKNEDesignation));
+
+                final AlertDialog dialog = builder.create();
+
+                memCall.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        String contactNo = getString(R.string.fundraisingChairRACKNEContact);
+                        clubMemCall(v, contactNo);
+
+                    }
+                });
+
+                memEmail.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        String[] to = {getString(R.string.fundraisingChairRACKNEEmail)};
+                        clubMemEmail(v, to);
+
+                    }
+                });
+
+                memClose.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.cancel();
+                    }
+                });
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
+
+                dialog.show();
+            }
+        });
+
+        rackne_Sergeant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -97,12 +226,14 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
 
-        AssDir.setOnClickListener(new View.OnClickListener() {
+        rackne_AssDir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -156,13 +287,15 @@ public class ClubReview extends AppCompatActivity {
                         dialog.cancel();
                     }
                 });
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
 
                 dialog.show();
             }
         });
 
 
-        ProDev.setOnClickListener(new View.OnClickListener() {
+        rackne_ProDev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -217,12 +350,15 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
+
                 dialog.show();
             }
         });
 
 
-        CommSer.setOnClickListener(new View.OnClickListener() {
+        rackne_CommSer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -277,12 +413,14 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
 
-        IntSer.setOnClickListener(new View.OnClickListener() {
+        rackne_IntSer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -337,11 +475,13 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
-        Treasurer.setOnClickListener(new View.OnClickListener() {
+        rackne_Treasurer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -396,11 +536,13 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
-        Secretary.setOnClickListener(new View.OnClickListener() {
+        rackne_Secretary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -455,11 +597,13 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
-        ClubSer.setOnClickListener(new View.OnClickListener() {
+        rackne_ClubSer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -514,11 +658,13 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
-        VicePre.setOnClickListener(new View.OnClickListener() {
+        rackne_VicePre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -573,11 +719,13 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
-        President.setOnClickListener(new View.OnClickListener() {
+        rackne_President.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -632,11 +780,13 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
-        IPP.setOnClickListener(new View.OnClickListener() {
+        rackne_IPP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -691,11 +841,13 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });
 
-        ITofficer.setOnClickListener(new View.OnClickListener() {
+        rackne_ITofficer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ClubReview.this);
@@ -750,6 +902,8 @@ public class ClubReview extends AppCompatActivity {
                     }
                 });
 
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.setCancelable(false);
                 dialog.show();
             }
         });

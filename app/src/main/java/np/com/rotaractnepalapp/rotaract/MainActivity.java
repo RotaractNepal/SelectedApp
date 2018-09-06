@@ -889,6 +889,8 @@ public class MainActivity extends AppCompatActivity
             });
 
 
+            dialog.setCanceledOnTouchOutside(false);
+            dialog.setCancelable(false);
             dialog.show();
 
         } else if (id == R.id.nav_feed_back){
