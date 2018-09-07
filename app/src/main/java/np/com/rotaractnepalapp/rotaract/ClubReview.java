@@ -9,31 +9,42 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+
+
 
 public class ClubReview extends AppCompatActivity {
 
-    private ImageView rackne_ITofficer, rackne_President, rackne_IPP, rackne_VicePre, rackne_Secretary, rackne_Treasurer, rackne_ClubSer, rackne_IntSer, rackne_CommSer, rackne_ProDev, rackne_AssDir, rackne_Sergeant, rackne_FundChair, rackne_PubRel;
+    /*private ImageView rackne_ITofficer, rackne_President, rackne_IPP, rackne_VicePre, rackne_Secretary, rackne_Treasurer, rackne_ClubSer, rackne_IntSer, rackne_CommSer, rackne_ProDev, rackne_AssDir, rackne_Sergeant, rackne_FundChair, rackne_PubRel;
     private ImageView clubBODProfile, bodClubLogo;
     private TextView clubBODName, clubBODDes;
-    private ImageView memCall, memEmail, memClose;
+    private ImageView memCall, memEmail, memClose;*/
+
+    private ListView mListView;
+    String[] clubShortName ={"RACKNE", "RACGongabu"};
+    int[] clubLogo = {R.drawable.ic_rackne,R.drawable.ic_rac_gongabu};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club_review);
-        this.setTitle("Club Review");
+       /* this.setTitle("Club Review");
 
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
+        }*/
 
-        RotaractClubOfKathmanduNorthEast();
+        mListView = (ListView) findViewById(R.id.listview);
+        ClubReviewAdapter clubReviewAdapter = new ClubReviewAdapter(ClubReview.this, clubShortName, clubLogo);
+        mListView.setAdapter(clubReviewAdapter);
+        // RotaractClubOfKathmanduNorthEast();
 
     }
 
-    public void RotaractClubOfKathmanduNorthEast(){
+    /*public void RotaractClubOfKathmanduNorthEast(){
         rackne_President = (ImageView) findViewById(R.id.clubPresident);
         rackne_IPP = (ImageView) findViewById(R.id.clubIPP);
         rackne_ITofficer = (ImageView) findViewById(R.id.clubITOfficer);
@@ -926,13 +937,13 @@ public class ClubReview extends AppCompatActivity {
         intenEmail.setType("message/rfc822");
         chooserEmail = intenEmail.createChooser(intenEmail,"Send Email");
         startActivity(chooserEmail);
-    }
+    }*/
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home){
             finish();
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

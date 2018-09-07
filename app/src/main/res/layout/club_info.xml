@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                android:text="Rotract Club of Kathmandu North East"/>
+                android:text="Clube_Name"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                android:text="Tangal Higher Secondary School"/>
+                android:text="Venue"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                android:text="Saturday, 11:00 am"/>
+                android:text="Time"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                android:text="Tangal, Naxal, Kathmandu"/>
+                android:text="Address"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>

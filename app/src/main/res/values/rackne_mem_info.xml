@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="clubRACKNEName">Rotract Club of Kathmandu North East</string>
+    <string name="clubRACKNEVenue">Tangal Higher Secondary School</string>
+    <string name="clubRACKNETime">Saturday, 11:00 am</string>
+    <string name="clubRACKNEAddress">Tangal, Naxal, Kathmandu</string>
+
     <string name="preRACKNEName">Rtr. Aasish Wagle</string>
     <string name="preRACKNEDesignation">President</string>
     <string name="preRACKNEContact">9840062003</string>
