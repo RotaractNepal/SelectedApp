@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -127,6 +128,13 @@ public class ClubReview extends AppCompatActivity {
                 clubPresident, clubIPP, clubVicePre, clubSecretary, clubTreasurer, clubClubSer, clubIntSer, clubCommSer, clubProDev, clubAssDir, clubSergeant, clubFundChair,
                 clubPubRel, clubITOfficer);
         mListView.setAdapter(clubReviewAdapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
         // RotaractClubOfKathmanduNorthEast();
 
     }
