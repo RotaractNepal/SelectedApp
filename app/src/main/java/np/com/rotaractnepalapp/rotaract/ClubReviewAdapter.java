@@ -29,7 +29,7 @@ public class ClubReviewAdapter extends ArrayAdapter<String> {
 
     @Override
     public int getCount() {
-        return Name.length+FullName.length+Venue.length+MeetingTime.length+Address.length;
+        return Name.length;
     }
 
     @NonNull
