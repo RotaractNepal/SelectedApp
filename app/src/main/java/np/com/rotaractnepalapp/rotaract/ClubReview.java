@@ -39,6 +39,76 @@ public class ClubReview extends AppCompatActivity {
                           "Techno Track Pvt. Ltd, Putalisadak", "IOM, Maharajgunj", "Puspalal Memorial College, Chabahil", "Shephard College, Baneshwor",
                           "School of Information Technologies", "Thames Int. College, Surya Bikram Gyawali Marg, Battisputali, Old Banshwor", "SAIM College, Mid Baneshwor"};
     String[] clubMeetingTime ={"04:00 PM", "08:00 AM", "03:00 PM", "10:30 AM", "Saturday, 11:00 AM", "Time", "Time", "04:30 PM", "Time", "03:00 PM", "09:00 AM", "10:00 AM", "11:00 AM"};
+    int[] clubPresident = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_president, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubIPP = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_ipp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubVicePre = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_vicepre, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubSecretary = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_secretary, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubTreasurer = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_treasurer, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubClubSer = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_clubservice, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubIntSer = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_international, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubCommSer = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_community, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubProDev = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_professional, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubAssDir = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubSergeant = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_sergeant, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubFundChair = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubPubRel = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
+    int[] clubITOfficer = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.rackne_itofficer, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp};
 
 
     @Override
@@ -53,7 +123,9 @@ public class ClubReview extends AppCompatActivity {
         }
 
         mListView = (ListView) findViewById(R.id.listview);
-        ClubReviewAdapter clubReviewAdapter = new ClubReviewAdapter(ClubReview.this, clubShortName, clubLogo, clubFullName, clubVenue, clubMeetingTime, clubAddresss);
+        ClubReviewAdapter clubReviewAdapter = new ClubReviewAdapter(ClubReview.this, clubShortName, clubLogo, clubFullName, clubVenue, clubMeetingTime, clubAddresss,
+                clubPresident, clubIPP, clubVicePre, clubSecretary, clubTreasurer, clubClubSer, clubIntSer, clubCommSer, clubProDev, clubAssDir, clubSergeant, clubFundChair,
+                clubPubRel, clubITOfficer);
         mListView.setAdapter(clubReviewAdapter);
         // RotaractClubOfKathmanduNorthEast();
 
