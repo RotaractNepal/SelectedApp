@@ -22,20 +22,24 @@ public class ClubReview extends AppCompatActivity {
     private ImageView memCall, memEmail, memClose;*/
 
     private ListView mListView;
-    String[] clubShortName ={"RACKNE", "RACGongabu"};
-    int[] clubLogo = {R.drawable.ic_rackne,R.drawable.ic_rac_gongabu};
+    String[] clubShortName ={"RACB", "RACDK", "RACG", "RACKM", "RACKNE", "RACKS", "RACYNE", "RACMBIOM", "RACP", "RACR", "RACS", "RACTIC", "RACK"};
+    int[] clubLogo = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.ic_rackne, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
+            R.drawable.colorlogo_rotaractnepalapp,};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club_review);
-       /* this.setTitle("Club Review");
+        this.setTitle("Club Review");
 
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }*/
+        }
 
         mListView = (ListView) findViewById(R.id.listview);
         ClubReviewAdapter clubReviewAdapter = new ClubReviewAdapter(ClubReview.this, clubShortName, clubLogo);
@@ -939,11 +943,11 @@ public class ClubReview extends AppCompatActivity {
         startActivity(chooserEmail);
     }*/
 
-   /* @Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home){
             finish();
         }
         return super.onOptionsItemSelected(item);
-    }*/
+    }
 }
