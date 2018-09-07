@@ -49,9 +49,9 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
-                android:text="Time : "/>
+                android:text="Meeting Time : "/>
             <TextView
-                android:id="@+id/clubTime"
+                android:id="@+id/clubMeetingTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"

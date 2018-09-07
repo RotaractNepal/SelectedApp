@@ -23,11 +23,22 @@ public class ClubReview extends AppCompatActivity {
 
     private ListView mListView;
     String[] clubShortName ={"RACB", "RACDK", "RACG", "RACKM", "RACKNE", "RACKS", "RACYNE", "RACMBIOM", "RACP", "RACR", "RACS", "RACTIC", "RACK"};
-    int[] clubLogo = {R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
-            R.drawable.colorlogo_rotaractnepalapp, R.drawable.ic_rackne, R.drawable.colorlogo_rotaractnepalapp,
-            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
-            R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp, R.drawable.colorlogo_rotaractnepalapp,
-            R.drawable.colorlogo_rotaractnepalapp,};
+    int[] clubLogo = {R.drawable.ic_racb, R.drawable.ic_racdk, R.drawable.ic_racg,
+            R.drawable.ic_rackm, R.drawable.ic_rackne, R.drawable.ic_racks,
+            R.drawable.ic_racyne, R.drawable.ic_racmbiom, R.drawable.ic_racp,
+            R.drawable.ic_racr, R.drawable.ic_racs, R.drawable.ic_ractic,
+            R.drawable.ic_rack,};
+    String[] clubFullName = {"RAC Budhanilkantha","RAC Dillibazar-Kathmandu", "RAC Gongabu", "RAC Kathmandu Metro", "RAC Kathmandu North East",
+                             "RAC Kathmandu Sunrise", "RAC Kathmandu Youth North East", "RAC Matribhumi Baluwatar IOM", "RAC Pashupati",
+                             "RAC Rajdhani", "RAC Swoyambhu", "RAC Thames International College", "Rotaract Club of Kantipur"};
+    String[] clubAddresss = {"Bal Bikash School, Budhanilkantha", "Dillibazar, Kathmandu", "Sky Restro & Banquets, Samakhusi Chowk", "Dhumbarahi, Kathmandu",
+                             "Tangal, Naxal, Kathmandu", "Address", "Address", "IOM, Maharajgunj", "Address", "Kathmandu,Nepal", "Swoyambhu,Kathmandu",
+                             "Thames Int. College, Surya Bikram Gyawali Marg, Battisputali, Old Banshwor","Old Baneshwor, Kathmandu"};
+    String[] clubVenue = {"Bal Bikas Boarding School", "National Integrated College, Dillibazar- Kathmandu", "Sky Restro & Banquets, Samakhusi Chowk",
+                          "National College, Dhumbarahi, Kathmandu", "Tangal Higher Secondary School", "College of Information Technology and Engineering",
+                          "Techno Track Pvt. Ltd, Putalisadak", "IOM, Maharajgunj", "Puspalal Memorial College, Chabahil", "Shephard College, Baneshwor",
+                          "School of Information Technologies", "Thames Int. College, Surya Bikram Gyawali Marg, Battisputali, Old Banshwor", "SAIM College, Mid Baneshwor"};
+    String[] clubMeetingTime ={"04:00 PM", "08:00 AM", "03:00 PM", "10:30 AM", "Saturday, 11:00 AM", "Time", "Time", "04:30 PM", "Time", "03:00 PM", "09:00 AM", "10:00 AM", "11:00 AM"};
 
 
     @Override
@@ -42,7 +53,7 @@ public class ClubReview extends AppCompatActivity {
         }
 
         mListView = (ListView) findViewById(R.id.listview);
-        ClubReviewAdapter clubReviewAdapter = new ClubReviewAdapter(ClubReview.this, clubShortName, clubLogo);
+        ClubReviewAdapter clubReviewAdapter = new ClubReviewAdapter(ClubReview.this, clubShortName, clubLogo, clubFullName, clubVenue, clubMeetingTime, clubAddresss);
         mListView.setAdapter(clubReviewAdapter);
         // RotaractClubOfKathmanduNorthEast();
 
