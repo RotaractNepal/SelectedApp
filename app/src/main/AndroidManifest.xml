@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="np.com.rotaractnepalapp.rotaract">
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -24,7 +25,7 @@
         <activity android:name=".Events" />
         <activity android:name=".ClubReview" />
         <activity android:name=".Gallery" />
-        <activity android:name=".Chat"></activity>
+        <activity android:name=".Chat" />
     </application>
 
 </manifest>
