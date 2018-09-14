@@ -18,6 +18,8 @@ public class ClubReview extends AppCompatActivity {
     private ArrayList<String> mItemName = new ArrayList<>();
     private ArrayList<String> mItemRIDNo = new ArrayList<>();
     private ArrayList<String> mItemBackground = new ArrayList<>();
+    private ArrayList<String> mItemContactNo = new ArrayList<>();
+    private ArrayList<String> mItemEmailID = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,95 +39,93 @@ public class ClubReview extends AppCompatActivity {
     private void getImages(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
-        mItemImageUrls.add("https://drive.google.com/uc?id=1J13nhEYHGnLuz_9BCeVpYu1nxF_CUF7N");
-        mItemDesignation.add("Rotaract Club of Kathmandu North East");
-        mItemName.add("");
-        mItemRIDNo.add("");
-        mItemBackground.add("https://drive.google.com/uc?id=1J13nhEYHGnLuz_9BCeVpYu1nxF_CUF7N");
+        mItemImageUrls.add("https://drive.google.com/uc?id=1CSk3zi7v5q5duVM44Gk-gBTnafhowuhz");
+        mItemDesignation.add("Rotract Club of Kathmandu North East");
+        mItemName.add("Tangal Higher Secondary School");
+        mItemRIDNo.add("Saturday, 11:00 am");
+        mItemBackground.add("https://drive.google.com/uc?id=1CSk3zi7v5q5duVM44Gk-gBTnafhowuhz");
+        mItemContactNo.add("9840062003");
+        mItemEmailID.add("president1819rackne@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=17N_zrsZTSDSJgpW43-BoklHGIKbqd56A");
         mItemDesignation.add("President");
-        mItemName.add("");
+        mItemName.add("Rtr. Aasish Wagle");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=17N_zrsZTSDSJgpW43-BoklHGIKbqd56A");
+        mItemContactNo.add("9840062003");
+        mItemEmailID.add("president1819rackne@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1oYD6_AYmclNxZih_zozPMzT0EVrGsyxy");
         mItemDesignation.add("Immediate Past President");
-        mItemName.add("");
+        mItemName.add("Rtr. Shrawan Bishowkarma");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1oYD6_AYmclNxZih_zozPMzT0EVrGsyxy");
+        mItemContactNo.add("9841704762");
+        mItemEmailID.add("bkshrawanbk@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1TddIDf4CVpQ5gPYtz3KGHKB_91p2rT_E");
         mItemDesignation.add("Vice President");
-        mItemName.add("");
+        mItemName.add("Rtr. Ashma Neupane");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1TddIDf4CVpQ5gPYtz3KGHKB_91p2rT_E");
+        mItemContactNo.add("9849994917");
+        mItemEmailID.add("Osimumashma@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1KC_eC_arrLgOH7kmKiLVx_yU5wFrmdSm");
         mItemDesignation.add("Secretary");
-        mItemName.add("");
+        mItemName.add("Rtr. Shrishti Maharjan");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1KC_eC_arrLgOH7kmKiLVx_yU5wFrmdSm");
+        mItemContactNo.add("9849163469");
+        mItemEmailID.add("shreshti.s@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1xu0OAKqSzOD_NKTfRtrXpAlzHhIaVsbz");
         mItemDesignation.add("Treasurer");
-        mItemName.add("");
+        mItemName.add("Rtr. Saroj Bishwakarma");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1xu0OAKqSzOD_NKTfRtrXpAlzHhIaVsbz");
+        mItemContactNo.add("9813590712");
+        mItemEmailID.add("Sarojorasbk@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1567tQFnHRv-nPhirt1MwUz_AadnFdRRw");
         mItemDesignation.add("Club Service Director");
-        mItemName.add("");
+        mItemName.add("Rtr. Sovit Sharma");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1567tQFnHRv-nPhirt1MwUz_AadnFdRRw");
+        mItemContactNo.add("9849912730");
+        mItemEmailID.add("sovitsharma33@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1gwkzjMmOoElQm3iHRa275lp8lnAclU1A");
         mItemDesignation.add("International Service Director");
-        mItemName.add("");
+        mItemName.add("Rtr. Susmita Adhikari");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1gwkzjMmOoElQm3iHRa275lp8lnAclU1A");
+        mItemContactNo.add("9843172172");
+        mItemEmailID.add("susmitaadhikari73@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=13MOoNN9zwWkgC8JFitNigDBW0OXiwJ88");
         mItemDesignation.add("Community Service Director");
-        mItemName.add("");
+        mItemName.add("Rtr. Sagun Pudasaini");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=13MOoNN9zwWkgC8JFitNigDBW0OXiwJ88");
+        mItemContactNo.add("9861041339");
+        mItemEmailID.add("Shagoonpudasaini@gmail.com");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1Tt87Qd15UZiFtvtD9sWhCHS4SPlcg-hC");
         mItemDesignation.add("Professional Service Director");
-        mItemName.add("");
+        mItemName.add("Rtr. Monika Thapa Magar");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1Tt87Qd15UZiFtvtD9sWhCHS4SPlcg-hC");
-
-        mItemImageUrls.add("https://drive.google.com/uc?id=1Cn-MXuT3i0H4ziYazHqUil8mHeQ_q7US");
-        mItemDesignation.add("Assistant Director and Officer");
-        mItemName.add("");
-        mItemRIDNo.add("");
-        mItemBackground.add("https://drive.google.com/uc?id=1Cn-MXuT3i0H4ziYazHqUil8mHeQ_q7US");
+        mItemContactNo.add("9867809727");
+        mItemEmailID.add("");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1lC67XwP-lX4vBnYPFV33sgRC1ajrxtVA");
         mItemDesignation.add("Sergeant-at-Arms");
-        mItemName.add("");
+        mItemName.add("Rtr. Shrija Thapa");
         mItemRIDNo.add("");
         mItemBackground.add("https://drive.google.com/uc?id=1lC67XwP-lX4vBnYPFV33sgRC1ajrxtVA");
-
-        mItemImageUrls.add("https://drive.google.com/uc?id=1Cn-MXuT3i0H4ziYazHqUil8mHeQ_q7US");
-        mItemDesignation.add("Fundraising Chair");
-        mItemName.add("");
-        mItemRIDNo.add("");
-        mItemBackground.add("https://drive.google.com/uc?id=1Cn-MXuT3i0H4ziYazHqUil8mHeQ_q7US");
-
-        mItemImageUrls.add("https://drive.google.com/uc?id=1Cn-MXuT3i0H4ziYazHqUil8mHeQ_q7US");
-        mItemDesignation.add("Public Relations Officer");
-        mItemName.add("");
-        mItemRIDNo.add("");
-        mItemBackground.add("https://drive.google.com/uc?id=1Cn-MXuT3i0H4ziYazHqUil8mHeQ_q7US");
-
-        mItemImageUrls.add("https://drive.google.com/uc?id=1_jgOWyOWTdJG4MYjfJ2slSiUpKv244K6");
-        mItemDesignation.add("Information Technology Officer");
-        mItemName.add("Rtr. Keshab Bahadur Sunari");
-        mItemRIDNo.add("9647197");
-        mItemBackground.add("https://drive.google.com/uc?id=1_jgOWyOWTdJG4MYjfJ2slSiUpKv244K6");
+        mItemContactNo.add("9803922091");
+        mItemEmailID.add("tshrija11@gmail.com");
 
         initRecyclerView();
 
@@ -137,7 +137,7 @@ public class ClubReview extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         RecyclerView recyclerView = findViewById(R.id.clubReviewRecyclerView);
         recyclerView.setLayoutManager(layoutManager);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mItemDesignation, mItemImageUrls, mItemName, mItemRIDNo, mItemBackground);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mItemDesignation, mItemImageUrls, mItemName, mItemRIDNo, mItemBackground, mItemContactNo, mItemEmailID);
         recyclerView.setAdapter(adapter);
 
     }
