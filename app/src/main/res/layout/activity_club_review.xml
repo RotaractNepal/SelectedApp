@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ClubReview">
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listview"
-        android:scrollbars="none"/>
+        android:id="@+id/clubReviewRecyclerView"
+        android:orientation="horizontal">
 
+    </android.support.v7.widget.RecyclerView>
 </RelativeLayout>
