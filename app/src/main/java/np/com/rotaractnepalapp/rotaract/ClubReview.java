@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 
 public class ClubReview extends AppCompatActivity {
-    private static final String TAG = "ClubReview";
+    private static final String TAG = "Clubs";
 
     private ArrayList<String> mItemDesignation = new ArrayList<>();
     private ArrayList<String> mItemImageUrls = new ArrayList<>();
@@ -32,11 +32,12 @@ public class ClubReview extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        getImages();
+        getImagesRACKNE();
 
     }
 
-    private void getImages(){
+
+    private void getImagesRACKNE(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
         mItemImageUrls.add("https://drive.google.com/uc?id=1CSk3zi7v5q5duVM44Gk-gBTnafhowuhz");
@@ -127,18 +128,19 @@ public class ClubReview extends AppCompatActivity {
         mItemContactNo.add("9803922091");
         mItemEmailID.add("tshrija11@gmail.com");
 
-        initRecyclerView();
-
+        initRecyclerViewRACKNE();
     }
 
-    private void initRecyclerView() {
+    private void initRecyclerViewRACKNE() {
         Log.d(TAG, "initRecyclerView: init recyclerview.");
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        RecyclerView recyclerView = findViewById(R.id.clubReviewRecyclerView);
-        recyclerView.setLayoutManager(layoutManager);
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mItemDesignation, mItemImageUrls, mItemName, mItemRIDNo, mItemBackground, mItemContactNo, mItemEmailID);
-        recyclerView.setAdapter(adapter);
+        RecyclerView recyclerViewRACKNE = findViewById(R.id.clubRCKNERecyclerView);
+        recyclerViewRACKNE.setLayoutManager(layoutManager);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, mItemDesignation, mItemImageUrls,
+                                                               mItemName, mItemRIDNo, mItemBackground,
+                                                               mItemContactNo, mItemEmailID);
+        recyclerViewRACKNE.setAdapter(adapter);
 
     }
 
