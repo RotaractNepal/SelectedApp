@@ -14,15 +14,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import np.com.rotaractnepalapp.rotaract.Class.Club1Class;
-import np.com.rotaractnepalapp.rotaract.Class.Club3Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club8Class;
 import np.com.rotaractnepalapp.rotaract.R;
 
-public class Club3Adapter extends RecyclerView.Adapter<Club3Adapter.ClubViewHolder>{
+public class Club8Adapter extends RecyclerView.Adapter<Club8Adapter.ClubViewHolder> {
 
-    ArrayList<Club3Class> data = new ArrayList<>();
+    ArrayList<Club8Class> data = new ArrayList<>();
 
-    public Club3Adapter(ArrayList<Club3Class> data){
+    public Club8Adapter(ArrayList<Club8Class> data) {
         this.data = data;
     }
 
@@ -46,18 +45,18 @@ public class Club3Adapter extends RecyclerView.Adapter<Club3Adapter.ClubViewHold
 
     public class ClubViewHolder extends RecyclerView.ViewHolder {
         TextView title;
-        CircleImageView images;
+        ImageView images;
         public ClubViewHolder(@NonNull View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.nameTextView);
-            images = (CircleImageView) itemView.findViewById(R.id.imageView);
+            images = (ImageView) itemView.findViewById(R.id.imageView);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     int position = getAdapterPosition();
                     if (position != RecyclerView.NO_POSITION){
-                        final Club3Class clickedDataItem = data.get(position);
+                        final Club8Class clickedDataItem = data.get(position);
                         final Dialog memInformation;
                         memInformation = new Dialog(v.getContext());
 

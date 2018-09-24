@@ -9,11 +9,19 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 import np.com.rotaractnepalapp.rotaract.Adapter.MainClubAdapter;
+import np.com.rotaractnepalapp.rotaract.Class.Club10Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club11Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club12Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club13Class;
 import np.com.rotaractnepalapp.rotaract.Class.Club1Class;
 import np.com.rotaractnepalapp.rotaract.Class.Club2Class;
 import np.com.rotaractnepalapp.rotaract.Class.Club3Class;
 import np.com.rotaractnepalapp.rotaract.Class.Club4Class;
 import np.com.rotaractnepalapp.rotaract.Class.Club5Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club6Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club7Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club8Class;
+import np.com.rotaractnepalapp.rotaract.Class.Club9Class;
 import np.com.rotaractnepalapp.rotaract.R;
 
 
@@ -45,86 +53,94 @@ public class ClubReview extends AppCompatActivity {
         objects.add(getClub3Data().get(0));
         objects.add(getClub4Data().get(0));
         objects.add(getClub5Data().get(0));
+        objects.add(getClub6Data().get(0));
+        objects.add(getClub7Data().get(0));
+        objects.add(getClub8Data().get(0));
+        objects.add(getClub9Data().get(0));
+        objects.add(getClub10Data().get(0));
+        objects.add(getClub11Data().get(0));
+        objects.add(getClub12Data().get(0));
+        objects.add(getClub13Data().get(0));
         return objects;
     }
 
     public static ArrayList<Club1Class> getClub1Data(){
         ArrayList<Club1Class> club1Classes = new ArrayList<>();
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"RACB"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"President"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Immediate Past"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Vice President"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Secretary"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Treasurer"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Club Service Director"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"International Service"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Community Service"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Profession Development"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Assistant Directors"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Sergeant-At-Arms"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Fundraising Chair"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Public Relations"));
-        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Information Technology"));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
         return club1Classes;
 
     }
     public static ArrayList<Club2Class> getClub2Data(){
         ArrayList<Club2Class> club2Classes = new ArrayList<>();
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"RACDK"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"President"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Immediate Past President"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Vice President"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Secretary"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Treasurer"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Club Service Director"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"International Service"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Community Service"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Profession Development"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Assistant Directors"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Sergeant-At-Arms"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Fundraising Chair"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Public Relations"));
-        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Information Technology"));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"RACDK", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
         return club2Classes;
 
     }
     public static ArrayList<Club3Class> getClub3Data(){
         ArrayList<Club3Class> club3Classes = new ArrayList<>();
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"RACG"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"President"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Immediate Past President"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Vice President"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Secretary"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Treasurer"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Club Service Director"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"International Service"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Community Service"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Profession Development"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Assistant Directors"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Sergeant-At-Arms"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Fundraising Chair"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Public Relations"));
-        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Information Technology"));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"RACG", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
         return club3Classes;
 
     }
     public static ArrayList<Club4Class> getClub4Data(){
         ArrayList<Club4Class> club4Classes = new ArrayList<>();
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"RACG"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"President"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Immediate Past President"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Vice President"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Secretary"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Treasurer"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Club Service Director"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"International Service"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Community Service"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Profession Development"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Assistant Directors "));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Sergeant-At-Arms"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Fundraising Chair"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Public Relations"));
-        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Information Technology"));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"RACKM", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
         return club4Classes;
 
     }
@@ -144,6 +160,175 @@ public class ClubReview extends AppCompatActivity {
         return club5Classes;
 
     }
+
+    public static ArrayList<Club6Class> getClub6Data(){
+        ArrayList<Club6Class> club6Classes = new ArrayList<>();
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"RACKS", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club6Classes.add(new Club6Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club6Classes;
+
+    }
+
+    public static ArrayList<Club7Class> getClub7Data(){
+        ArrayList<Club7Class> club7Classes = new ArrayList<>();
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"RACKYNE", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club7Classes.add(new Club7Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club7Classes;
+
+    }
+
+    public static ArrayList<Club8Class> getClub8Data(){
+        ArrayList<Club8Class> club8Classes = new ArrayList<>();
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"RACMBIOM", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club8Classes.add(new Club8Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club8Classes;
+
+    }
+
+    public static ArrayList<Club9Class> getClub9Data(){
+        ArrayList<Club9Class> club9Classes = new ArrayList<>();
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"RACP", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club9Classes.add(new Club9Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club9Classes;
+
+    }
+
+    public static ArrayList<Club10Class> getClub10Data(){
+        ArrayList<Club10Class> club10Classes = new ArrayList<>();
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"RACR", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club10Classes.add(new Club10Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club10Classes;
+
+    }
+
+    public static ArrayList<Club11Class> getClub11Data(){
+        ArrayList<Club11Class> club11Classes = new ArrayList<>();
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"RACS", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club11Classes.add(new Club11Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club11Classes;
+
+    }
+
+    public static ArrayList<Club12Class> getClub12Data(){
+        ArrayList<Club12Class> club12Classes = new ArrayList<>();
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"RACTIC", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club12Classes.add(new Club12Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club12Classes;
+
+    }
+
+    public static ArrayList<Club13Class> getClub13Data(){
+        ArrayList<Club13Class> club13Classes = new ArrayList<>();
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"RACK", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Immediate Past President", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
+        club13Classes.add(new Club13Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        return club13Classes;
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
