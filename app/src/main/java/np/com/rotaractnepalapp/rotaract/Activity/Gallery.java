@@ -1,16 +1,18 @@
-package np.com.rotaractnepalapp.rotaract;
+package np.com.rotaractnepalapp.rotaract.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class Chat extends AppCompatActivity {
+import np.com.rotaractnepalapp.rotaract.R;
+
+public class Gallery extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
-        this.setTitle("Chat");
+        setContentView(R.layout.activity_gallery);
+        this.setTitle("Gallery");
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);

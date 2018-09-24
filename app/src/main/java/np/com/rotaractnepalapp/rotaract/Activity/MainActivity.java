@@ -1,4 +1,4 @@
-package np.com.rotaractnepalapp.rotaract;
+package np.com.rotaractnepalapp.rotaract.Activity;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -29,6 +29,9 @@ import com.rey.material.widget.Button;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import np.com.rotaractnepalapp.rotaract.Adapter.ImageSliderAdapter;
+import np.com.rotaractnepalapp.rotaract.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

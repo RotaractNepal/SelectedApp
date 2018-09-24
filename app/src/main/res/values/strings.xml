@@ -74,4 +74,17 @@
     <string name="member_designation">Member Designation</string>
     <string name="rid_no">RID. No.:</string>
     <string name="item_designation">Item Designation</string>
+    <string name="rac_budhanilkantha">RAC Budhanilkantha</string>
+    <string name="rac_dillibazar_kathmandu">RAC Dillibazar-Kathmandu</string>
+    <string name="rac_gongabu">RAC Gongabu</string>
+    <string name="rac_kathmandu_metro">RAC Kathmandu Metro</string>
+    <string name="rac_kathmandu_north_east">RAC Kathmandu North East</string>
+    <string name="rac_kathmandu_sunrise">RAC Kathmandu Sunrise</string>
+    <string name="rac_kathmandu_youth_north_east">RAC Kathmandu Youth North East</string>
+    <string name="rac_matribhumi_baluwatar_iom">RAC Matribhumi Baluwatar IOM</string>
+    <string name="rac_pashupati">RAC Pashupati</string>
+    <string name="rac_rajdhani">RAC Rajdhani</string>
+    <string name="rac_swoyambhu">RAC Swoyambhu</string>
+    <string name="rac_thames_international_college">RAC Thames International College</string>
+    <string name="rotaract_club_of_kantipur">Rotaract Club of Kantipur</string>
 </resources>

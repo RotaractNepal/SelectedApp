@@ -1,8 +1,10 @@
-package np.com.rotaractnepalapp.rotaract;
+package np.com.rotaractnepalapp.rotaract.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import np.com.rotaractnepalapp.rotaract.R;
 
 public class News extends AppCompatActivity {
 

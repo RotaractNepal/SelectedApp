@@ -20,7 +20,7 @@
         android:id="@+id/memImageInfo"
         android:layout_marginTop="106dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/colorlogo_rotaractnepalapp"/>
+        android:src="@mipmap/ic_app"/>
     <TextView
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
