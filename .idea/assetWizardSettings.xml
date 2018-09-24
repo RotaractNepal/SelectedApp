@@ -19,9 +19,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="iconShape" value="CIRCLE" />
-                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\Desktop\club\colorlogo_rotaractnepalapp.png" />
-                                      <entry key="outputName" value="ic_app" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\rackne.png" />
+                                      <entry key="outputName" value="ic_rackne" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -25,7 +25,7 @@ public class ClubReview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club_review);
-        this.setTitle("Club Review");
+        this.setTitle("Zone VI Club R.ID.NO. 3292");
 
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -50,7 +50,7 @@ public class ClubReview extends AppCompatActivity {
 
     public static ArrayList<Club1Class> getClub1Data(){
         ArrayList<Club1Class> club1Classes = new ArrayList<>();
-        club1Classes.add(new Club1Class(R.mipmap.ic_racb,"RACB"));
+        club1Classes.add(new Club1Class(R.mipmap.ic_app,"RACB"));
         club1Classes.add(new Club1Class(R.mipmap.ic_app,"President"));
         club1Classes.add(new Club1Class(R.mipmap.ic_app,"Immediate Past"));
         club1Classes.add(new Club1Class(R.mipmap.ic_app,"Vice President"));
@@ -70,7 +70,7 @@ public class ClubReview extends AppCompatActivity {
     }
     public static ArrayList<Club2Class> getClub2Data(){
         ArrayList<Club2Class> club2Classes = new ArrayList<>();
-        club2Classes.add(new Club2Class(R.mipmap.ic_racdk,"RACDK"));
+        club2Classes.add(new Club2Class(R.mipmap.ic_app,"RACDK"));
         club2Classes.add(new Club2Class(R.mipmap.ic_app,"President"));
         club2Classes.add(new Club2Class(R.mipmap.ic_app,"Immediate Past President"));
         club2Classes.add(new Club2Class(R.mipmap.ic_app,"Vice President"));
@@ -90,7 +90,7 @@ public class ClubReview extends AppCompatActivity {
     }
     public static ArrayList<Club3Class> getClub3Data(){
         ArrayList<Club3Class> club3Classes = new ArrayList<>();
-        club3Classes.add(new Club3Class(R.mipmap.ic_racg,"RACG"));
+        club3Classes.add(new Club3Class(R.mipmap.ic_app,"RACG"));
         club3Classes.add(new Club3Class(R.mipmap.ic_app,"President"));
         club3Classes.add(new Club3Class(R.mipmap.ic_app,"Immediate Past President"));
         club3Classes.add(new Club3Class(R.mipmap.ic_app,"Vice President"));
@@ -110,7 +110,7 @@ public class ClubReview extends AppCompatActivity {
     }
     public static ArrayList<Club4Class> getClub4Data(){
         ArrayList<Club4Class> club4Classes = new ArrayList<>();
-        club4Classes.add(new Club4Class(R.mipmap.ic_rackm,"RACG"));
+        club4Classes.add(new Club4Class(R.mipmap.ic_app,"RACG"));
         club4Classes.add(new Club4Class(R.mipmap.ic_app,"President"));
         club4Classes.add(new Club4Class(R.mipmap.ic_app,"Immediate Past President"));
         club4Classes.add(new Club4Class(R.mipmap.ic_app,"Vice President"));
@@ -130,7 +130,7 @@ public class ClubReview extends AppCompatActivity {
     }
     public static ArrayList<Club5Class> getClub5Data(){
         ArrayList<Club5Class> club5Classes = new ArrayList<>();
-        club5Classes.add(new Club5Class(R.mipmap.ic_rackne,"RACG", R.drawable.rackne, "RAC Kathmandu North East", "3292", "9840062003", "president1819rackne@gmail.com"));
+        club5Classes.add(new Club5Class(R.drawable.rackne,"RACKNE", R.drawable.rackne, "RAC Kathmandu North East", "Tangal Higher Secondary School @11:00 AM", "9840062003", "president1819rackne@gmail.com"));
         club5Classes.add(new Club5Class(R.drawable.rackne_president,"President", R.drawable.rackne_president, "Rtr. Aasish Wagle", "", "9840062003", "president1819rackne@gmail.com"));
         club5Classes.add(new Club5Class(R.drawable.rackne_ipp,"Immediate Past President", R.drawable.rackne_ipp, "Rtr. Shrawan Bishowkarma", "", "9841704762", "bkshrawanbk@gmail.com"));
         club5Classes.add(new Club5Class(R.drawable.rackne_vicepre,"Vice President", R.drawable.rackne_vicepre, "Rtr. Ashma Neupane", "", "9849994917", "Osimumashma@gmail.com"));
