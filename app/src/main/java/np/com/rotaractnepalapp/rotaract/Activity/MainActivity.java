@@ -1,6 +1,5 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,7 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -52,6 +51,10 @@ public class MainActivity extends AppCompatActivity
     JustifiedTextView textIntroductionOne, textIndroductionDesOne;
     private Button submitBtn;
     private ImageView call, email, cancel;
+
+    private RecyclerView mRecyclerView;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private RecyclerView.Adapter mAdapter;
 
 
     @Override
@@ -844,58 +847,7 @@ public class MainActivity extends AppCompatActivity
             intent = new Intent(this, Chat.class);
             startActivity(intent);
         } else if (id == R.id.nav_about_us){
-           /* AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
-            LayoutInflater inflater = getLayoutInflater();
-            View dialogView = inflater.inflate(R.layout.about_us,null);
-
-            builder.setView(dialogView);
-
-            call = (ImageView) dialogView.findViewById(R.id.call);
-            email = (ImageView) dialogView.findViewById(R.id.email);
-            cancel = (ImageView) dialogView.findViewById(R.id.cancel);
-
-            final AlertDialog dialog = builder.create();
-
-
-            call.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                   // Toast.makeText(MainActivity.this, "Call Pressed", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:9841803337"));
-                    startActivity(intent);
-                }
-            });
-
-            email.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intenEmail=null, chooserEmail=null;
-                    intenEmail = new Intent(Intent.ACTION_SEND);
-                    intenEmail.setData(Uri.parse("mailto:"));
-                    String[] to = {"070bct515@ioe.edu.np"};
-                    intenEmail.putExtra(Intent.EXTRA_EMAIL, to);
-                    intenEmail.putExtra(Intent.EXTRA_SUBJECT, "Sent From Rotaract Nepal App");
-                    intenEmail.putExtra(Intent.EXTRA_TEXT, "Hellow Sir");
-                    intenEmail.setType("message/rfc822");
-                    chooserEmail = intenEmail.createChooser(intenEmail,"Send Email");
-                    startActivity(chooserEmail);
-                }
-            });
-
-            cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    dialog.cancel();
-                }
-            });
-
-
-            dialog.setCanceledOnTouchOutside(false);
-            dialog.setCancelable(false);
-            dialog.show();
-*/
         } else if (id == R.id.nav_feed_back){
             intent = new Intent(Intent.ACTION_SEND);
             intent.setData(Uri.parse("mailto:"));
