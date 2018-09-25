@@ -157,6 +157,7 @@ public class ClubReview extends AppCompatActivity {
         club5Classes.add(new Club5Class(R.drawable.rackne_community,"Community Service", R.drawable.rackne_community, "Rtr. Sagun Pudasaini", "", "9861041339", "Shagoonpudasaini@gmail.com"));
         club5Classes.add(new Club5Class(R.drawable.rackne_professional,"Profession Development", R.drawable.rackne_professional, "Rtr. Monika Thapa Magar", "", "9867809727", ""));
         club5Classes.add(new Club5Class(R.drawable.rackne_sergeant,"Sergeant-At-Arms", R.drawable.rackne_sergeant, "Rtr. Shrija Thapa", "", "9803922091", "tshrija11@gmail.com"));
+        club5Classes.add(new Club5Class(R.drawable.keshab, "Member", R.drawable.keshab, "Rtr. Keshab Bahadur Sunari", "", "9841803337", "070bct515@ioe.edu.np"));
         return club5Classes;
 
     }
