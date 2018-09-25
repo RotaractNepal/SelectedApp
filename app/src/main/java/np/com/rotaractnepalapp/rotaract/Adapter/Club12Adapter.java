@@ -2,6 +2,8 @@ package np.com.rotaractnepalapp.rotaract.Adapter;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -116,6 +118,7 @@ public class Club12Adapter extends RecyclerView.Adapter<Club12Adapter.ClubViewHo
 
                         memInformation.setCanceledOnTouchOutside(false);
                         memInformation.setCancelable(false);
+                        memInformation.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                         memInformation.show();
                     }
                 }

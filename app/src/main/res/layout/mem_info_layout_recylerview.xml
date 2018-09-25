@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity="center_horizontal">
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/round_rect_bg">
     <ImageView
         android:id="@+id/memImageBackground"
-        android:layout_width="310dp"
-        android:layout_height="310dp"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
         android:alpha="0.8"
         android:layout_centerHorizontal="true"
         android:background="@drawable/colorlogo_rotaractnepalapp">
     </ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="246dp"/>
     <de.hdodenhof.circleimageview.CircleImageView
         app:civ_border_color="@android:color/white"
-        app:civ_border_width="2dp"
+        app:civ_border_width="3dp"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:id="@+id/memImageInfo"
-        android:layout_marginTop="106dp"
+        android:layout_marginTop="185dp"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/ic_app"/>
     <TextView
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/memNameInfo"
         android:text="@string/member_name"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold"
+        android:background="@android:color/white"
         android:autoSizeTextType="uniform"
         android:autoSizeMaxTextSize="15sp"
         android:autoSizeMinTextSize="8sp"
@@ -37,11 +43,12 @@
         android:gravity="center"
         android:layout_centerHorizontal="true" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/memDesignationInfo"
+        android:background="@android:color/white"
         android:text="@string/member_designation"
-        android:textColor="@android:color/white"
+        android:textColor="@color/colorPrimary"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_below="@id/memNameInfo"
         android:textStyle="bold"
@@ -51,11 +58,12 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/memRIDNoInfo"
         android:text="@string/rid_no"
-        android:textColor="@android:color/white"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_below="@id/memDesignationInfo"
         android:gravity="center"
@@ -67,7 +75,5 @@
     <include layout="@layout/cust_alert_butttom_layout"
         android:layout_below="@id/memRIDNoInfo"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="4dp"/>
+        android:layout_width="match_parent"/>
 </RelativeLayout>

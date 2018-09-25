@@ -8,7 +8,7 @@
         android:id="@+id/profile"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:src="@drawable/keshab"/>
+        android:src="@drawable/colorlogo_rotaractnepalapp"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,28 +20,28 @@
             android:src="@drawable/rotaractnepalapp"
             android:layout_marginLeft="10dp"/>
         <TextView
-            android:id="@+id/name01"
+            android:id="@+id/aboutUsName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="65dp"
-            android:text="@string/keshabName"
+            android:text="Name"
             android:textColor="@android:color/white"
             android:textSize="16dp"
             android:textStyle="bold" />
         <TextView
-            android:id="@+id/profession01"
+            android:id="@+id/aboutUsProfession"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/name01"
-            android:layout_alignStart="@id/name01"
-            android:layout_below="@id/name01"
-            android:text="@string/keshabProfession"
+            android:layout_alignLeft="@id/aboutUsName"
+            android:layout_alignStart="@id/aboutUsName"
+            android:layout_below="@id/aboutUsName"
+            android:text="Profession"
             android:textColor="@android:color/white"
             android:textSize="16dp"
             android:textStyle="bold" />
     </RelativeLayout>
     <include layout="@layout/cust_alert_butttom_layout"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:layout_height="wrap_content"
-        android:layout_width="300dp"/>
+        android:layout_width="match_parent"/>
 </LinearLayout>

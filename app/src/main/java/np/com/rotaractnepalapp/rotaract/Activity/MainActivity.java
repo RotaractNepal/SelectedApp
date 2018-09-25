@@ -844,7 +844,7 @@ public class MainActivity extends AppCompatActivity
             intent = new Intent(this, Chat.class);
             startActivity(intent);
         } else if (id == R.id.nav_about_us){
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+           /* AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
             LayoutInflater inflater = getLayoutInflater();
             View dialogView = inflater.inflate(R.layout.about_us,null);
@@ -895,7 +895,7 @@ public class MainActivity extends AppCompatActivity
             dialog.setCanceledOnTouchOutside(false);
             dialog.setCancelable(false);
             dialog.show();
-
+*/
         } else if (id == R.id.nav_feed_back){
             intent = new Intent(Intent.ACTION_SEND);
             intent.setData(Uri.parse("mailto:"));
