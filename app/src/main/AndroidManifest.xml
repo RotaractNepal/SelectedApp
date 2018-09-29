@@ -28,7 +28,18 @@
         <activity android:name=".Activity.Gallery" />
         <activity android:name=".Activity.Chat" />
         <activity android:name=".Activity.Club" />
-        <activity android:name=".Activity.ClubActivity.ClubIReview"></activity>
+        <activity android:name=".Activity.ClubActivity.ClubIReview" />
+        <activity android:name=".Activity.ClubActivity.ClubIIReview" />
+        <activity android:name=".Activity.ClubActivity.ClubIIIReview" />
+        <activity android:name=".Activity.ClubActivity.ClubIVReview" />
+        <activity android:name=".Activity.ClubActivity.ClubVReview" />
+        <activity android:name=".Activity.ClubActivity.ClubVIIReview" />
+        <activity android:name=".Activity.ClubActivity.ClubVIIIReview" />
+        <activity android:name=".Activity.ClubActivity.ClubIXReview" />
+        <activity android:name=".Activity.ClubActivity.ClubXReview" />
+        <activity android:name=".Activity.ClubActivity.ClubXIReview" />
+        <activity android:name=".Activity.ClubActivity.ClubXIIReview" />
+        <activity android:name=".Activity.ClubActivity.ClubXIIIReview"></activity>
     </application>
 
 </manifest>

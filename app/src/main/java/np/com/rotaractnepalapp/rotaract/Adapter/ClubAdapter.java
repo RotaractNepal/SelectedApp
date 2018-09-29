@@ -13,7 +13,18 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIVReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIXReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIIIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIIReview;
 import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIIIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubXIIIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubXIIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubXIReview;
+import np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubXReview;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class ClubAdapter extends RecyclerView.Adapter<ClubAdapter.ClubViewHolder> {
@@ -65,41 +76,52 @@ public class ClubAdapter extends RecyclerView.Adapter<ClubAdapter.ClubViewHolder
                             mContext.startActivity(openClubIActivity);
                             break;
                         case 1:
-                            Toast.makeText(mContext, "Zone II", Toast.LENGTH_LONG).show();
+                            Intent openClubIIActivity = new Intent(mContext, ClubIIReview.class);
+                            mContext.startActivity(openClubIIActivity);
                             break;
                         case 2:
-                            Toast.makeText(mContext, "Zone III", Toast.LENGTH_LONG).show();
+                            Intent openClubIIIActivity = new Intent(mContext, ClubIIIReview.class);
+                            mContext.startActivity(openClubIIIActivity);
                             break;
                         case 3:
-                            Toast.makeText(mContext, "Zone IV", Toast.LENGTH_LONG).show();
+                            Intent openClubIVActivity = new Intent(mContext, ClubIVReview.class);
+                            mContext.startActivity(openClubIVActivity);
                             break;
                         case 4:
-                            Toast.makeText(mContext, "Zone V", Toast.LENGTH_LONG).show();
+                            Intent openClubVActivity = new Intent(mContext, ClubVReview.class);
+                            mContext.startActivity(openClubVActivity);
                             break;
                         case 5:
                             Intent openClubVIActivity = new Intent(mContext, ClubVIReview.class);
                             mContext.startActivity(openClubVIActivity);
                             break;
                         case 6:
-                            Toast.makeText(mContext, "Zone VII", Toast.LENGTH_LONG).show();
+                            Intent openClubVIIActivity = new Intent(mContext, ClubVIIReview.class);
+                            mContext.startActivity(openClubVIIActivity);
                             break;
                         case 7:
-                            Toast.makeText(mContext, "Zone VIII", Toast.LENGTH_LONG).show();
+                            Intent openClubVIIIActivity = new Intent(mContext, ClubVIIIReview.class);
+                            mContext.startActivity(openClubVIIIActivity);
                             break;
                         case 8:
-                            Toast.makeText(mContext, "Zone IX", Toast.LENGTH_LONG).show();
+                            Intent openClubIXActivity = new Intent(mContext, ClubIXReview.class);
+                            mContext.startActivity(openClubIXActivity);
                             break;
                         case 9:
-                            Toast.makeText(mContext, "Zone X", Toast.LENGTH_LONG).show();
+                            Intent openClubXActivity = new Intent(mContext, ClubXReview.class);
+                            mContext.startActivity(openClubXActivity);
                             break;
                         case 10:
-                            Toast.makeText(mContext, "Zone XI", Toast.LENGTH_LONG).show();
+                            Intent openClubXIActivity = new Intent(mContext, ClubXIReview.class);
+                            mContext.startActivity(openClubXIActivity);
                             break;
                         case 11:
-                            Toast.makeText(mContext, "Zone XII", Toast.LENGTH_LONG).show();
+                            Intent openClubXIIActivity = new Intent(mContext, ClubXIIReview.class);
+                            mContext.startActivity(openClubXIIActivity);
                             break;
                         case 12:
-                            Toast.makeText(mContext, "Zone XIII", Toast.LENGTH_LONG).show();
+                            Intent openClubXIIIActivity = new Intent(mContext, ClubXIIIReview.class);
+                            mContext.startActivity(openClubXIIIActivity);
                             break;
                     }
 
