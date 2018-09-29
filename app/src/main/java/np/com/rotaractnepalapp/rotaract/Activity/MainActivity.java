@@ -841,7 +841,7 @@ public class MainActivity extends AppCompatActivity
             intent = new Intent(this, Events.class);
             startActivity(intent);
         } else if (id == R.id.nav_club_review) {
-            intent = new Intent(this, ClubReview.class);
+            intent = new Intent(this, Club.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
             intent = new Intent(this, Gallery.class);
