@@ -843,8 +843,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_club_review) {
             intent = new Intent(this, Club.class);
             startActivity(intent);
-        } else if (id == R.id.nav_gallery) {
-            intent = new Intent(this, Gallery.class);
+        } else if (id == R.id.nav_dcalender) {
+            intent = new Intent(this, DCalendar.class);
             startActivity(intent);
         } else if (id == R.id.nav_chat) {
             intent = new Intent(this, Chat.class);

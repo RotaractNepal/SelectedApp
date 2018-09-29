@@ -20,9 +20,9 @@
                 android:icon="@drawable/ic_club_review"
                 android:title="Clubs" />
             <item
-                android:id="@+id/nav_gallery"
-                android:icon="@drawable/gallery"
-                android:title="Gallery" />
+                android:id="@+id/nav_dcalender"
+                android:icon="@drawable/ic_district_calendar"
+                android:title="District Calendar" />
             <item
                 android:id="@+id/nav_chat"
                 android:icon="@drawable/chat"

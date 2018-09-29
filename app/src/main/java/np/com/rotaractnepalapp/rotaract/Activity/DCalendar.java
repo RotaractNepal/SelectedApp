@@ -6,13 +6,13 @@ import android.view.MenuItem;
 
 import np.com.rotaractnepalapp.rotaract.R;
 
-public class Gallery extends AppCompatActivity {
+public class DCalendar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery);
-        this.setTitle("Gallery");
+        setContentView(R.layout.activity_dcalendar);
+        this.setTitle("District 3292 Nepal-Bhutan Calendar");
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);

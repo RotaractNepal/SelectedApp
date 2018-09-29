@@ -25,7 +25,6 @@
         <activity android:name=".Activity.News" />
         <activity android:name=".Activity.Events" />
         <activity android:name=".Activity.ClubActivity.ClubVIReview" />
-        <activity android:name=".Activity.Gallery" />
         <activity android:name=".Activity.Chat" />
         <activity android:name=".Activity.Club" />
         <activity android:name=".Activity.ClubActivity.ClubIReview" />
@@ -39,7 +38,8 @@
         <activity android:name=".Activity.ClubActivity.ClubXReview" />
         <activity android:name=".Activity.ClubActivity.ClubXIReview" />
         <activity android:name=".Activity.ClubActivity.ClubXIIReview" />
-        <activity android:name=".Activity.ClubActivity.ClubXIIIReview"></activity>
+        <activity android:name=".Activity.ClubActivity.ClubXIIIReview" />
+        <activity android:name=".Activity.DCalendar"></activity>
     </application>
 
 </manifest>
