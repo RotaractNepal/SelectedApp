@@ -27,7 +27,8 @@
         <activity android:name=".Activity.ClubActivity.ClubVIReview" />
         <activity android:name=".Activity.Gallery" />
         <activity android:name=".Activity.Chat" />
-        <activity android:name=".Activity.Club"></activity>
+        <activity android:name=".Activity.Club" />
+        <activity android:name=".Activity.ClubActivity.ClubIReview"></activity>
     </application>
 
 </manifest>
