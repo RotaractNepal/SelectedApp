@@ -92,4 +92,14 @@
     <string name="news_date">2075/01/15 - 2075/02/15</string>
     <string name="news_time">7:00 AM - 8:00 AM</string>
     <string name="news_location">Tangal Higher Secondary School</string>
+    <string name="your_news">Create Your News</string>
+    <string name="text_hint_title">Title</string>
+    <string name="text_news_description">Description</string>
+    <string name="text_news_location">Location</string>
+    <string name="choose_your_an_image">Choose your an Image</string>
+    <string name="pick_start_date">Pick Start Date</string>
+    <string name="pick_end_date">Pick End Date</string>
+    <string name="pick_program_time">Pick Program Time</string>
+    <string name="upload_news">Upload News</string>
+    <string name="x">X</string>
 </resources>

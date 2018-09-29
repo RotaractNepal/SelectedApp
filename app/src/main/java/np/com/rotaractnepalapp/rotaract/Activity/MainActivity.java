@@ -272,21 +272,24 @@ public class MainActivity extends AppCompatActivity
         fab_news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Add News", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, News.class);
+                startActivity(intent);
             }
         });
 
         fab_events.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Add Events", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, Events.class);
+                startActivity(intent);
             }
         });
 
         fab_chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Open Chat", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, Chat.class);
+                startActivity(intent);
             }
         });
 
