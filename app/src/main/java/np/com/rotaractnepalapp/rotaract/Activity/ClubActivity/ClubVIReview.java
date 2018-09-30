@@ -8,20 +8,20 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-import np.com.rotaractnepalapp.rotaract.ClubVIAdapter.MainClubVIAdapter;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI10Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI11Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI12Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI13Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI1Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI2Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI3Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI4Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI5Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI6Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI7Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI8Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI9Class;
+import np.com.rotaractnepalapp.rotaract.Adapter.ClubVIAdapter.MainClubVIAdapter;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI10Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI11Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI12Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI13Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI1Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI2Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI3Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI4Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI5Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI6Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI7Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI8Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubVI.ClubVI9Class;
 import np.com.rotaractnepalapp.rotaract.R;
 
 

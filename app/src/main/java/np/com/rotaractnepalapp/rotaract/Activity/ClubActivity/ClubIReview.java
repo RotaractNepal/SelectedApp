@@ -5,20 +5,19 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI1Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI2Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI3Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI4Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI5Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI6Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI7Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI8Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI9Class;
-import np.com.rotaractnepalapp.rotaract.ClubIAdapter.MainClubIAdapter;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI1Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI2Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI3Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI4Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI5Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI6Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI7Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI8Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassClubI.ClubI9Class;
+import np.com.rotaractnepalapp.rotaract.Adapter.ClubIAdapter.MainClubIAdapter;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class ClubIReview extends AppCompatActivity {
@@ -38,32 +37,6 @@ public class ClubIReview extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        /*club1 = (TextView) findViewById(R.id.club1Name);
-        club1.setText("RAC Biratnagar");
-
-        club2 = (TextView) findViewById(R.id.club2Name);
-        club2.setText("");
-
-        club3 = (TextView) findViewById(R.id.club3Name);
-        club3.setText("");
-
-        club4 = (TextView) findViewById(R.id.club4Name);
-        club4.setText("");
-
-        club5 = (TextView) findViewById(R.id.club5Name);
-        club5.setText("");
-
-        club6 = (TextView) findViewById(R.id.club6Name);
-        club6.setText("");
-
-        club7 = (TextView) findViewById(R.id.club7Name);
-        club7.setText("");
-
-        club8 = (TextView) findViewById(R.id.club8Name);
-        club8.setText("");
-
-        club9 = (TextView) findViewById(R.id.club9Name);
-        club9.setText("");*/
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_clubi_View);
         MainClubIAdapter adapter = new MainClubIAdapter(this, getObject());
