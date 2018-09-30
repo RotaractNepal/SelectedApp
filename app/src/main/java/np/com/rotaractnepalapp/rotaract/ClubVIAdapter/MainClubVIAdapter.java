@@ -115,55 +115,55 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView.ViewHolder holder = null;
         switch (i){
             case club1:
-                view =  inflater.inflate(R.layout.club1, viewGroup, false);
+                view =  inflater.inflate(R.layout.clubvi1, viewGroup, false);
                 holder = new Club1ViewHolder(view);
                 break;
             case club2:
-                view = inflater.inflate(R.layout.club2, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi2, viewGroup, false);
                 holder = new Club2ViewHolder(view);
                 break;
             case club3:
-                view = inflater.inflate(R.layout.club3, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi3, viewGroup, false);
                 holder = new Club3ViewHolder(view);
                 break;
             case club4:
-                view = inflater.inflate(R.layout.club4, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi4, viewGroup, false);
                 holder = new Club4ViewHolder(view);
                 break;
             case club5:
-                view = inflater.inflate(R.layout.club5, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi5, viewGroup, false);
                 holder = new Club5ViewHolder(view);
                 break;
             case club6:
-                view = inflater.inflate(R.layout.club6, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi6, viewGroup, false);
                 holder = new Club6ViewHolder(view);
                 break;
             case club7:
-                view = inflater.inflate(R.layout.club7, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi7, viewGroup, false);
                 holder = new Club7ViewHolder(view);
                 break;
             case club8:
-                view = inflater.inflate(R.layout.club8, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi8, viewGroup, false);
                 holder = new Club8ViewHolder(view);
                 break;
             case club9:
-                view = inflater.inflate(R.layout.club9, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi9, viewGroup, false);
                 holder = new Club9ViewHolder(view);
                 break;
             case club10:
-                view = inflater.inflate(R.layout.club10, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi10, viewGroup, false);
                 holder = new Club10ViewHolder(view);
                 break;
             case club11:
-                view = inflater.inflate(R.layout.club11, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi11, viewGroup, false);
                 holder = new Club11ViewHolder(view);
                 break;
             case club12:
-                view = inflater.inflate(R.layout.club12, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi12, viewGroup, false);
                 holder = new Club12ViewHolder(view);
                 break;
             case club13:
-                view = inflater.inflate(R.layout.club13, viewGroup, false);
+                view = inflater.inflate(R.layout.clubvi13, viewGroup, false);
                 holder = new Club13ViewHolder(view);
                 break;
         }
@@ -291,7 +291,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club1ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -299,7 +299,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club2ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -307,7 +307,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club3ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -315,7 +315,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club4ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -324,7 +324,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         public Club5ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -332,7 +332,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club6ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -340,7 +340,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club7ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -348,7 +348,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club8ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -356,7 +356,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club9ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -364,7 +364,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club10ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -372,7 +372,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club11ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -380,7 +380,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club12ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 
@@ -388,7 +388,7 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         RecyclerView recyclerView;
         public Club13ViewHolder(@NonNull View itemView) {
             super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_clubvi_recyclerView);
         }
     }
 

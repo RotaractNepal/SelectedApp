@@ -6,17 +6,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/rac_dillibazar_kathmandu"
+        android:text="@string/rac_kathmandu_metro"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="4dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
         android:textStyle="bold"/>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/inner_recyclerView"
+        android:id="@+id/inner_clubvi_recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
     </android.support.v7.widget.RecyclerView>
 
