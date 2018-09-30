@@ -32,7 +32,7 @@ public class ClubVIReview extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_club_review);
+        setContentView(R.layout.activity_club_vireview);
         this.setTitle("Zone VI Club R.ID.NO. 3292");
 
         if(getSupportActionBar() != null){
@@ -40,7 +40,7 @@ public class ClubVIReview extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_View);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_clubvi_View);
         MainClubVIAdapter adapter = new MainClubVIAdapter(this, getObject());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
