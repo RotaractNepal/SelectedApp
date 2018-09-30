@@ -4,6 +4,7 @@ android:orientation="vertical"
 android:layout_width="match_parent"
 android:layout_height="wrap_content">
 <TextView
+    android:id="@+id/club5Name"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/rac_kathmandu_north_east"
@@ -12,11 +13,6 @@ android:layout_height="wrap_content">
     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
     android:textStyle="bold"/>
 
-<android.support.v7.widget.RecyclerView
-    android:id="@+id/inner_clubvi_recyclerView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-</android.support.v7.widget.RecyclerView>
+    <include layout="@layout/club_recyclerview"/>
 
 </LinearLayout>

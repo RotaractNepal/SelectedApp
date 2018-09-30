@@ -1,5 +1,4 @@
-package np.com.rotaractnepalapp.rotaract.ClubVIAdapter;
-
+package np.com.rotaractnepalapp.rotaract.ClubIAdapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,39 +7,32 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI10Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI11Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI12Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI13Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI1Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI2Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI3Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI4Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI5Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI6Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI7Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI8Class;
-import np.com.rotaractnepalapp.rotaract.ClassClubVI.ClubVI9Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI1Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI2Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI3Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI4Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI5Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI6Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI7Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI8Class;
+import np.com.rotaractnepalapp.rotaract.ClassClubI.ClubI9Class;
 import np.com.rotaractnepalapp.rotaract.R;
 
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub10Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub11Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub12Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub13Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub1Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub2Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub3Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub4Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub5Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub6Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub7Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub8Data;
-import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubVIReview.getClub9Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub1Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub2Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub3Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub4Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub5Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub6Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub7Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub8Data;
+import static np.com.rotaractnepalapp.rotaract.Activity.ClubActivity.ClubIReview.getClub9Data;
 
-public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class MainClubIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private Context context;
     private ArrayList<Object> items;
@@ -53,56 +45,40 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     private final int club7 = 7;
     private final int club8 = 8;
     private final int club9 = 9;
-    private final int club10 = 10;
-    private final int club11 = 11;
-    private final int club12 = 12;
-    private final int club13 = 13;
 
-    public MainClubVIAdapter(Context context, ArrayList<Object> items) {
+    public MainClubIAdapter(Context context, ArrayList<Object> items) {
         this.context = context;
         this.items = items;
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (items.get(position) instanceof ClubVI1Class){
+        if (items.get(position) instanceof ClubI1Class){
             return club1;
         }
-        if (items.get(position) instanceof ClubVI2Class){
+        if (items.get(position) instanceof ClubI2Class){
             return club2;
         }
-        if (items.get(position) instanceof ClubVI3Class){
+        if (items.get(position) instanceof ClubI3Class){
             return club3;
         }
-        if (items.get(position) instanceof ClubVI4Class){
+        if (items.get(position) instanceof ClubI4Class){
             return club4;
         }
-        if (items.get(position) instanceof ClubVI5Class){
+        if (items.get(position) instanceof ClubI5Class){
             return club5;
         }
-        if (items.get(position) instanceof ClubVI6Class){
+        if (items.get(position) instanceof ClubI6Class){
             return club6;
         }
-        if (items.get(position) instanceof ClubVI7Class){
+        if (items.get(position) instanceof ClubI7Class){
             return club7;
         }
-        if (items.get(position) instanceof ClubVI8Class){
+        if (items.get(position) instanceof ClubI8Class){
             return club8;
         }
-        if (items.get(position) instanceof ClubVI9Class){
+        if (items.get(position) instanceof ClubI9Class){
             return club9;
-        }
-        if (items.get(position) instanceof ClubVI10Class){
-            return club10;
-        }
-        if (items.get(position) instanceof ClubVI11Class){
-            return club11;
-        }
-        if (items.get(position) instanceof ClubVI12Class){
-            return club12;
-        }
-        if (items.get(position) instanceof ClubVI13Class){
-            return club13;
         }
         return -1;
     }
@@ -112,59 +88,62 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view;
+        TextView club1Name, club2Name, club3Name, club4Name, club5Name, club6Name, club7Name, club8Name, club9Name;
         RecyclerView.ViewHolder holder = null;
         switch (i){
             case club1:
                 view =  inflater.inflate(R.layout.club1, viewGroup, false);
                 holder = new Club1ViewHolder(view);
+                club1Name = (TextView) view.findViewById(R.id.club1Name);
+                club1Name.setText("RAC Biratnagar");
                 break;
             case club2:
                 view = inflater.inflate(R.layout.club2, viewGroup, false);
                 holder = new Club2ViewHolder(view);
+                club2Name = (TextView) view.findViewById(R.id.club2Name);
+                club2Name.setText("RAC Biratnagar Down Town");
                 break;
             case club3:
                 view = inflater.inflate(R.layout.club3, viewGroup, false);
                 holder = new Club3ViewHolder(view);
+                club3Name = (TextView) view.findViewById(R.id.club3Name);
+                club3Name.setText("RAC Birtamod Mid-Town");
                 break;
             case club4:
                 view = inflater.inflate(R.layout.club4, viewGroup, false);
                 holder = new Club4ViewHolder(view);
+                club4Name = (TextView) view.findViewById(R.id.club4Name);
+                club4Name.setText("RAC Birtamode");
                 break;
             case club5:
                 view = inflater.inflate(R.layout.club5, viewGroup, false);
                 holder = new Club5ViewHolder(view);
+                club5Name = (TextView) view.findViewById(R.id.club5Name);
+                club5Name.setText("RAC Damak");
                 break;
             case club6:
                 view = inflater.inflate(R.layout.club6, viewGroup, false);
                 holder = new Club6ViewHolder(view);
+                club6Name = (TextView) view.findViewById(R.id.club6Name);
+                club6Name.setText("RAC Dharan");
                 break;
             case club7:
                 view = inflater.inflate(R.layout.club7, viewGroup, false);
                 holder = new Club7ViewHolder(view);
+                club7Name = (TextView) view.findViewById(R.id.club7Name);
+                club7Name.setText("RAC Dharan Ghopa");
                 break;
             case club8:
                 view = inflater.inflate(R.layout.club8, viewGroup, false);
                 holder = new Club8ViewHolder(view);
+                club8Name = (TextView) view.findViewById(R.id.club8Name);
+                club8Name.setText("RAC Itahari");
                 break;
             case club9:
                 view = inflater.inflate(R.layout.club9, viewGroup, false);
                 holder = new Club9ViewHolder(view);
-                break;
-            case club10:
-                view = inflater.inflate(R.layout.club10, viewGroup, false);
-                holder = new Club10ViewHolder(view);
-                break;
-            case club11:
-                view = inflater.inflate(R.layout.club11, viewGroup, false);
-                holder = new Club11ViewHolder(view);
-                break;
-            case club12:
-                view = inflater.inflate(R.layout.club12, viewGroup, false);
-                holder = new Club12ViewHolder(view);
-                break;
-            case club13:
-                view = inflater.inflate(R.layout.club13, viewGroup, false);
-                holder = new Club13ViewHolder(view);
+                club9Name = (TextView) view.findViewById(R.id.club9Name);
+                club9Name.setText("RAC Kakarvita");
                 break;
         }
         return holder;
@@ -190,97 +169,63 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             club8View((Club8ViewHolder) viewHolder);
         if (viewHolder.getItemViewType() == club9)
             club9View((Club9ViewHolder) viewHolder);
-        if (viewHolder.getItemViewType() == club10)
-            club10View((Club10ViewHolder) viewHolder);
-        if (viewHolder.getItemViewType() == club11)
-            club11View((Club11ViewHolder) viewHolder);
-        if (viewHolder.getItemViewType() == club12)
-            club12View((Club12ViewHolder) viewHolder);
-        if (viewHolder.getItemViewType() == club13)
-            club13View((Club13ViewHolder) viewHolder);
-
     }
 
     private void club1View(Club1ViewHolder holder){
-        ClubVI1Adapter adapter1 = new ClubVI1Adapter(getClub1Data());
+        ClubI1Adapter adapter1 = new ClubI1Adapter(getClub1Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter1);
 
     }
 
     private void club2View(Club2ViewHolder holder){
-        ClubVI2Adapter adapter2 = new ClubVI2Adapter(getClub2Data());
+        ClubI2Adapter adapter2 = new ClubI2Adapter(getClub2Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter2);
 
     }
 
     private void club3View(Club3ViewHolder holder){
-        ClubVI3Adapter adapter3 = new ClubVI3Adapter(getClub3Data());
+        ClubI3Adapter adapter3 = new ClubI3Adapter(getClub3Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter3);
     }
 
     private void club4View(Club4ViewHolder holder){
-        ClubVI4Adapter adapter4 = new ClubVI4Adapter(getClub4Data());
+        ClubI4Adapter adapter4 = new ClubI4Adapter(getClub4Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter4);
     }
 
     private void club5View(Club5ViewHolder holder){
-        ClubVI5Adapter adapter5 = new ClubVI5Adapter(getClub5Data());
+        ClubI5Adapter adapter5 = new ClubI5Adapter(getClub5Data());
         holder.recyclerView.setLayoutManager(new  LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter5);
     }
 
     private void club6View(Club6ViewHolder holder){
-        ClubVI6Adapter adapter6 = new ClubVI6Adapter(getClub6Data());
+        ClubI6Adapter adapter6 = new ClubI6Adapter(getClub6Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter6);
     }
 
     private void club7View(Club7ViewHolder holder){
-        ClubVI7Adapter adapter7 = new ClubVI7Adapter(getClub7Data());
+        ClubI7Adapter adapter7 = new ClubI7Adapter(getClub7Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter7);
     }
 
     private void club8View(Club8ViewHolder holder){
-        ClubVI8Adapter adapter8 = new ClubVI8Adapter(getClub8Data());
+        ClubI8Adapter adapter8 = new ClubI8Adapter(getClub8Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter8);
     }
 
     private void club9View(Club9ViewHolder holder){
-        ClubVI9Adapter adapter9 = new ClubVI9Adapter(getClub9Data());
+        ClubI9Adapter adapter9 = new ClubI9Adapter(getClub9Data());
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
         holder.recyclerView.setAdapter(adapter9);
     }
-
-    private void club10View(Club10ViewHolder holder){
-        ClubVI10Adapter adapter10 = new ClubVI10Adapter(getClub10Data());
-        holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
-        holder.recyclerView.setAdapter(adapter10);
-    }
-
-    private void club11View(Club11ViewHolder holder){
-        ClubVI11Adapter adapter11 = new ClubVI11Adapter(getClub11Data());
-        holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
-        holder.recyclerView.setAdapter(adapter11);
-    }
-
-    private void club12View(Club12ViewHolder holder){
-        ClubVI12Adapter adapter12 = new ClubVI12Adapter(getClub12Data());
-        holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
-        holder.recyclerView.setAdapter(adapter12);
-    }
-
-    private void club13View(Club13ViewHolder holder){
-        ClubVI13Adapter adapter13 = new ClubVI13Adapter(getClub13Data());
-        holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
-        holder.recyclerView.setAdapter(adapter13);
-    }
-
 
     @Override
     public int getItemCount() {
@@ -359,37 +304,4 @@ public class MainClubVIAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
         }
     }
-
-    private class Club10ViewHolder extends RecyclerView.ViewHolder{
-        RecyclerView recyclerView;
-        public Club10ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
-        }
-    }
-
-    private class Club11ViewHolder extends RecyclerView.ViewHolder{
-        RecyclerView recyclerView;
-        public Club11ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
-        }
-    }
-
-    private class Club12ViewHolder extends RecyclerView.ViewHolder{
-        RecyclerView recyclerView;
-        public Club12ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
-        }
-    }
-
-    private class Club13ViewHolder extends RecyclerView.ViewHolder{
-        RecyclerView recyclerView;
-        public Club13ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
-        }
-    }
-
 }
