@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/cllub12Name"
+        android:id="@+id/club12Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/rac_thames_international_college"
