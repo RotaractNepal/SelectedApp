@@ -13,6 +13,16 @@ public class ClubVII5Class {
     public ClubVII5Class() {
     }
 
+    public ClubVII5Class(int images, String title, int bimages, String name, String ridno, String call, String email) {
+        this.images = images;
+        this.title = title;
+        this.bimages = bimages;
+        this.name = name;
+        this.ridno = ridno;
+        this.call = call;
+        this.email = email;
+    }
+
     public int getImages() {
         return images;
     }
