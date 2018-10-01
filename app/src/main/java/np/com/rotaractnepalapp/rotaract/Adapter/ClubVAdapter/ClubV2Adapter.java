@@ -52,7 +52,6 @@ public class ClubV2Adapter extends RecyclerView.Adapter<ClubV2Adapter.ClubViewHo
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.nameTextView);
             images = (CircleImageView) itemView.findViewById(R.id.imageView);
-
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
