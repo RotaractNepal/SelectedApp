@@ -16,12 +16,27 @@
                             <entry key="launcherLegacy">
                               <value>
                                 <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="paddingPercent" value="10" />
+                                                <entry key="trimmed" value="true" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\rotary.png" />
-                                      <entry key="outputName" value="ic_rotaract" />
+                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\Desktop\aboutus\colorlogo_rotaractnepalapp.png" />
+                                      <entry key="outputName" value="ic_rotaract_nepal_app_logo" />
                                     </map>
                                   </option>
                                 </PersistentState>
