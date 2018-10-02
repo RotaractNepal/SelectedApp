@@ -20,8 +20,8 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\rackne.png" />
-                                      <entry key="outputName" value="ic_rackne" />
+                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\dummy_signature.png" />
+                                      <entry key="outputName" value="ic_rtr_representative_signature" />
                                     </map>
                                   </option>
                                 </PersistentState>

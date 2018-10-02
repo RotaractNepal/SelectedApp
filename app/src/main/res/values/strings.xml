@@ -43,7 +43,7 @@
     <string name="rotarytitle"><u>Rotary Club</u></string>
     <string name="rotaracttitle"><u>Rotaract Club</u></string>
     <string name="intaracttitle"><u>Intaract Club</u></string>
-    <string name="websiterotary">https://www.rotaractnepal.org/</string>
+    <string name="websiterotary">www.rotaractnepal.org</string>
     <string name="districtno">District 3292 Nepal-Bhutan</string>
     <string name="cusHeadtitle">Title</string>
     <string name="district_no">District_No</string>
@@ -105,4 +105,6 @@
     <string name="zone_i">Zone I</string>
     <string name="district_3292">District 3292</string>
     <string name="nepal_bhutan">Nepal-Bhutan</string>
+    <string name="district_rotaract_representative_2018_19">District Rotaract Representative 2018-19</string>
+    <string name="rtr_representative_name">Rtr. Saugat Gautam</string>
 </resources>

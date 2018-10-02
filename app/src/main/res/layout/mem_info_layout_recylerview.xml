@@ -13,6 +13,25 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/colorlogo_rotaractnepalapp">
     </ImageView>
+
+    <ImageView
+        android:id="@+id/drrTheme2018_19"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/memImageBackground"
+        android:layout_alignRight="@+id/memImageBackground"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@mipmap/ic_drr_theme_2018_19"
+        android:tint="@android:color/white" />
+    <ImageView
+        android:id="@+id/rotaractLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:tint="@android:color/white"
+        android:src="@mipmap/ic_rotaract_logo"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -72,8 +91,51 @@
         android:autoSizeTextType="uniform"
         android:autoSizeMaxTextSize="15sp"
         android:autoSizeMinTextSize="8sp"/>
-    <include layout="@layout/cust_alert_butttom_layout"
+    <ImageView
+        android:id="@+id/rtr_representative_signature"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
         android:layout_below="@id/memRIDNoInfo"
+        android:src="@mipmap/ic_rtr_representative_signature"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtrRepresentativeName"
+        android:text="@string/rtr_representative_name"
+        android:background="@android:color/white"
+        android:layout_below="@id/rtr_representative_signature"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtrRepresentative"
+        android:text="@string/district_rotaract_representative_2018_19"
+        android:background="@android:color/white"
+        android:layout_below="@id/rtrRepresentativeName"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtrWebsite"
+        android:text="@string/websiterotary"
+        android:background="@android:color/white"
+        android:layout_below="@id/rtrRepresentative"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp"/>
+
+    <include layout="@layout/cust_alert_butttom_layout"
+        android:layout_below="@id/rtrWebsite"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"/>
 </RelativeLayout>
