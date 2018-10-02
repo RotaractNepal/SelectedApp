@@ -1,6 +1,6 @@
 package np.com.rotaractnepalapp.rotaract.Class.ClassClubXII;
 
-public class ClassXII5Class {
+public class ClubXII2Class {
 
     private int images;
     private String title;
@@ -10,10 +10,10 @@ public class ClassXII5Class {
     private String call;
     private String email;
 
-    public ClassXII5Class() {
+    public ClubXII2Class() {
     }
 
-    public ClassXII5Class(int images, String title, int bimages, String name, String ridno, String call, String email) {
+    public ClubXII2Class(int images, String title, int bimages, String name, String ridno, String call, String email) {
         this.images = images;
         this.title = title;
         this.bimages = bimages;
