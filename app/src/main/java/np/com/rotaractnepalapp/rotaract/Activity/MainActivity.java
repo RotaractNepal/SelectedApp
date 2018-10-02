@@ -1,9 +1,6 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
-import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -21,18 +18,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.codesgood.views.JustifiedTextView;
-import com.rey.material.widget.Button;
+
+import com.github.clans.fab.FloatingActionMenu;
 
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import np.com.rotaractnepalapp.rotaract.Adapter.ImageSliderAdapter;
-import np.com.rotaractnepalapp.rotaract.Adapter.IntroductionAdapter.Intro3Adpater;
 import np.com.rotaractnepalapp.rotaract.Adapter.IntroductionAdapter.MainIntroAdpater;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro1Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro2Class;
@@ -116,6 +111,7 @@ public class MainActivity extends AppCompatActivity
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
         fab_news = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_news);
         fab_chat = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_chat);
         fab_events = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_events);
@@ -165,9 +161,9 @@ public class MainActivity extends AppCompatActivity
 
     public static ArrayList<Intro1Class> getIntro1Data(){
         ArrayList<Intro1Class> intro1Classes = new ArrayList<>();
-        intro1Classes.add(new Intro1Class(R.drawable.ic_rotary,"Rotary", ""));
-        intro1Classes.add(new Intro1Class(R.drawable.ic_rotaract,"Rotaract", ""));
-        intro1Classes.add(new Intro1Class(R.drawable.ic_interact,"Interact", ""));
+        intro1Classes.add(new Intro1Class(R.mipmap.ic_rotary,"Rotary", ""));
+        intro1Classes.add(new Intro1Class(R.mipmap.ic_rotaract,"Rotaract", ""));
+        intro1Classes.add(new Intro1Class(R.mipmap.ic_interact,"Interact", ""));
         intro1Classes.add(new Intro1Class(R.drawable.ic_join_us,"How to Join ?", ""));
         return intro1Classes;
 
@@ -175,40 +171,43 @@ public class MainActivity extends AppCompatActivity
 
     public static ArrayList<Intro2Class> getIntro2Data(){
         ArrayList<Intro2Class> intro2Classes = new ArrayList<>();
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"President", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Immediate Past", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Vice President", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Secretary", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Treasurer", ""));
         return intro2Classes;
 
     }
 
     public static ArrayList<Intro3Class> getIntro3Data(){
         ArrayList<Intro3Class> intro3Classes = new ArrayList<>();
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Club Service", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"International Service", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Community Service", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Professional Development", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Finance", ""));
         return intro3Classes;
 
     }
 
     public static ArrayList<Intro4Class> getIntro4Data(){
         ArrayList<Intro4Class> intro4Classes = new ArrayList<>();
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Assistant Directors", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Sergeant", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Fundraising Chair", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Public Relations", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Information Technology", ""));
         return intro4Classes;
 
     }
 
     public static ArrayList<Intro5Class> getIntro5Data(){
         ArrayList<Intro5Class> intro5Classes = new ArrayList<>();
-        intro5Classes.add(new Intro5Class(R.drawable.ic_rotary,"Rotary", ""));
-        intro5Classes.add(new Intro5Class(R.drawable.ic_rotaract,"Rotary", ""));
-        intro5Classes.add(new Intro5Class(R.drawable.ic_interact,"Rotary", ""));
-        intro5Classes.add(new Intro5Class(R.drawable.ic_join_us,"Rotary", ""));
+        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp,"District Conference", ""));
+        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp,"DLTS", ""));
+        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp,"PS-Meet", ""));
+        intro5Classes.add(new Intro5Class(R.mipmap.ic_ryla,"RYLA", ""));
         return intro5Classes;
 
     }

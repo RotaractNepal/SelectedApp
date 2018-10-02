@@ -20,8 +20,8 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\dummy_signature.png" />
-                                      <entry key="outputName" value="ic_rtr_representative_signature" />
+                                      <entry key="imageAsset" value="C:\Users\dell\Desktop\ryla-logo-png-transparent.png" />
+                                      <entry key="outputName" value="ic_ryla" />
                                     </map>
                                   </option>
                                 </PersistentState>
