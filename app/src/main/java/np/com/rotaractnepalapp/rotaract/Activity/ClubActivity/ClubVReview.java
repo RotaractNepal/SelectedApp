@@ -8,7 +8,7 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
-import np.com.rotaractnepalapp.rotaract.Adapter.ClubVAdapter.MainClubVAdapter;
+import np.com.rotaractnepalapp.rotaract.Adapter.ClubXAdapter.MainClubXAdapter;
 import np.com.rotaractnepalapp.rotaract.Class.ClassClubV.ClubV10Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassClubV.ClubV11Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassClubV.ClubV12Class;
@@ -40,7 +40,7 @@ public class ClubVReview extends AppCompatActivity {
         }
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_clubv_View);
-        MainClubVAdapter adapter = new MainClubVAdapter(this, getObject());
+        MainClubXAdapter adapter = new MainClubXAdapter(this, getObject());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
