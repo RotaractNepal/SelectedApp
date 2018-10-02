@@ -161,10 +161,41 @@ public class MainActivity extends AppCompatActivity
 
     public static ArrayList<Intro1Class> getIntro1Data(){
         ArrayList<Intro1Class> intro1Classes = new ArrayList<>();
-        intro1Classes.add(new Intro1Class(R.mipmap.ic_rotary,"Rotary", ""));
-        intro1Classes.add(new Intro1Class(R.mipmap.ic_rotaract,"Rotaract", ""));
-        intro1Classes.add(new Intro1Class(R.mipmap.ic_interact,"Interact", ""));
-        intro1Classes.add(new Intro1Class(R.drawable.ic_join_us,"How to Join ?", ""));
+        intro1Classes.add(new Intro1Class(R.mipmap.ic_rotary,R.drawable.rotary,"Rotary", "Rotary is an organization of business and professional person united worldwide, who provide humanitarian service, encourage high ethical standards in all vocations and help build goodwill and peace in the world which is open to all persons regardless of race, color, creed, religion, gender or political preference." +
+                "Rotary’s principle motto is, “Service Above Self”." +
+                "Rotary members believe that we have a shared responsibility to take action on our world’s most persistent issues." +
+                "The object of Rotary is to encourage and foster the ideal of service as a basis of worthy enterprise and, in particular, to encourage and foster:" +
+                "\n•The development of acquaintance as an opportunity for service" +
+                "\n•High ethical standards in business and professions, the recognition of the worthiness of all useful occupations, and the dignifying of each Rotarian's occupation as an opportunity to serve society;" +
+                "\n•The application of the ideal of service in each Rotarian's personal, business, and community life;" +
+                "\n•The advancement of international understanding, goodwill, and peace through a world fellowship of business and professional persons united in the ideal of service." +
+                "\nOur 35,000+ clubs work together to: " +
+                "\nPromote peace, Fight disease, Provide clean water, sanitation, and hygiene, Save mothers and children, Support education, Grow local economies"));
+        intro1Classes.add(new Intro1Class(R.mipmap.ic_rotaract, R.drawable.rotaract,"Rotaract", "Rotaract clubs bring together people ages 18-30 to exchange ideas with leaders in the community, develop leadership and professional skills, and have fun through service." +
+                "Rotaract clubs decide how to organize and run their club, manage their own funds, and plan and carry out activities and service projects aligned with causes that are important to your community. Rotary club sponsors offer guidance and support and work with your club as partners in service." +
+                "Rotaract was founded in 1968 by Charlotte North Rotary Club,[citation needed] located in Charlotte, North Carolina." +
+                "Rotaract connects you with leaders in your community and around the world to:" +
+                "\n•Take action locally and internationally to create sustainable change" +
+                "\n•Expand your professional network and exchange ideas with proven leaders" +
+                "\n•Develop your professional skills through leadership training" +
+                "\n•Save money on travel, hotels, and supplies with Rotary’s member benefits program, Rotary Global Rewards" +
+                "\n•Have fun and make new friends from around the world" +
+                "\n•Connect with the global community of Rotaract at the annual Rotary International Convention and Rotaract Preconvention" +
+                "\nIn communities worldwide, Rotary and Rotaract members work side by side to take action through service. From big cities to rural villages, Rotaract is changing communities like yours."));
+        intro1Classes.add(new Intro1Class(R.mipmap.ic_interact, R.drawable.intaract,"Interact", "Interact is Rotary International’s service club for young people ages 12 to 18. Interact clubs are sponsored by individual Rotary clubs, which provide support and guidance, but they are self-governing and self-supporting." +
+                "Club membership varies greatly. Clubs can be single gender or mixed, large or small. They can draw from the student body of a single school or from two or more schools in the same community." +
+                "Each year, Interact clubs complete at least two community service projects, one of which furthers international understanding and goodwill. Through these efforts, Interactors develop a network of friendships with local and overseas clubs and learn the importance of:" +
+                "\n•Developing leadership skills and personal integrity" +
+                "\n•Demonstrating helpfulness and respect for others" +
+                "\n•Understanding the value of individual responsibility and hard work" +
+                "\n•Advancing international understanding and goodwill" +
+                "As one of the most significant and fastest-growing programs of Rotary service, with more than 33,000 clubs in more than 200 countries and geographical areas,[citation needed] Interact has become a worldwide phenomenon. Almost 340,000 young people are involved in Interact."));
+        intro1Classes.add(new Intro1Class(R.drawable.ic_join_us, R.drawable.end_polio,"How to Join ?", "Please note that membership in a Rotary club is by invitation. Often, a person being considered for membership is invited by a club member, or sponsor, to attend one or more club meetings to learn more about Rotary. In this case, the sponsor submits the candidate's name to the club's membership committee." +
+                "You may check with your university or contact a local Rotary club to find out if there’s a Rotaract club in your area. Contact the Rotaract club to find out how you can join its next meeting, service project, or social event." +
+                "As a club member, you will be asked to:" +
+                "\n•Pay club dues" +
+                "\n•Attend meetings and events" +
+                "\n•Use your professional skills and talents to make a difference"));
         return intro1Classes;
 
     }

@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.codesgood.views.JustifiedTextView;
+
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -62,6 +64,15 @@ public class Intro1Adpater extends RecyclerView.Adapter<Intro1Adpater.ClubViewHo
                         Information = new Dialog(v.getContext());
 
                         Information.setContentView(R.layout.intro_item_adapter_layout);
+
+                        ImageView Image = (ImageView) Information.findViewById(R.id.dialogImage);
+                        Image.setImageResource(clickedDataItem.getDimage());
+
+                        TextView Title = (TextView) Information.findViewById(R.id.dialogTitle);
+                        Title.setText(clickedDataItem.getTitle());
+
+                        JustifiedTextView Introduction = (JustifiedTextView) Information.findViewById(R.id.dialogInformation);
+                        Introduction.setText(clickedDataItem.getInformation());
 
                         TextView close = (TextView) Information.findViewById(R.id.closeDialog);
                         close.setOnClickListener(new View.OnClickListener() {
