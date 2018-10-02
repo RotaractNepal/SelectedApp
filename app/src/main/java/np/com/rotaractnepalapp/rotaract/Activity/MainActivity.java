@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -26,10 +27,18 @@ import android.widget.Toast;
 import com.codesgood.views.JustifiedTextView;
 import com.rey.material.widget.Button;
 
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import np.com.rotaractnepalapp.rotaract.Adapter.ImageSliderAdapter;
+import np.com.rotaractnepalapp.rotaract.Adapter.IntroductionAdapter.Intro3Adpater;
+import np.com.rotaractnepalapp.rotaract.Adapter.IntroductionAdapter.MainIntroAdpater;
+import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro1Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro2Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro3Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro4Class;
+import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro5Class;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class MainActivity extends AppCompatActivity
@@ -40,22 +49,8 @@ public class MainActivity extends AppCompatActivity
     LinearLayout sliderDotsPlaner;
     private int dotcount;
     private ImageView[] dots;
-    private ImageView imgRotary, imgRotaract, imgIntaract, imgJoinUs, imgLogo;
-    private ImageView imgPresident, imgIPP, imgVicePre, imgSec, imgTreas;
-    private ImageView imgClubSer, imgIntSer, imgCommSer, imgProDev;
-    private ImageView imgAssDir, imgSergeant, imgFundChair, imgPubRelOfficer, imgITOfficer;
-    private ImageView imgAboutUs01, imgCusHeadLogo;
-    Dialog Introduction;
-    private TextView textClose, textTitle, textDistrictNo, textWebsite, textDesignation;
-    private TextView textAlertClose, textCusHeadTitle;
-    JustifiedTextView textIntroductionOne, textIndroductionDesOne;
-    private Button submitBtn;
-    private ImageView call, email, cancel;
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.LayoutManager mLayoutManager;
-    private RecyclerView.Adapter mAdapter;
-
+    private ArrayList<Object> objects = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,155 +59,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Introduction = new Dialog(this);
-
-        imgRotary = (ImageView) findViewById(R.id.infoRotary);
-        imgRotaract = (ImageView) findViewById(R.id.infoRotaract);
-        imgIntaract = (ImageView) findViewById(R.id.infoIntaract);
-        imgJoinUs = (ImageView) findViewById(R.id.infoJoinUs);
-
-        imgPresident = (ImageView) findViewById(R.id.infoPre);
-        imgIPP = (ImageView) findViewById(R.id.infoIPP);
-        imgVicePre = (ImageView) findViewById(R.id.infoVicePre);
-        imgSec = (ImageView) findViewById(R.id.infoSec);
-        imgTreas = (ImageView) findViewById(R.id.infoTre);
-
-        imgClubSer = (ImageView) findViewById(R.id.infoClubSer);
-        imgIntSer = (ImageView) findViewById(R.id.infoIntSer);
-        imgCommSer = (ImageView) findViewById(R.id.infoComSer);
-        imgProDev = (ImageView) findViewById(R.id.infoProDev);
-
-        imgAssDir = (ImageView) findViewById(R.id.infoAssDirOff);
-        imgSergeant = (ImageView) findViewById(R.id.infoSerg);
-        imgFundChair = (ImageView) findViewById(R.id.infoFunCha);
-        imgPubRelOfficer = (ImageView) findViewById(R.id.infoPubRelOff);
-        imgITOfficer = (ImageView) findViewById(R.id.infoITOff);
-
-        imgAssDir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                assDirOffIntroPopup(view);
-            }
-        });
-
-        imgSergeant.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                sergIntroPopup(view);
-            }
-        });
-
-        imgFundChair.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                funRaiseChairIntroPopup(view);
-            }
-        });
-
-        imgPubRelOfficer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                pubRelOfficerIntroPopup(view);
-            }
-        });
-
-        imgITOfficer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                itOfficerIntroPopup(view);
-            }
-        });
-
-        imgClubSer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                clubSerIntroPopup(view);
-            }
-        });
-
-        imgIntSer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                intSerIntroPopup(view);
-            }
-        });
-
-        imgCommSer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                commSerIntroPopup(view);
-            }
-        });
-
-        imgProDev.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                proDevIntroPopup(view);
-            }
-        });
-
-        imgPresident.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                presidentIntroPopup(view);
-            }
-        });
-
-        imgIPP.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ippIntroPopup(view);
-            }
-        });
-
-        imgVicePre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vicePreIntroPopup(view);
-            }
-        });
-
-        imgSec.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                secIntroPopup(view);
-            }
-        });
-
-        imgTreas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                treIntroPopup(view);
-            }
-        });
-
-        imgRotary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                rotaryIntroductionPopup(view);
-            }
-        });
-
-        imgRotaract.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                rotaractIntroductionPopup(view);
-            }
-        });
-
-        imgIntaract.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                intaractIntroductionPopup(view);
-            }
-        });
-
-        imgJoinUs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                howDoIJoinPopup(view);
-            }
-        });
 
         imageSlider = (ViewPager) findViewById(R.id.imageSlider);
 
@@ -265,6 +111,11 @@ public class MainActivity extends AppCompatActivity
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new ImageSliderTask(), 6000, 6000);
 
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.informationRecyclerView);
+        MainIntroAdpater adapter = new MainIntroAdpater(this, getObject());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         fab_news = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_news);
         fab_chat = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_chat);
         fab_events = (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_events);
@@ -303,463 +154,65 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    public void rotaryIntroductionPopup(View v){
-        Introduction.setContentView(R.layout.info_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
-        imgLogo.setImageResource(R.drawable.rotary);
-
-        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
-        textTitle.setText(getString(R.string.rotarytitle));
-
-        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
-        textDistrictNo.setText(getString(R.string.districtno));
-
-        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
-        textWebsite.setText(getString(R.string.websiterotary));
-
-        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
-        textIntroductionOne.setText(getString(R.string.rotaryIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
+    private ArrayList<Object> getObject() {
+        objects.add(getIntro1Data().get(0));
+        objects.add(getIntro2Data().get(0));
+        objects.add(getIntro3Data().get(0));
+        objects.add(getIntro4Data().get(0));
+        objects.add(getIntro5Data().get(0));
+        return objects;
     }
 
-    public void rotaractIntroductionPopup(View v) {
-        Introduction.setContentView(R.layout.info_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
-        imgLogo.setImageResource(R.drawable.rotaract);
-
-        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
-        textTitle.setText(getString(R.string.rotaracttitle));
-
-        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
-        textDistrictNo.setText(getString(R.string.districtno));
-
-        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
-        textWebsite.setText(getString(R.string.websiterotary));
-
-        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
-        textIntroductionOne.setText(getString(R.string.rotaractIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void intaractIntroductionPopup(View v){
-        Introduction.setContentView(R.layout.info_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
-        imgLogo.setImageResource(R.drawable.intaract);
-
-        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
-        textTitle.setText(getString(R.string.intaracttitle));
-
-        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
-        textDistrictNo.setText(getString(R.string.districtno));
-
-        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
-        textWebsite.setText(getString(R.string.websiterotary));
-
-        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
-        textIntroductionOne.setText(getString(R.string.intaractIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void howDoIJoinPopup(View v){
-        Introduction.setContentView(R.layout.info_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgLogo);
-        imgLogo.setImageResource(R.drawable.end_polio);
-
-        textTitle = (TextView) Introduction.findViewById(R.id.txtTitle);
-        textTitle.setText(getString(R.string.joinus));
-
-        textDistrictNo = (TextView) Introduction.findViewById(R.id.txtDistNo);
-        textDistrictNo.setText(getString(R.string.districtno));
-
-        textWebsite = (TextView) Introduction.findViewById(R.id.txtWeblink);
-        textWebsite.setText(getString(R.string.websiterotary));
-
-        textIntroductionOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroOne);
-        textIntroductionOne.setText(getString(R.string.howdoijoin));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
+    public static ArrayList<Intro1Class> getIntro1Data(){
+        ArrayList<Intro1Class> intro1Classes = new ArrayList<>();
+        intro1Classes.add(new Intro1Class(R.drawable.ic_rotary,"Rotary", ""));
+        intro1Classes.add(new Intro1Class(R.drawable.ic_rotaract,"Rotaract", ""));
+        intro1Classes.add(new Intro1Class(R.drawable.ic_interact,"Interact", ""));
+        intro1Classes.add(new Intro1Class(R.drawable.ic_join_us,"How to Join ?", ""));
+        return intro1Classes;
 
     }
 
-    public void presidentIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.president));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.presidentIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
+    public static ArrayList<Intro2Class> getIntro2Data(){
+        ArrayList<Intro2Class> intro2Classes = new ArrayList<>();
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod,"Rotary", ""));
+        return intro2Classes;
 
     }
 
-    public void ippIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
+    public static ArrayList<Intro3Class> getIntro3Data(){
+        ArrayList<Intro3Class> intro3Classes = new ArrayList<>();
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod,"Rotary", ""));
+        return intro3Classes;
 
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.ipp));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.ippIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
     }
 
-    public void vicePreIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
+    public static ArrayList<Intro4Class> getIntro4Data(){
+        ArrayList<Intro4Class> intro4Classes = new ArrayList<>();
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod,"Rotary", ""));
+        return intro4Classes;
 
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.vicepre));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.vicepreIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
     }
 
-    public void secIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
+    public static ArrayList<Intro5Class> getIntro5Data(){
+        ArrayList<Intro5Class> intro5Classes = new ArrayList<>();
+        intro5Classes.add(new Intro5Class(R.drawable.ic_rotary,"Rotary", ""));
+        intro5Classes.add(new Intro5Class(R.drawable.ic_rotaract,"Rotary", ""));
+        intro5Classes.add(new Intro5Class(R.drawable.ic_interact,"Rotary", ""));
+        intro5Classes.add(new Intro5Class(R.drawable.ic_join_us,"Rotary", ""));
+        return intro5Classes;
 
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.secretary));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.secIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
     }
 
-    public void treIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.treasurer));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.treasIntroduction));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void clubSerIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.clubservice));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.clubSerIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void intSerIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.internationalservice));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.interSerIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void commSerIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.communityservice));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.commSerIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void proDevIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.professionaldevelopment));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.proDevIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void assDirOffIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.assdirofficers));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.assDirectorIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void sergIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.sergeantatarms));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.sergeantIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void funRaiseChairIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.fundchair));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.fundChairIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void pubRelOfficerIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.publicrelationofficer));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.pubRelOffIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
-
-    public void itOfficerIntroPopup(View v){
-        Introduction.setContentView(R.layout.designation_intro_layout);
-
-        textClose = (TextView) Introduction.findViewById(R.id.txtClose01);
-
-        imgLogo = (ImageView) Introduction.findViewById(R.id.imgPersonLogo);
-        imgLogo.setImageResource(R.drawable.rotaractnepalapp);
-
-        textDesignation = (TextView) Introduction.findViewById(R.id.txtDesignation);
-        textDesignation.setText(getString(R.string.itofficers));
-
-        textIndroductionDesOne = (JustifiedTextView) Introduction.findViewById(R.id.txtIntroDesOne);
-        textIndroductionDesOne.setText(getString(R.string.itOfficerIntro));
-
-        textClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Introduction.dismiss();
-            }
-        });
-        Introduction.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        Introduction.show();
-    }
 
     public class ImageSliderTask extends TimerTask{
 
