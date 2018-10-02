@@ -3,14 +3,16 @@ package np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction;
 public class Intro4Class {
 
     private int image;
+    private int dimage;
     private String title;
     private String information;
 
     public Intro4Class() {
     }
 
-    public Intro4Class(int image, String title, String information) {
+    public Intro4Class(int image, int dimage, String title, String information) {
         this.image = image;
+        this.dimage = dimage;
         this.title = title;
         this.information = information;
     }
@@ -21,6 +23,14 @@ public class Intro4Class {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public int getDimage() {
+        return dimage;
+    }
+
+    public void setDimage(int dimage) {
+        this.dimage = dimage;
     }
 
     public String getTitle() {
