@@ -109,4 +109,8 @@
     <string name="rtr_representative_name">Rtr. Saugat Gautam</string>
     <string name="justification">Justification</string>
     <string name="written_by">Written By: Rtr. Shirja Thapa</string>
+    <string name="close">Close</string>
+    <string name="name">Rtr. Keshab Bahadur Sunari</string>
+    <string name="profession">Android App Develpor</string>
+    <string name="address">Basantapur, Kathmandu, Nepal</string>
 </resources>

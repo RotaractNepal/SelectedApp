@@ -21,8 +21,6 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
-import com.github.clans.fab.FloatingActionMenu;
-
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -464,7 +462,8 @@ public class MainActivity extends AppCompatActivity
             intent = new Intent(this, Chat.class);
             startActivity(intent);
         } else if (id == R.id.nav_about_us){
-
+            intent = new Intent(this, AboutUs.class);
+            startActivity(intent);
         } else if (id == R.id.nav_feed_back){
             intent = new Intent(Intent.ACTION_SEND);
             intent.setData(Uri.parse("mailto:"));
