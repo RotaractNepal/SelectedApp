@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/round_rect_bg"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:id="@+id/eventsDate"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/eventsMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="Sept."
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/eventsDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="17"
+            android:textSize="50sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/eventsYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="2018"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/eventsClubName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="Rotaract Club of KNE"/>
+        <TextView
+            android:id="@+id/eventsProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="Mero Sip"/>
+        <TextView
+            android:id="@+id/eventsLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="Tangal Higher Secondary School"/>
+        <TextView
+            android:id="@+id/eventsTime"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="11:00 AM - 02:00 PM"/>
+        <TextView
+            android:id="@+id/eventsContact"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="Contact Rtr. Keshab Bdr. Sunari"/>
+        <TextView
+            android:id="@+id/eventsContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="9841803337"/>
+    </LinearLayout>
+
+</LinearLayout>
