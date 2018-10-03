@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•District Rotaract representative through club participation in district activities and meetings" +
                 "\n\n•Rotary International through participation in the Rotaract Preconvention Meeting and annual reporting" +
                 "\n\n•To help facilitate communication, the above groups should also receive the club's bulletin or newsletter featuring the outstanding Rotaract club projects or activities."));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.end_polio,"I. Past President", "The Immediate Past President (IPP) remains on the board the year immediately following their tenure as President to ensure continuity in leadership and act as an advisor to the new President and board. The IPP serves in this capacity even if they reach the age of 30 during their year as President." +
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.end_polio,"Immediate Past President", "The Immediate Past President (IPP) remains on the board the year immediately following their tenure as President to ensure continuity in leadership and act as an advisor to the new President and board. The IPP serves in this capacity even if they reach the age of 30 during their year as President." +
                 "\nThe IPP must always support the actions of the President and the Board.The IPP’s role in the Board is to advice the Board and guide the Board in their decisions." +
                 "\nAs an IPP, the club members will listen to him/her and the IPP must capitalise on this to diffuse any dissension." +
                 "\n\nThe IPP can also play a vital role in the following club activities:" +
