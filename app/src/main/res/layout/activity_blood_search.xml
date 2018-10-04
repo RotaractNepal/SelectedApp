@@ -24,7 +24,7 @@
     </TableLayout>
     <include layout="@layout/blood_group_item_adapter"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/bloodGroupSearchBar"
         android:layout_margin="5dp"/>
 </RelativeLayout>
