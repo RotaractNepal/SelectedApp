@@ -1,21 +1,20 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
 
+import java.util.ArrayList;
+
+import np.com.rotaractnepalapp.rotaract.Adapter.AboutUsAdapter;
+import np.com.rotaractnepalapp.rotaract.Class.AboutUsClass;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class AboutUs extends AppCompatActivity {
-
-    ImageView call, email, close;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,42 +26,32 @@ public class AboutUs extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        call = (ImageView) findViewById(R.id.aboutUscall);
-        email = (ImageView) findViewById(R.id.aboutUsemail);
-        close = (ImageView) findViewById(R.id.aboutUscancel);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.aboutUsRecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setAdapter(new AboutUsAdapter(this, getData()));
+    }
 
-        call.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                String contactNo = "9841803337";
-                intent.setData(Uri.parse("tel:" + contactNo));
-                v.getContext().startActivity(intent);
-            }
-        });
+    private ArrayList getData(){
+        ArrayList<AboutUsClass> aboutUsClasses = new ArrayList<>();
 
-        email.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intenEmail=null, chooserEmail=null;
-                intenEmail = new Intent(Intent.ACTION_SEND);
-                intenEmail.setData(Uri.parse("mailto:"));
-                String[] to = {"070bct515@ioe.edu.np"};
-                intenEmail.putExtra(Intent.EXTRA_EMAIL, to);
-                intenEmail.putExtra(Intent.EXTRA_SUBJECT, "Sent From Rotaract Nepal App");
-                intenEmail.putExtra(Intent.EXTRA_TEXT, "Dear Sir/Madam;");
-                intenEmail.setType("message/rfc822");
-                chooserEmail = intenEmail.createChooser(intenEmail,"Send Email");
-                v.getContext().startActivity(chooserEmail);
-            }
-        });
+        AboutUsClass aboutUS = new AboutUsClass();
+        aboutUS.setName("Rtr. Keshab Bahadur Sunari");
+        aboutUS.setProfession("Android App Developer");
+        aboutUS.setAddress("Basantapur, Kathamandu, Nepal");
+        aboutUS.setImage(R.drawable.keshab);
+        aboutUS.setCall("9841803337");
+        aboutUS.setEmail("070bct515@ioe.edu.np");
+        aboutUsClasses.add(aboutUS);
 
-        close.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        aboutUS = new AboutUsClass();
+        aboutUS.setName("Mr. Suresh Khatri");
+        aboutUS.setProfession("Android App Developer");
+        aboutUS.setAddress("Kathamandu, Nepal");
+        aboutUS.setImage(R.drawable.shresh);
+        aboutUS.setCall("9849380632");
+        aboutUS.setEmail("");
+        aboutUsClasses.add(aboutUS);
 
+        return aboutUsClasses;
     }
 }

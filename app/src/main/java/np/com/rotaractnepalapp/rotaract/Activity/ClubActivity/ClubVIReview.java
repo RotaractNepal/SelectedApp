@@ -147,16 +147,16 @@ public class ClubVIReview extends AppCompatActivity {
     public static ArrayList<ClubVI5Class> getClub5Data(){
         ArrayList<ClubVI5Class> clubVI5Classes = new ArrayList<>();
         clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne,"RACKNE", R.drawable.rackne, "RAC Kathmandu North East", "Tangal Higher Secondary School @11:00 AM", "9840062003", "president1819rackne@gmail.com"));
-        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_president,"President", R.drawable.rackne_president, "Rtr. Aasish Wagle", "", "9840062003", "president1819rackne@gmail.com"));
-        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_ipp,"Immediate Past President", R.drawable.rackne_ipp, "Rtr. Shrawan Bishowkarma", "", "9841704762", "bkshrawanbk@gmail.com"));
+        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_president,"President", R.drawable.rackne_president, "Rtr. Aasish Wagle", "RTR8020", "9840062003", "president1819rackne@gmail.com"));
+        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_ipp,"Immediate Past President", R.drawable.rackne_ipp, "Rtr. Shrawan Bishowkarma", "RTR5770", "9841704762", "bkshrawanbk@gmail.com"));
         clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_vicepre,"Vice President", R.drawable.rackne_vicepre, "Rtr. Ashma Neupane", "", "9849994917", "Osimumashma@gmail.com"));
         clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_secretary,"Secretary", R.drawable.rackne_secretary, "Rtr. Shrishti Maharjan", "", "9849163469", "shreshti.s@gmail.com"));
-        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_treasurer,"Treasurer", R.drawable.rackne_treasurer, "Rtr. Saroj Bishwakarma", "", "9813590712", "Sarojorasbk@gmail.com"));
-        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_clubservice,"Club Service Director", R.drawable.rackne_clubservice, "Rtr. Sovit Sharma", "", "9849912730", "sovitsharma33@gmail.com"));
-        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_international,"International Service", R.drawable.rackne_international, "Rtr. Susmita Adhikari", "", "9843172172", "susmitaadhikari73@gmail.com"));
+        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_treasurer,"Treasurer", R.drawable.rackne_treasurer, "Rtr. Saroj Bishwakarma", "RTR6986", "9813590712", "Sarojorasbk@gmail.com"));
+        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_clubservice,"Club Service Director", R.drawable.rackne_clubservice, "Rtr. Sovit Sharma", "RTR8481", "9849912730", "sovitsharma33@gmail.com"));
+        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_international,"International Service", R.drawable.rackne_international, "Rtr. Susmita Adhikari", "RTR7157", "9843172172", "susmitaadhikari73@gmail.com"));
         clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_community,"Community Service", R.drawable.rackne_community, "Rtr. Sagun Pudasaini", "", "9861041339", "Shagoonpudasaini@gmail.com"));
         clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_professional,"Profession Development", R.drawable.rackne_professional, "Rtr. Monika Thapa Magar", "", "9867809727", ""));
-        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_sergeant,"Sergeant-At-Arms", R.drawable.rackne_sergeant, "Rtr. Shrija Thapa", "", "9803922091", "tshrija11@gmail.com"));
+        clubVI5Classes.add(new ClubVI5Class(R.drawable.rackne_sergeant,"Sergeant-At-Arms", R.drawable.rackne_sergeant, "Rtr. Shrija Thapa", "RTR8480", "9803922091", "tshrija11@gmail.com"));
         clubVI5Classes.add(new ClubVI5Class(R.drawable.keshab, "Club Member", R.drawable.keshab, "Rtr. Keshab Bahadur Sunari", "Member ID: RTR5765", "9841803337", "070bct515@ioe.edu.np"));
         return clubVI5Classes;
 
