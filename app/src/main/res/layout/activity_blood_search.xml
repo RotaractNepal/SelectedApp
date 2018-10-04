@@ -12,19 +12,19 @@
         android:stretchColumns="1">
         <TableRow>
             <com.jaredrummler.materialspinner.MaterialSpinner
-                android:id="@+id/bloodSpinner"
+                android:id="@+id/bloodGroupSpinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <com.jaredrummler.materialspinner.MaterialSpinner
-                android:id="@+id/clubSpinner"
+                android:id="@+id/clubBloodGroupSpinner"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 app:ms_dropdown_height="400dp"/>
         </TableRow>
     </TableLayout>
-    <include layout="@layout/blood_group_item_adapter"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bloodGroupDonorRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/bloodGroupSearchBar"
-        android:layout_margin="5dp"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/bloodGroupSearchBar"/>
 </RelativeLayout>

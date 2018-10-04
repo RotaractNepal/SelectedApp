@@ -25,12 +25,10 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
     </RelativeLayout>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="5dp"
-        android:layout_marginStart="5dp">
+        android:layout_gravity="center_vertical">
         <TextView
             android:id="@+id/bloodDonorName"
             android:layout_width="match_parent"
@@ -58,14 +56,29 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
             android:textStyle="bold"
             android:text="Basantapur, Kathamandu, Nepal"/>
-        <TextView
-            android:id="@+id/bloodDonorContactNo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="@color/colorPrimary"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-            android:textStyle="bold"
-            android:text="9841803337"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/bloodDonorCall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_call"
+            android:tint="#ff5252"
+            android:background="@drawable/img_border"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:id="@+id/bloodDonorEmail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_email"
+            android:tint="#ff5252"
+            android:background="@drawable/img_border"
+            android:layout_marginBottom="5dp"/>
     </LinearLayout>
 </LinearLayout>
