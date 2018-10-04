@@ -18,7 +18,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -49,9 +48,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         imageSlider = (ViewPager) findViewById(R.id.imageSlider);
 
@@ -429,8 +428,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Toast.makeText(MainActivity.this, "LogOut Pressed", Toast.LENGTH_LONG).show();
+        if (id == R.id.bloodSearch) {
+            Intent intent = new Intent(this, BloodSearch.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

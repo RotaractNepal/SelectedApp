@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BloodSearch">
+    <TableLayout
+        android:id="@+id/bloodGroupSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:stretchColumns="1">
+        <TableRow>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/bloodSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/clubSpinner"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                app:ms_dropdown_height="400dp"/>
+        </TableRow>
+    </TableLayout>
+    <include layout="@layout/blood_group_item_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bloodGroupSearchBar"
+        android:layout_margin="5dp"/>
+</RelativeLayout>
