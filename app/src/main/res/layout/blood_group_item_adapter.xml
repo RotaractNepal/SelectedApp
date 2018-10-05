@@ -67,18 +67,14 @@
             android:id="@+id/bloodDonorCall"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_call"
-            android:tint="#ff5252"
-            android:background="@drawable/img_border"
+            android:src="@mipmap/ic_blood_donor"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"/>
         <ImageView
             android:id="@+id/bloodDonorEmail"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_email"
-            android:tint="#ff5252"
-            android:background="@drawable/img_border"
+            android:src="@mipmap/ic_blood_donor_email"
             android:layout_marginBottom="5dp"/>
     </LinearLayout>
 </LinearLayout>

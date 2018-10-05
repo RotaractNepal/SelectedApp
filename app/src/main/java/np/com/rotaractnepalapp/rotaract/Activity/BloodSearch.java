@@ -29,7 +29,7 @@ public class BloodSearch extends AppCompatActivity {
         }
 
         bloodGroup = (MaterialSpinner) findViewById(R.id.bloodGroupSpinner);
-        bloodGroup.setItems("A(+ve)","A(-ve)","B(+ve)","B(-ve)","O(+)","O(-ve)","AB(+ve)","AB(-ve)");
+        bloodGroup.setItems("All","A(+ve)","A(-ve)","B(+ve)","B(-ve)","O(+)","O(-ve)","AB(+ve)","AB(-ve)");
         bloodGroup.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, Object item) {
@@ -177,6 +177,56 @@ public class BloodSearch extends AppCompatActivity {
         ArrayList<BloodGroupClass> bloodGroupClasses = new ArrayList<>();
 
         BloodGroupClass bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("A+");
+        bloodGroup.setName("Rtr. Monika Thapa Magar");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9867809727");
+        bloodGroup.setEmail("mthapamagar3@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("A+");
+        bloodGroup.setName("Rtr. Pratiksha Adhikari");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9823051683");
+        bloodGroup.setEmail("");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("A+");
+        bloodGroup.setName("Rtr. Amish Ratna Sthapit");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9841814774");
+        bloodGroup.setEmail("amishsthapit@hotmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("A+");
+        bloodGroup.setName("Rtr. Anuj Singh");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9841529145");
+        bloodGroup.setEmail("anuzzsingh@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("A+");
+        bloodGroup.setName("Rtr. Saroj Bishwakarma");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9813590712");
+        bloodGroup.setEmail("sarojorasbk@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
         bloodGroup.setBloodgroup("B+");
         bloodGroup.setName("Aasish Wagle");
         bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
@@ -237,6 +287,85 @@ public class BloodSearch extends AppCompatActivity {
         bloodGroup.setAddress("");
         bloodGroup.setContact("9803922091");
         bloodGroup.setEmail("tshrija11@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("O+");
+        bloodGroup.setName("Rtr. Deepa Ghimire");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9869555743");
+        bloodGroup.setEmail("ghimiredeepa10@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("O+");
+        bloodGroup.setName("Rtr. Monika Ranjit");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9841490571");
+        bloodGroup.setEmail("m.ranjit2@hotmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("O+");
+        bloodGroup.setName("Rtr. Puneet Shakya");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9803017625");
+        bloodGroup.setEmail("punshak@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("O+");
+        bloodGroup.setName("Rtr. Susmita Adhikari");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9843172172");
+        bloodGroup.setEmail("susmitaadhikari73@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("O+");
+        bloodGroup.setName("Rtr. Sovit Sharma");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9849912730");
+        bloodGroup.setEmail("sovitsharma33@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("O-");
+        bloodGroup.setName("Rtr. Shristi Maharjan");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9849163469");
+        bloodGroup.setEmail("secretary1819rackne@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("AB+");
+        bloodGroup.setName("Rtr. Bikash Rana");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9849098979");
+        bloodGroup.setEmail("bikashrana3@gmail.com");
+        bloodGroupClasses.add(bloodGroup);
+
+
+        bloodGroup = new BloodGroupClass();
+        bloodGroup.setBloodgroup("AB+");
+        bloodGroup.setName("Rtr. Pilinda Baniya");
+        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
+        bloodGroup.setAddress("");
+        bloodGroup.setContact("9841759593");
+        bloodGroup.setEmail("gpilinda@hotmail.com");
         bloodGroupClasses.add(bloodGroup);
 
         return bloodGroupClasses;

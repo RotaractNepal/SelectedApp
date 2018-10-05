@@ -1,6 +1,8 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -51,6 +53,9 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Drawable drawable = ContextCompat.getDrawable(getApplicationContext(),R.mipmap.ic_blood_donor);
+        toolbar.setOverflowIcon(drawable);
 
         imageSlider = (ViewPager) findViewById(R.id.imageSlider);
 
