@@ -4,6 +4,7 @@
     <item
         android:id="@+id/bloodSearch"
         android:orderInCategory="100"
-        android:title="@string/blood_search"
-        app:showAsAction="never"/>
+        android:title=""
+        android:icon="@mipmap/ic_blood_donor"
+        app:showAsAction="always"/>
 </menu>

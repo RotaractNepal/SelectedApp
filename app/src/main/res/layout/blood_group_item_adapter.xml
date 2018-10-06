@@ -48,6 +48,15 @@
             android:textStyle="bold"
             android:text="Rotaract Club of Kathmandu North East"/>
         <TextView
+            android:id="@+id/bloodDonorClubSortName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            android:text="( RACKNE )"/>
+        <TextView
             android:id="@+id/bloodDonorAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -4,9 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MenuItem;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.ArrayList;
 
@@ -16,7 +19,12 @@ import np.com.rotaractnepalapp.rotaract.R;
 
 public class BloodSearch extends AppCompatActivity {
 
-    MaterialSpinner bloodGroup, clubGroup;
+    MaterialEditText editTextSearch;
+    RecyclerView recyclerView;
+    RecyclerView.LayoutManager layoutManager;
+    BloodGroupAdapter adapter;
+    ArrayList<BloodGroupClass> bloodGroupClasses;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,347 +36,68 @@ public class BloodSearch extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        bloodGroup = (MaterialSpinner) findViewById(R.id.bloodGroupSpinner);
-        bloodGroup.setItems("All","A(+ve)","A(-ve)","B(+ve)","B(-ve)","O(+)","O(-ve)","AB(+ve)","AB(-ve)");
-        bloodGroup.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
+        getBloodGroup();
+        buildRecylerView();
+
+        editTextSearch = (MaterialEditText) findViewById(R.id.editTextSearch);
+        editTextSearch.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onItemSelected(MaterialSpinner view, int position, long id, Object item) {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
-        });
 
-        clubGroup = (MaterialSpinner) findViewById(R.id.clubBloodGroupSpinner);
-        clubGroup.setItems("All","RAC Annapurna\n",
-                "RAC Baglung",
-                "RAC Bagmati",
-                "RAC Bajra Manasalu Gorkha",
-                "RAC Balaju",
-                "RAC Banepa",
-                "RAC Baneshwor",
-                "RAC Baneshwor Royal",
-                "RAC Bhadgaon",
-                "RAC Bhairahawa",
-                "RAC Bhaktapur",
-                "RAC Bharatpur",
-                "RAC Biratnagar",
-                "RAC Biratnagar Down Town",
-                "RAC Birgunj",
-                "RAC Birgunj Metropolis",
-                "RAC Birtamod Mid-Town",
-                "RAC Birtamode",
-                "RAC Budhanilkantha",
-                "RAC Budol",
-                "RAC Butwal",
-                "RAC Butwal Down Town",
-                "RAC Butwal South",
-                "RAC Butwal Synergy",
-                "RAC Central Butwal",
-                "RAC Central Lumbini",
-                "RAC Chandragiri",
-                "RAC Charumati",
-                "RAC Chitwan",
-                "RAC Damak",
-                "RAC Damauli",
-                "RAC Dang",
-                "RAC Dhangadhi",
-                "RAC Dharan",
-                "RAC Dharan Ghopa",
-                "RAC Dhulikhel",
-                "RAC Dillibazar-Kathmandu",
-                "RAC Durbarmarg",
-                "RAC Gongabu",
-                "RAC Gorkha",
-                "RAC Hemja",
-                "RAC Hetauda",
-                "RAC Himalaya Patan",
-                "RAC Itahari",
-                "RAC Jawalakhel",
-                "RAC Jawalakhel Manjushree",
-                "RAC Kakarvita",
-                "RAC Kantipur Dental College",
-                "RAC Kapilvastu",
-                "RAC Kapilvastu Mid-Town",
-                "RAC Kasthamandap",
-                "RAC Kathmandu",
-                "RAC Kathmandu Medical College",
-                "RAC Kathmandu Metro",
-                "RAC Kathmandu Metropolis",
-                "RAC Kathmandu Mid Town",
-                "RAC Kathmandu North",
-                "RAC Kathmandu North East",
-                "RAC Kathmandu Sunrise",
-                "RAC Kathmandu University",
-                "RAC Kathmandu University Medical School",
-                "RAC Kathmandu West",
-                "RAC Kathmandu Youth North East",
-                "RAC Khitiz Int'l College",
-                "RAC KIST Medical College",
-                "RAC Kopundol",
-                "RAC Lalitpur",
-                "RAC Lalitpur Midtown",
-                "RAC Lamjung",
-                "RAC Lekhnath",
-                "RAC Liberty College",
-                "RAC Lumbini Banijya Campus",
-                "RAC Lumbini Siddhartha Nagar",
-                "RAC Madhyapur",
-                "RAC Mahabouddha",
-                "RAC Makwanpur",
-                "RAC Manipal College of Medical Sciences",
-                "RAC Manohara",
-                "RAC Matribhumi Baluwatar IOM",
-                "RAC Metro City",
-                "RAC Mount Everest, Lalitpur",
-                "RAC Narayangarh",
-                "RAC Narayani Mid Town",
-                "RAC New Road City",
-                "RAC Newroad Pokhara",
-                "RAC Palpa Tansen",
-                "RAC Panauti",
-                "RAC Parbat",
-                "RAC Parbat Pokhara",
-                "RAC Pashupati",
-                "RAC Patan",
-                "RAC Patan Durbar Square",
-                "RAC Patan South",
-                "RAC Patan West",
-                "RAC People Campus",
-                "RAC Phulbari",
-                "RAC Pokhara",
-                "RAC Pokhara Fishtail",
-                "RAC Pokhara GMC",
-                "RAC Pokhara Lakeside",
-                "RAC Pokhara Mid Town",
-                "RAC Rajdhani",
-                "RAC Ramapithecus",
-                "RAC Ratnanagar",
-                "RAC Reliance College",
-                "RAC Rudramati",
-                "RAC Rudramati- Babarmahal",
-                "RAC Rupandehi",
-                "RAC SAIM College",
-                "RAC Sainamaina",
-                "RAC Sainbu Bhainsepati",
-                "RAC Sukedhara",
-                "RAC Swoyambhu",
-                "RAC Thames International College",
-                "RAC Tilottama Devdaha",
-                "RAC Tilottama Rupandehi",
-                "RAC Tinau Butwal",
-                "RAC Tinau City",
-                "RAC Tripureshwor",
-                "RAC Tulsipur",
-                "RAC Yala",
-                "Rotaract Club of Kantipur");
-        clubGroup.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(MaterialSpinner view, int position, long id, Object item) {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             }
-        });
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.bloodGroupDonorRecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new BloodGroupAdapter(this, getBloodGroup()));
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
 
     }
 
-    private ArrayList getBloodGroup(){
-        ArrayList<BloodGroupClass> bloodGroupClasses = new ArrayList<>();
+    private void filter(String text){
+        ArrayList<BloodGroupClass> filteredList = new ArrayList<>();
+        for (BloodGroupClass item : bloodGroupClasses){
+            if (item.getBloodgroup().toLowerCase().contains(text.toLowerCase()) || item.getClubshortname().toUpperCase().contains(text.toUpperCase())){
+                filteredList.add(item);
+            }
+        }
+        adapter.filterList(filteredList);
 
-        BloodGroupClass bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("A+");
-        bloodGroup.setName("Rtr. Monika Thapa Magar");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9867809727");
-        bloodGroup.setEmail("mthapamagar3@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
+    }
 
+    private void getBloodGroup(){
+        bloodGroupClasses = new ArrayList<>();
 
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("A+");
-        bloodGroup.setName("Rtr. Pratiksha Adhikari");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9823051683");
-        bloodGroup.setEmail("");
-        bloodGroupClasses.add(bloodGroup);
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Monika Thapa Magar", "A+", "9867809727", "mthapamagar3@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", ""));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Pratiksha Adhikari", "A+", "9823051683", "pratikshaadhikari111@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", ""));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Amish Ratna Sthapit", "A+", "9841814774", "amishsthapit@hotmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", ""));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Anuj Singh", "A+", "9841529145", "anuzzsingh@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", ""));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Saroj Bishwakarma", "A+", "9813590712", "sarojorasbk@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", ""));
 
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Aasish Wagle", "B+", "9840062003", "president1819rackne@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", "RACKNE"));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Ashma Neupane", "B+", "9849994917", "secretary@rotaractkne.org.np", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", "RACKNE"));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Keshab Bdr. Sunari", "B+", "9841803337", "070bct515@ioe.edu.np", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", "RACKNE"));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Saurav Shrestha", "B+", "9860305485", "sauravshrestha13@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", "RACKNE"));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Shrawan Bishowkarma", "B+", "9841704762", "president@rotaractkne.org.np", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", "RACKNE"));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Sagun Pudasaini", "B+", "9861041339", "Shagoonpudasaini@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", "RACKNE"));
+        bloodGroupClasses.add(new BloodGroupClass("Rtr. Shrija Thapa", "B+", "9803922091", "tshrija11@gmail.com", "Kathmandu Nepal", "Rotaract Club of Kathmandu North East", "RACKNE"));
 
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("A+");
-        bloodGroup.setName("Rtr. Amish Ratna Sthapit");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9841814774");
-        bloodGroup.setEmail("amishsthapit@hotmail.com");
-        bloodGroupClasses.add(bloodGroup);
+    }
 
+    private void buildRecylerView(){
+        recyclerView = (RecyclerView) findViewById(R.id.bloodGroupDonorRecyclerView);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        adapter = new BloodGroupAdapter(bloodGroupClasses);
 
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("A+");
-        bloodGroup.setName("Rtr. Anuj Singh");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9841529145");
-        bloodGroup.setEmail("anuzzsingh@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
 
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("A+");
-        bloodGroup.setName("Rtr. Saroj Bishwakarma");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9813590712");
-        bloodGroup.setEmail("sarojorasbk@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("B+");
-        bloodGroup.setName("Aasish Wagle");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9840062003");
-        bloodGroup.setEmail("president1819rackne@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("B+");
-        bloodGroup.setName("Rtr. Ashma Neupane");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9849994917");
-        bloodGroup.setEmail("secretary@rotaractkne.org.np");
-        bloodGroupClasses.add(bloodGroup);
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("B+");
-        bloodGroup.setName("Rtr. Keshab Bdr. Sunari");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9841803337");
-        bloodGroup.setEmail("bskeshab@hotmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("B+");
-        bloodGroup.setName("Rtr. Saurav Shrestha");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9860305485");
-        bloodGroup.setEmail("sauravshrestha13@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("B+");
-        bloodGroup.setName("Rtr. Shrawan Bishowkarma");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9841704762");
-        bloodGroup.setEmail("president@rotaractkne.org.np");
-        bloodGroupClasses.add(bloodGroup);
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("B+");
-        bloodGroup.setName("Sagun Pudasaini");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9861041339");
-        bloodGroup.setEmail("Shagoonpudasaini@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("B+");
-        bloodGroup.setName("Shrija Thapa");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9803922091");
-        bloodGroup.setEmail("tshrija11@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("O+");
-        bloodGroup.setName("Rtr. Deepa Ghimire");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9869555743");
-        bloodGroup.setEmail("ghimiredeepa10@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("O+");
-        bloodGroup.setName("Rtr. Monika Ranjit");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9841490571");
-        bloodGroup.setEmail("m.ranjit2@hotmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("O+");
-        bloodGroup.setName("Rtr. Puneet Shakya");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9803017625");
-        bloodGroup.setEmail("punshak@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("O+");
-        bloodGroup.setName("Rtr. Susmita Adhikari");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9843172172");
-        bloodGroup.setEmail("susmitaadhikari73@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("O+");
-        bloodGroup.setName("Rtr. Sovit Sharma");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9849912730");
-        bloodGroup.setEmail("sovitsharma33@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("O-");
-        bloodGroup.setName("Rtr. Shristi Maharjan");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9849163469");
-        bloodGroup.setEmail("secretary1819rackne@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("AB+");
-        bloodGroup.setName("Rtr. Bikash Rana");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9849098979");
-        bloodGroup.setEmail("bikashrana3@gmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-
-        bloodGroup = new BloodGroupClass();
-        bloodGroup.setBloodgroup("AB+");
-        bloodGroup.setName("Rtr. Pilinda Baniya");
-        bloodGroup.setClubname("Rotaract Club of Kathmandu North East");
-        bloodGroup.setAddress("");
-        bloodGroup.setContact("9841759593");
-        bloodGroup.setEmail("gpilinda@hotmail.com");
-        bloodGroupClasses.add(bloodGroup);
-
-        return bloodGroupClasses;
     }
 
     @Override

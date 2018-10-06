@@ -7,6 +7,21 @@ public class BloodGroupClass {
     private String email;
     private String address;
     private String clubname;
+    private String clubshortname;
+
+    public BloodGroupClass(){
+
+    }
+
+    public BloodGroupClass(String name, String bloodgroup, String contact, String email, String address, String clubname, String clubshortname) {
+        this.name = name;
+        this.bloodgroup = bloodgroup;
+        this.contact = contact;
+        this.email = email;
+        this.address = address;
+        this.clubname = clubname;
+        this.clubshortname = clubshortname;
+    }
 
     public String getName() {
         return name;
@@ -54,5 +69,13 @@ public class BloodGroupClass {
 
     public void setClubname(String clubname) {
         this.clubname = clubname;
+    }
+
+    public String getClubshortname() {
+        return clubshortname;
+    }
+
+    public void setClubshortname(String clubshortname) {
+        this.clubshortname = clubshortname;
     }
 }
