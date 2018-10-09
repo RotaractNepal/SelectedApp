@@ -39,9 +39,10 @@
         <activity android:name=".Activity.ClubActivity.ClubXIReview" />
         <activity android:name=".Activity.ClubActivity.ClubXIIReview" />
         <activity android:name=".Activity.ClubActivity.ClubXIIIReview" />
-        <activity android:name=".Activity.DCalendar" />
+        <activity android:name=".Activity.DistrictEvents" />
         <activity android:name=".Activity.AboutUs" />
-        <activity android:name=".Activity.BloodSearch"></activity>
+        <activity android:name=".Activity.BloodSearch" />
+        <activity android:name=".Activity.ZonalEvents"></activity>
     </application>
 
 </manifest>

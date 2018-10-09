@@ -1,10 +1,8 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -14,7 +12,7 @@ import android.widget.TextView;
 
 import np.com.rotaractnepalapp.rotaract.R;
 
-public class Events extends AppCompatActivity {
+public class ZonalEvents extends AppCompatActivity {
 
     ImageView openDetail;
     Dialog event;
@@ -22,8 +20,8 @@ public class Events extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clubs_events);
-        this.setTitle("Events");
+        setContentView(R.layout.activity_zonal_events);
+        this.setTitle("Zonal Events");
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -32,7 +30,7 @@ public class Events extends AppCompatActivity {
         openDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                event = new Dialog(Events.this);
+                event = new Dialog(ZonalEvents.this);
                 event.setContentView(R.layout.event_detail_popup);
                 TextView close = (TextView) event.findViewById(R.id.closeDialog);
                 close.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +47,6 @@ public class Events extends AppCompatActivity {
             }
         });
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home){

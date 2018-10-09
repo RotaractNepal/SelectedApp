@@ -1,8 +1,6 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -457,8 +455,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_club_review) {
             intent = new Intent(this, Club.class);
             startActivity(intent);
-        } else if (id == R.id.nav_dcalender) {
-            intent = new Intent(this, DCalendar.class);
+        } else if (id == R.id.nav_distevents) {
+            intent = new Intent(this, DistrictEvents.class);
             startActivity(intent);
         } else if (id == R.id.nav_chat) {
             intent = new Intent(this, Chat.class);
@@ -476,6 +474,9 @@ public class MainActivity extends AppCompatActivity
             intent.setType("message/rfc822");
             chooser = intent.createChooser(intent,"Send Feedback");
             startActivity(chooser);
+        } else if (id == R.id.nav_zonalevents){
+            intent = new Intent(this, ZonalEvents.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

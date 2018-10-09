@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Events">
+    tools:context=".Activity.ZonalEvents">
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:layout_marginRight="22dp"
         android:layout_marginBottom="22dp"
         android:src="@drawable/events"
-        android:id="@+id/createEvents"/>
-    <include layout="@layout/event_adapter"/>
+        android:id="@+id/createZonalEvents"/>
+    <include layout="@layout/detail_events_adapter"/>
 
 </RelativeLayout>

@@ -12,17 +12,21 @@
                 android:icon="@drawable/news"
                 android:title="News" />
             <item
-                android:id="@+id/nav_today_event"
-                android:icon="@drawable/events"
-                android:title="Events" />
-            <item
                 android:id="@+id/nav_club_review"
                 android:icon="@drawable/ic_club_review"
                 android:title="Clubs" />
             <item
-                android:id="@+id/nav_dcalender"
-                android:icon="@drawable/ic_district_calendar"
-                android:title="District Calendar" />
+                android:id="@+id/nav_distevents"
+                android:icon="@drawable/events"
+                android:title="District Events" />
+            <item
+                android:id="@+id/nav_zonalevents"
+                android:icon="@drawable/events"
+                android:title="Zonal Events" />
+            <item
+                android:id="@+id/nav_today_event"
+                android:icon="@drawable/events"
+                android:title="Club Events" />
             <item
                 android:id="@+id/nav_chat"
                 android:icon="@drawable/chat"

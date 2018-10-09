@@ -89,7 +89,7 @@
     <string name="rotaract_club_of_kantipur">Rotaract Club of Kantipur</string>
     <string name="news_title">“मेरो सिप”</string>
     <string name="news_description">मेरो सिप is a professional development oriented project designed by Rotaract Club of Kathmandu North East that includes basic computer and Microsoft package training to the students of government schools.</string>
-    <string name="news_date">2075/01/15 - 2075/02/15</string>
+    <string name="news_date">2075/01/15 - 02/15</string>
     <string name="news_time">7:00 AM - 8:00 AM</string>
     <string name="news_location">Tangal Higher Secondary School</string>
     <string name="your_news">Create Your News</string>
@@ -115,4 +115,10 @@
     <string name="address">Basantapur, Kathmandu, Nepal</string>
     <string name="blood_search">Blood Search</string>
     <string name="blood_donor_search_here">Blood Donor Search Here</string>
+    <string name="last_year_events_details">Last Year Events Details</string>
+    <string name="mero_sip">Mero Sip</string>
+    <string name="tangal_higher_secodary_school">Tangal Higher Secodary School</string>
+    <string name="_07_00_am_to_08_00_am">07:00 AM to 08:00 AM</string>
+    <string name="up_coming_club_events">Up Coming Events</string>
+    <string name="up_coming_events">Up Coming Events</string>
 </resources>
