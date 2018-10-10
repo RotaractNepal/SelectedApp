@@ -451,6 +451,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nave_home){
             intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+        } else if (id == R.id.nav_learning_material){
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/folders/11yzjhoznhASyo6IXVgITgoRp5kF_t4Qz"));
+            startActivity(intent);
         } else if (id == R.id.nav_news) {
             intent = new Intent(this, News.class);
             startActivity(intent);
