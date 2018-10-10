@@ -439,6 +439,7 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Intent intent=null, chooser =null;
@@ -449,14 +450,17 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_news) {
             intent = new Intent(this, News.class);
             startActivity(intent);
-        } else if (id == R.id.nav_today_event) {
-            intent = new Intent(this, Events.class);
-            startActivity(intent);
         } else if (id == R.id.nav_club_review) {
             intent = new Intent(this, Club.class);
             startActivity(intent);
         } else if (id == R.id.nav_distevents) {
             intent = new Intent(this, DistrictEvents.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_zonalevents){
+            intent = new Intent(this, ZonalEvents.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_today_event) {
+            intent = new Intent(this, Events.class);
             startActivity(intent);
         } else if (id == R.id.nav_chat) {
             intent = new Intent(this, Chat.class);
@@ -474,9 +478,6 @@ public class MainActivity extends AppCompatActivity
             intent.setType("message/rfc822");
             chooser = intent.createChooser(intent,"Send Feedback");
             startActivity(chooser);
-        } else if (id == R.id.nav_zonalevents){
-            intent = new Intent(this, ZonalEvents.class);
-            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

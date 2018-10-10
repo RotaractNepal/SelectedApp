@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
-
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
@@ -22,6 +21,6 @@
         app:menu="@menu/activity_main_drawer"
         android:background="@android:color/white"
         app:itemTextColor="@color/colorPrimary"
-        app:itemIconTint="@color/colorPrimary"/>
-
+        app:itemIconTint="@color/colorPrimary">
+    </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>
