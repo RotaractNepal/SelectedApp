@@ -51,6 +51,7 @@
         android:layout_height="300dp"
         android:layout_below="@id/dialogWebLink"
         android:layout_margin="15dp"
+        android:layout_marginBottom="5dp"
         android:scrollbars="none"
         android:id="@+id/informationScrollView">
         <com.codesgood.views.JustifiedTextView
@@ -61,13 +62,4 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"/>
     </ScrollView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/written_by"
-        android:layout_below="@id/informationScrollView"
-        android:layout_marginLeft="15dp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:layout_marginBottom="5dp"/>
 </RelativeLayout>

@@ -193,6 +193,10 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Pay club dues" +
                 "\n\n•Attend meetings and events" +
                 "\n\n•Use your professional skills and talents to make a difference"));
+        intro1Classes.add(new Intro1Class(R.drawable.ic_oath, R.drawable.rotaract,"Rotaract Oath", "OATH: Board Members" +
+                "\n\nI DO SOLEMNLY SWEAR, THAT I WILL SINCERELY EXECUTE, THE OFFICE OF...THE ROTARACT CLUB OF ....AND SHALL DO MY BEST TO KEEP UP, THE DECORUM, OF OUR ROTARACT MOVEMENT, BY UPHOLDING, THE CONSTITUTION AND STATEMENT OF POLICY OF OUR ORGANIZATION" +
+                "\n\nMembers" +
+                "\n\nI DO SOLEMNLY PROMISE, THAT I WILL SINCERELY SERVE, AS A MEMBER OF THIS ROTARACT CLUB OF ...AND SHALL AT ALL TIMES UPHOLD THE IDEALS AND PRINCIPLES OF THIS ORGANISATION"));
         return intro1Classes;
 
     }
