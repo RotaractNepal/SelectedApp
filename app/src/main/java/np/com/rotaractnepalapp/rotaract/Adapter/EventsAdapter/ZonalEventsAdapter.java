@@ -113,17 +113,6 @@ public class ZonalEventsAdapter extends RecyclerView.Adapter<ZonalEventsAdapter.
                             }
                         });
 
-                        ImageView call = (ImageView) Information.findViewById(R.id.eventCall);
-                        call.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent intent = new Intent(Intent.ACTION_DIAL);
-                                String contactNo = clickedDataItem.getCall();
-                                intent.setData(Uri.parse("tel:" + contactNo));
-                                v.getContext().startActivity(intent);
-                            }
-                        });
-
                         Information.setCanceledOnTouchOutside(false);
                         Information.setCancelable(false);
                         Information.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
