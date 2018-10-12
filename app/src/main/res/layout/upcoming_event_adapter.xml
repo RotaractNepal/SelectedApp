@@ -22,7 +22,7 @@
                 android:background="@android:color/white"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
-                android:text="Sept."
+                android:text="@string/month"
                 android:textSize="20sp"
                 android:gravity="center"/>
             <TextView
@@ -32,7 +32,7 @@
                 android:textColor="@android:color/white"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
-                android:text="17"
+                android:text="@string/day"
                 android:textSize="50sp"
                 android:gravity="center"/>
             <TextView
@@ -42,7 +42,7 @@
                 android:textColor="@android:color/white"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
-                android:text="2018"
+                android:text="@string/year"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -50,7 +50,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_marginLeft="5dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:layout_marginStart="5dp">
             <TextView
                 android:id="@+id/eventsClubName"
                 android:layout_width="match_parent"
@@ -59,25 +60,28 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
                 android:textSize="12sp"
-                android:text="Rotaract Club of KNE"/>
+                android:lines="1"
+                android:text="@string/organizer"/>
             <TextView
                 android:id="@+id/eventsProjectName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
+                android:lines="1"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
-                android:text="Mero Sip"/>
+                android:text="@string/event"/>
             <TextView
-                android:id="@+id/eventsLocation"
+                android:id="@+id/eventsVenue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
+                android:lines="1"
                 android:textSize="12sp"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
-                android:text="Tangal Higher Secondary School"/>
+                android:text="@string/venue"/>
             <TextView
                 android:id="@+id/eventsTime"
                 android:layout_width="match_parent"
@@ -86,7 +90,8 @@
                 android:textColor="@color/colorPrimary"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                 android:textStyle="bold"
-                android:text="11:00 AM - 02:00 PM"/>
+                android:lines="1"
+                android:text="@string/time"/>
             <include layout="@layout/event_comm_adapter"
                 android:layout_marginTop="5dp"
                 android:layout_height="wrap_content"

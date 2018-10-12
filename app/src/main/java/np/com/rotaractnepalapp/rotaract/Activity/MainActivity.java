@@ -459,12 +459,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_club_review) {
             intent = new Intent(this, Club.class);
             startActivity(intent);
-        } else if (id == R.id.nav_distevents) {
-            intent = new Intent(this, DistrictEvents.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_zonalevents){
-            intent = new Intent(this, ZonalEvents.class);
-            startActivity(intent);
         } else if (id == R.id.nav_today_event) {
             intent = new Intent(this, Events.class);
             startActivity(intent);
