@@ -5,10 +5,9 @@
     android:layout_height="match_parent"
     android:layout_margin="5dp"
     android:scrollbars="none">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -22,7 +21,8 @@
                 android:text="@string/your_news"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_marginStart="5dp" />
             <TextView
                 android:id="@+id/txtCloseNewsCreate"
                 android:layout_width="30dp"
@@ -117,6 +117,27 @@
             app:met_textColorHint="@color/colorAccent"
             android:textColorHighlight="@color/colorPrimaryDark"
             app:met_floatingLabel="highlight"/>
+        <TextView
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17.8sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/choose_your_club"/>
+        <Spinner
+            android:id="@+id/spinner_club"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="4dp"/>
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/button"
             android:layout_width="150dp"
@@ -127,6 +148,5 @@
             android:text="@string/upload_news"
             android:layout_gravity="right"
             android:layout_marginEnd="5dp" />
-
     </LinearLayout>
 </ScrollView>
