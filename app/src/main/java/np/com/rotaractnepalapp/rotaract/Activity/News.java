@@ -3,6 +3,11 @@ package np.com.rotaractnepalapp.rotaract.Activity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.provider.MediaStore;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,12 +15,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.rengwuxian.materialedittext.MaterialEditText;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -34,6 +41,9 @@ public class News extends AppCompatActivity {
 
     private ArrayList<SpinnerItem> mClubList;
     private SpinnerAdapter mAdapter;
+
+    private int REQUEST_CODE = 1;
+    ImageView newsSelectedImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -147,6 +157,17 @@ public class News extends AppCompatActivity {
             }
         });
 
+        newsSelectedImage = (ImageView) CreateNews.findViewById(R.id.newsImageSelect);
+        newsSelectedImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Selected Picture"), REQUEST_CODE );
+            }
+        });
+
         close = (TextView) CreateNews.findViewById(R.id.txtCloseNewsCreate);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,6 +181,21 @@ public class News extends AppCompatActivity {
         CreateNews.setCancelable(false);
         CreateNews.show();
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK && data != null &&  data.getData() != null){
+            Uri uri = data.getData();
+            try{
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
+                newsSelectedImage.setImageBitmap(bitmap);
+
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+        }
     }
 
     private void initList(){

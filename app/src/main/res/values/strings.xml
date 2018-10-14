@@ -96,7 +96,6 @@
     <string name="text_hint_title">Title</string>
     <string name="text_news_description">Description</string>
     <string name="text_news_location">Venue</string>
-    <string name="choose_your_an_image">Choose your an Image</string>
     <string name="pick_start_date">Pick Start Date</string>
     <string name="pick_end_date">Pick End Date</string>
     <string name="pick_program_time">Pick Program Time</string>
@@ -138,4 +137,5 @@
     <string name="venue">Venue</string>
     <string name="time">Time</string>
     <string name="choose_your_club">Choose Your Club</string>
+    <string name="choose_your_an_image">Choose your an Image</string>
 </resources>

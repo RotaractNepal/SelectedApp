@@ -138,6 +138,29 @@
             android:layout_marginRight="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginTop="4dp"/>
+        <TextView
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17.8sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/choose_your_an_image"/>
+        <ImageView
+            android:id="@+id/newsImageSelect"
+            android:layout_width="355dp"
+            android:layout_height="255dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/colorlogo_rotaractnepalapp"/>
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/button"
             android:layout_width="150dp"
