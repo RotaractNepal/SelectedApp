@@ -31,6 +31,7 @@ import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro2Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro3Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro4Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro5Class;
+import np.com.rotaractnepalapp.rotaract.Models.FirebaseDAO;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class MainActivity extends AppCompatActivity
@@ -335,7 +336,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Maintaining logos and other designs"));
         intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.end_polio,"Fundraising Chair", "The major responsibility of the fundraising committee is to raise the amount needed to meet the proposed unit budget and to work cooperatively with the PTA president and treasurer in accounting for receipts and disbursements for the activity." +
                 "\n\n•Ensure there’s a specific fundraising target." +
-                "\n\n•Ensure prospect research occurs to identify how much money might be raised from different types of resources" +
+                "\n\n•Ensure prospect reseaR.id.nav_chatrch occurs to identify how much money might be raised from different types of resources" +
                 "\n\n•identify specific, potential sources of funds from a diverse mix of sources" +
                 "\n\n•Develop an action plan of approach" +
                 "\n\n•Ensure effective administrative systems to track grants and donations"));
@@ -463,8 +464,14 @@ public class MainActivity extends AppCompatActivity
             intent = new Intent(this, Events.class);
             startActivity(intent);
         } else if (id == R.id.nav_chat) {
-            intent = new Intent(this, Chat.class);
-            startActivity(intent);
+            if(FirebaseDAO.UID==null){
+                intent = new Intent(this, loginActivity.class);
+                startActivity(intent);
+            }
+            else{
+                intent = new Intent(this, Chat.class);
+                startActivity(intent);
+            }
         } else if (id == R.id.nav_about_us){
             intent = new Intent(this, AboutUs.class);
             startActivity(intent);
