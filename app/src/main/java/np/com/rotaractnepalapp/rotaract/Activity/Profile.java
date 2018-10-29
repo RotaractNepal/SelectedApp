@@ -57,8 +57,6 @@ public class Profile extends AppCompatActivity implements CommonActivity, View.O
         user=new User(FirebaseDAO.UID);
 
         profilePic=findViewById(R.id.profile_image);
-        //holds reference to the database path
-        //i.e. /users/(Userid)
 
         tvFullname=findViewById(R.id.p_fullName);
         tvUsername=findViewById(R.id.p_username);
