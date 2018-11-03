@@ -38,19 +38,19 @@ public class AboutUs extends AppCompatActivity {
         aboutUS.setName("Rtr. Keshab Bahadur Sunari");
         aboutUS.setProfession("Android App Developer");
         aboutUS.setAddress("Basantapur, Kathamandu, Nepal");
-        aboutUS.setImage(R.drawable.keshab);
+        aboutUS.setImage(R.drawable.about_one);
         aboutUS.setCall("9841803337");
         aboutUS.setEmail("070bct515@ioe.edu.np");
         aboutUsClasses.add(aboutUS);
 
-        aboutUS = new AboutUsClass();
+       /* aboutUS = new AboutUsClass();
         aboutUS.setName("Mr. Suresh Khatri");
         aboutUS.setProfession("Android App Developer");
         aboutUS.setAddress("Kathamandu, Nepal");
         aboutUS.setImage(R.drawable.shresh);
         aboutUS.setCall("9849380632");
         aboutUS.setEmail("");
-        aboutUsClasses.add(aboutUS);
+        aboutUsClasses.add(aboutUS);*/
 
         return aboutUsClasses;
     }

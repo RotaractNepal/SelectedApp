@@ -1,96 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/round_rect_bg">
-    <ImageView
-        android:id="@+id/newsImage"
-        android:layout_width="wrap_content"
-        android:layout_height="180dp"
-        android:src="@drawable/mero_sip"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="@android:color/white"
-        android:alpha="0.5">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/newsTitle"
-            android:text="@string/news_title"
-            android:textStyle="bold"
-            android:layout_marginTop="4dp"
-            android:maxLength="20"
-            android:layout_marginLeft="10dp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-            android:gravity="center_vertical"/>
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_below="@id/newsImage"
-        android:id="@+id/cardNews"
-        android:layout_marginLeft="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@android:color/white">
-        <com.codesgood.views.JustifiedTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/newsDescription"
-            android:text="@string/news_description"
-            android:textStyle="bold"
-            android:layout_marginTop="23dp"
-            android:maxLines="5"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/newsLocation"
-            android:text="@string/news_location"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_below="@id/newsDescription"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_below="@id/newsLocation">
-            <TextView
-                android:id="@+id/newsDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                android:text="@string/news_date" />
-            <TextView
-                android:id="@+id/newsTime"
-                android:layout_marginLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                android:text="@string/news_time"
-                android:layout_marginStart="20dp" />
-        </LinearLayout>
-    </RelativeLayout>
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/newsClubLogo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignEnd="@id/newsImage"
-        android:layout_alignRight="@id/newsImage"
-        android:layout_marginTop="155dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:src="@drawable/rackne"
-        app:civ_border_width="2dp"
-        app:civ_border_color="@android:color/white"/>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:src="@drawable/mero_sip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:alpha="0.5"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:maxLength="20"
+                android:text="@string/news_title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardNews"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/newsImage"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@android:color/white">
+
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/newsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="5"
+                android:text="@string/news_description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/newsLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsDescription"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/news_location"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/newsDateType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsLocation"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/newsDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_date"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/newsType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/news_type"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/newsObjectBenefici"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsDateType"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newsObjectives"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/objectives"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/newsBeneficiaries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beneficiaries"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/newsClubLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@id/newsImage"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/colorlogo_rotaractnepalapp"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="2dp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

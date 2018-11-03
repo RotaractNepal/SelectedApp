@@ -93,11 +93,11 @@
     <string name="rac_swoyambhu">RAC Swoyambhu</string>
     <string name="rac_thames_international_college">RAC Thames International College</string>
     <string name="rotaract_club_of_kantipur">Rotaract Club of Kantipur</string>
-    <string name="news_title">“मेरो सिप”</string>
-    <string name="news_description">मेरो सिप is a professional development oriented project designed by Rotaract Club of Kathmandu North East that includes basic computer and Microsoft package training to the students of government schools.</string>
-    <string name="news_date">2075/01/15 - 02/15</string>
-    <string name="news_time">7:00 AM - 8:00 AM</string>
-    <string name="news_location">Tangal Higher Secondary School</string>
+    <string name="news_title">Title</string>
+    <string name="news_description">Description</string>
+    <string name="news_date">Date</string>
+    <string name="news_type">Type</string>
+    <string name="news_location">Location</string>
     <string name="your_news">Create Your News</string>
     <string name="text_hint_title">Title</string>
     <string name="text_news_description">Description</string>
@@ -128,7 +128,7 @@
     <string name="up_coming_events">Up Coming Events</string>
     <string name="home">Home</string>
     <string name="learning_resourcess">Learning Resourcess</string>
-    <string name="news">News</string>
+    <string name="news">Recent Projects</string>
     <string name="clubs">Clubs</string>
     <string name="chat">Chat</string>
     <string name="about_us">About Us</string>
@@ -177,6 +177,9 @@
     <string name="Username">Username</string>
     <string name="strEmail">Email</string>
     <string name="your_name">Your Name</string>
+    <string name="show_the_news"><u>Show the News</u></string>
+    <string name="objectives">Objectives</string>
+    <string name="beneficiaries">Beneficiaries</string>
 
 
     <string-array name="monthList">

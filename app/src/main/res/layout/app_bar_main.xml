@@ -20,7 +20,7 @@
 
     <include layout="@layout/content_main" />
 
-    <com.github.clans.fab.FloatingActionMenu
+   <!-- <com.github.clans.fab.FloatingActionMenu
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/floatingActionMenu"
@@ -70,6 +70,6 @@
             android:tint="@color/colorIconText"
             app:fab_label="@string/fab3"/>
     </com.github.clans.fab.FloatingActionMenu>
-
+-->
 
 </android.support.design.widget.CoordinatorLayout>
