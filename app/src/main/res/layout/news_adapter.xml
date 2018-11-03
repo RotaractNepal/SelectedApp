@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/round_rect_bg">
+    android:background="@drawable/round_rect_bg"
+    android:layout_margin="5dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,7 +14,8 @@
             android:id="@+id/newsImage"
             android:layout_width="wrap_content"
             android:layout_height="180dp"
-            android:src="@drawable/mero_sip" />
+            android:src="@drawable/mero_sip"
+            android:scaleType="fitXY"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -38,11 +40,19 @@
         <RelativeLayout
             android:id="@+id/cardNews"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/newsImage"
             android:layout_marginLeft="1dp"
             android:layout_marginRight="1dp"
             android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="@string/project_detail"
+                android:layout_marginStart="10dp"/>
 
             <com.codesgood.views.JustifiedTextView
                 android:id="@+id/newsDescription"
@@ -53,19 +63,27 @@
                 android:layout_marginRight="10dp"
                 android:maxLines="5"
                 android:text="@string/news_description"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/Venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                android:textStyle="bold" />
+                android:text="@string/venue"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/newsDescription"/>
 
             <TextView
                 android:id="@+id/newsLocation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/newsDescription"
+                android:layout_below="@id/Venue"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:text="@string/news_location"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                android:textStyle="bold" />
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
 
             <LinearLayout
                 android:id="@+id/newsDateType"
@@ -106,12 +124,25 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:text="@string/objectives"/>
+
+                <TextView
                     android:id="@+id/newsObjectives"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/objectives"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                    android:textStyle="bold" />
+                    android:text="@string/beneficiaries"/>
 
                 <TextView
                     android:id="@+id/newsBeneficiaries"
@@ -119,7 +150,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/beneficiaries"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                    android:textStyle="bold" />
+                    android:layout_marginBottom="5dp"/>
 
             </LinearLayout>
         </RelativeLayout>

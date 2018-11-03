@@ -1,38 +1,26 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
-import android.app.DatePickerDialog;
-import android.app.Dialog;
-import android.app.TimePickerDialog;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
-import android.provider.MediaStore;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
+
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.DatePicker;
 import android.widget.ImageView;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TimePicker;
-
-import com.rengwuxian.materialedittext.MaterialEditText;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Calendar;
-
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
+import np.com.rotaractnepalapp.rotaract.Class.NewsClass;
 import np.com.rotaractnepalapp.rotaract.R;
-import np.com.rotaractnepalapp.rotaract.Adapter.SpinnerAdapter;
-import np.com.rotaractnepalapp.rotaract.Class.SpinnerItem;
 
 public class News extends AppCompatActivity {
 
-    private FloatingActionButton addNews;
+    private RecyclerView newsRecylcerView;
+    private DatabaseReference mDataBase;
 
 
     @Override
@@ -45,6 +33,91 @@ public class News extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
+        mDataBase = FirebaseDatabase.getInstance().getReference().child("RecentProject");
+        mDataBase.keepSynced(true);
+
+        newsRecylcerView = (RecyclerView) findViewById(R.id.newsRecyclerView);
+        newsRecylcerView.setHasFixedSize(true);
+        newsRecylcerView.setLayoutManager(new LinearLayoutManager(this));
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseRecyclerAdapter<NewsClass, NewsViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<NewsClass, NewsViewHolder>(
+                        NewsClass.class,
+                        R.layout.news_adapter,
+                        NewsViewHolder.class,
+                        mDataBase) {
+            @Override
+            protected void populateViewHolder(NewsViewHolder viewHolder, NewsClass model, int position) {
+                viewHolder.setTitle(model.getTitle());
+                viewHolder.setBeneficiaries(model.getBeneficiaries());
+                viewHolder.setClub(model.getClub());
+                viewHolder.setDate(model.getDate());
+                viewHolder.setDescription(model.getDescription());
+                viewHolder.setImage(model.getImage());
+                viewHolder.setObjective(model.getObjective());
+                viewHolder.setType(model.getType());
+                viewHolder.setLocation(model.getLocation());
+            }
+        };
+
+        newsRecylcerView.setAdapter(firebaseRecyclerAdapter);
+    }
+
+    public static class NewsViewHolder extends RecyclerView.ViewHolder{
+        View mView;
+        public NewsViewHolder(@NonNull View itemView) {
+            super(itemView);
+            mView = itemView;
+        }
+
+        public void setTitle( String Title ){
+            TextView projectTitle = (TextView) mView.findViewById(R.id.newsTitle);
+            projectTitle.setText(Title);
+        }
+
+        public void setDescription( String Description ){
+            TextView projectDescription = (TextView) mView.findViewById(R.id.newsDescription);
+            projectDescription.setText(Description);
+        }
+
+        public void setLocation( String Location ){
+            TextView projectLocation = (TextView) mView.findViewById(R.id.newsLocation);
+            projectLocation.setText(Location);
+        }
+
+        public void setBeneficiaries (String Beneficiaries ){
+            TextView projectBeneficiaries = (TextView) mView.findViewById(R.id.newsBeneficiaries);
+            projectBeneficiaries.setText(Beneficiaries);
+        }
+
+        public void setDate (String Date){
+            TextView projectDate = (TextView) mView.findViewById(R.id.newsDate);
+            projectDate.setText(Date);
+        }
+
+        public void setObjective(String Objective){
+            TextView projectObjective = (TextView) mView.findViewById(R.id.newsObjectives);
+            projectObjective.setText(Objective);
+        }
+
+        public void setType (String Type){
+            TextView projectType = (TextView) mView.findViewById(R.id.newsType);
+            projectType.setText(Type);
+        }
+
+        public void setClub (String Club){
+            ImageView projectClubLogo = (ImageView) mView.findViewById(R.id.newsClubLogo);
+            Picasso.get().load(Club).into(projectClubLogo);
+        }
+
+        public void setImage (String Image){
+            ImageView projectImage = (ImageView) mView.findViewById(R.id.newsImage);
+            Picasso.get().load(Image).into(projectImage);
+        }
     }
 
     @Override

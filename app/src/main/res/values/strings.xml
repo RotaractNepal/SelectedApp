@@ -140,7 +140,6 @@
     <string name="month">Month</string>
     <string name="organizer">Organizer</string>
     <string name="event">Event</string>
-    <string name="venue">Venue</string>
     <string name="time">Time</string>
     <string name="choose_your_club">Choose Your Club</string>
     <string name="choose_your_an_image">Choose your an Image</string>
@@ -180,6 +179,8 @@
     <string name="show_the_news"><u>Show the News</u></string>
     <string name="objectives">Objectives</string>
     <string name="beneficiaries">Beneficiaries</string>
+    <string name="project_detail">Project Detail</string>
+    <string name="venue">Venue</string>
 
 
     <string-array name="monthList">
