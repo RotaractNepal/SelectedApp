@@ -41,7 +41,10 @@ public class News extends AppCompatActivity {
 
         newsRecylcerView = (RecyclerView) findViewById(R.id.newsRecyclerView);
         newsRecylcerView.setHasFixedSize(true);
-        newsRecylcerView.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager newsLayoutManager = new LinearLayoutManager(this);
+        newsLayoutManager.setReverseLayout(true);
+        newsLayoutManager.setStackFromEnd(true);
+        newsRecylcerView.setLayoutManager(newsLayoutManager);
 
     }
 

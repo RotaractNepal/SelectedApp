@@ -55,7 +55,7 @@
                 android:text="@string/project_detail"
                 android:layout_marginStart="5dp"
                 android:drawableLeft="@drawable/ic_details"
-                android:drawableTint="@color/main_color_gray"/>
+                android:drawableTint="@color/colorDivider"/>
 
             <com.codesgood.views.JustifiedTextView
                 android:id="@+id/newsDescription"
@@ -77,7 +77,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_below="@id/newsDescription"
                 android:drawableLeft="@drawable/ic_location"
-                android:drawableTint="@color/main_color_gray"/>
+                android:drawableTint="@color/colorDivider"/>
 
             <TextView
                 android:id="@+id/newsLocation"
@@ -102,7 +102,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/ic_district_calendar"
-                    android:backgroundTint="@color/main_color_gray"/>
+                    android:backgroundTint="@color/colorDivider"/>
 
                 <TextView
                     android:id="@+id/newsDate"
@@ -118,7 +118,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/ic_type"
-                    android:backgroundTint="@color/main_color_gray"/>
+                    android:backgroundTint="@color/colorDivider"/>
 
                 <TextView
                     android:id="@+id/newsType"
@@ -146,7 +146,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                     android:text="@string/objectives"
                     android:drawableLeft="@drawable/ic_objective"
-                    android:drawableTint="@color/main_color_gray"/>
+                    android:drawableTint="@color/colorDivider"/>
 
                 <com.codesgood.views.JustifiedTextView
                     android:id="@+id/newsObjectives"
@@ -162,7 +162,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                     android:text="@string/beneficiaries"
                     android:drawableLeft="@drawable/ic_beneficiaries"
-                    android:drawableTint="@color/main_color_gray"/>
+                    android:drawableTint="@color/colorDivider"/>
 
                 <TextView
                     android:id="@+id/newsBeneficiaries"
@@ -179,7 +179,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
                     android:text="@string/project_club_name"
                     android:drawableLeft="@drawable/ic_club_name"
-                    android:drawableTint="@color/main_color_gray"/>
+                    android:drawableTint="@color/colorDivider"/>
 
                 <TextView
                     android:id="@+id/newsClubName"
