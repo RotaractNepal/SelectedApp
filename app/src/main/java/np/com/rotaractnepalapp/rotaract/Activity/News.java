@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -27,7 +29,8 @@ public class News extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
-        this.setTitle("News");
+        this.setTitle("Recent Projects");
+        Toast.makeText(News.this,"Loading Recent Projects Data", Toast.LENGTH_SHORT).show();
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -61,6 +64,7 @@ public class News extends AppCompatActivity {
                 viewHolder.setObjective(model.getObjective());
                 viewHolder.setType(model.getType());
                 viewHolder.setLocation(model.getLocation());
+                viewHolder.setClubName(model.getClubName());
             }
         };
 
@@ -117,6 +121,11 @@ public class News extends AppCompatActivity {
         public void setImage (String Image){
             ImageView projectImage = (ImageView) mView.findViewById(R.id.newsImage);
             Picasso.get().load(Image).into(projectImage);
+        }
+
+        public void setClubName (String ClubName){
+            TextView projectClubName = (TextView) mView.findViewById(R.id.newsClubName);
+            projectClubName.setText(ClubName);
         }
     }
 

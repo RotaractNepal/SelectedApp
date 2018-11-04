@@ -181,6 +181,7 @@
     <string name="beneficiaries">Beneficiaries</string>
     <string name="project_detail">Project Detail</string>
     <string name="venue">Venue</string>
+    <string name="project_club_name">Club</string>
 
 
     <string-array name="monthList">

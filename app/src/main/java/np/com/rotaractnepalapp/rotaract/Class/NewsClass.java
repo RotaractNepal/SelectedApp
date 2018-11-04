@@ -11,11 +11,12 @@ public class NewsClass {
     private String Objective;
     private String Title;
     private String Type;
+    private String ClubName;
 
     public NewsClass() {
     }
 
-    public NewsClass(String beneficiaries, String club, String date, String description, String image, String location, String objective, String title, String type) {
+    public NewsClass(String beneficiaries, String club, String date, String description, String image, String location, String objective, String title, String type, String clubName) {
         Beneficiaries = beneficiaries;
         Club = club;
         Date = date;
@@ -25,6 +26,7 @@ public class NewsClass {
         Objective = objective;
         Title = title;
         Type = type;
+        ClubName = clubName;
     }
 
     public String getBeneficiaries() {
@@ -97,5 +99,13 @@ public class NewsClass {
 
     public void setType(String type) {
         Type = type;
+    }
+
+    public String getClubName() {
+        return ClubName;
+    }
+
+    public void setClubName(String clubName) {
+        ClubName = clubName;
     }
 }
