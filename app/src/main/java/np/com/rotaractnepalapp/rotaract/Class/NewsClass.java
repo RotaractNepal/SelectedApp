@@ -12,11 +12,12 @@ public class NewsClass {
     private String Title;
     private String Type;
     private String ClubName;
+    private String DImage;
 
     public NewsClass() {
     }
 
-    public NewsClass(String beneficiaries, String club, String date, String description, String image, String location, String objective, String title, String type, String clubName) {
+    public NewsClass(String beneficiaries, String club, String date, String description, String image, String location, String objective, String title, String type, String clubName, String DImage) {
         Beneficiaries = beneficiaries;
         Club = club;
         Date = date;
@@ -27,6 +28,7 @@ public class NewsClass {
         Title = title;
         Type = type;
         ClubName = clubName;
+        this.DImage = DImage;
     }
 
     public String getBeneficiaries() {
@@ -107,5 +109,13 @@ public class NewsClass {
 
     public void setClubName(String clubName) {
         ClubName = clubName;
+    }
+
+    public String getDImage() {
+        return DImage;
+    }
+
+    public void setDImage(String DImage) {
+        this.DImage = DImage;
     }
 }

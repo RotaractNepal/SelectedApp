@@ -1,6 +1,9 @@
 package np.com.rotaractnepalapp.rotaract;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.codesgood.views.JustifiedTextView;
 import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import np.com.rotaractnepalapp.rotaract.Class.NewsClass;
@@ -33,11 +38,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         newsViewHolder.Beneficiaries.setText(newsClasses.get(i).getBeneficiaries());
         newsViewHolder.Date.setText(newsClasses.get(i).getDate());
         newsViewHolder.Location.setText(newsClasses.get(i).getLocation());
-        newsViewHolder.Objective.setText(newsClasses.get(i).getObjective());
         newsViewHolder.Title.setText(newsClasses.get(i).getTitle());
         newsViewHolder.Type.setText(newsClasses.get(i).getType());
         newsViewHolder.ClubName.setText(newsClasses.get(i).getClubName());
-        newsViewHolder.Description.setText(newsClasses.get(i).getDescription());
         Picasso.get().load(newsClasses.get(i).getImage()).into(newsViewHolder.Image);
         Picasso.get().load(newsClasses.get(i).getClub()).into(newsViewHolder.Club);
     }
@@ -48,20 +51,57 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
     }
 
     public class NewsViewHolder extends RecyclerView.ViewHolder {
-        TextView Beneficiaries, Date, Location, Objective, Title, Type, ClubName, Description;
+        TextView Beneficiaries, Date, Location, Title, Type, ClubName;
         ImageView Image, Club;
         public NewsViewHolder(@NonNull View itemView) {
             super(itemView);
             Beneficiaries = (TextView) itemView.findViewById(R.id.newsBeneficiaries);
             Date = (TextView) itemView.findViewById(R.id.newsDate);
             Location = (TextView) itemView.findViewById(R.id.newsLocation);
-            Objective = (TextView) itemView.findViewById(R.id.newsObjectives);
             Title = (TextView) itemView.findViewById(R.id.newsTitle);
             Type = (TextView) itemView.findViewById(R.id.newsType);
             ClubName = (TextView) itemView.findViewById(R.id.newsClubName);
-            Description = (TextView) itemView.findViewById(R.id.newsDescription);
             Image = (ImageView) itemView.findViewById(R.id.newsImage);
             Club = (ImageView) itemView.findViewById(R.id.newsClubLogo);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+                    if (position != RecyclerView.NO_POSITION){
+                        final NewsClass clickedDataItem = newsClasses.get(position);
+                        final Dialog ProjectDetail;
+                        ProjectDetail = new Dialog(v.getContext());
+                        ProjectDetail.setContentView(R.layout.news_detail_layout);
+
+                        ImageView DImage = (ImageView) ProjectDetail.findViewById(R.id.dialogNewsDefaultImage);
+                        Picasso.get().load(newsClasses.get(position).getDImage()).into(DImage);
+
+                        TextView DialogTitle = (TextView) ProjectDetail.findViewById(R.id.dialogNewsTitle);
+                        DialogTitle.setText(clickedDataItem.getTitle());
+
+                        JustifiedTextView Detail = (JustifiedTextView) ProjectDetail.findViewById(R.id.dialogNewsDetails);
+                        Detail.setText(clickedDataItem.getDescription());
+
+                        TextView Objective = (TextView) ProjectDetail.findViewById(R.id.dialogNewsObjectives);
+                        Objective.setText(clickedDataItem.getObjective());
+
+                        TextView close = (TextView) ProjectDetail.findViewById(R.id.closeDialog);
+                        close.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                ProjectDetail.dismiss();
+                            }
+                        });
+
+                        ProjectDetail.setCanceledOnTouchOutside(false);
+                        ProjectDetail.setCancelable(false);
+                        ProjectDetail.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                        ProjectDetail.show();
+
+                    }
+                }
+            });
         }
     }
 }

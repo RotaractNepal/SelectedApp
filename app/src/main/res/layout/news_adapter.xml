@@ -33,7 +33,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/mero_sip" />
 
-        <TextView
+        <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_marginStart="5dp"
@@ -50,7 +50,7 @@
             android:layout_marginStart="33dp"
             android:layout_marginEnd="5dp"
             android:text="@string/news_description"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />-->
 
         <TextView
             android:id="@+id/Venue"
@@ -61,7 +61,8 @@
             android:drawableTint="@color/colorDivider"
             android:text="@string/venue"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
 
         <TextView
             android:id="@+id/newsLocation"
@@ -113,7 +114,7 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
             android:textStyle="bold" />
 
-        <TextView
+        <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_marginStart="5dp"
@@ -130,7 +131,7 @@
             android:layout_marginStart="33dp"
             android:text="@string/objectives"
             android:layout_marginEnd="5dp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />-->
 
         <TextView
             android:layout_width="match_parent"
