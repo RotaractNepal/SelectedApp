@@ -47,10 +47,22 @@
         android:text="@string/websiterotary"
         android:textColor="@android:color/white"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/dialogNewsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dialogWebLink"
+        android:text="@string/project_detail"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginStart="15dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_below="@id/dialogWebLink"
+        android:layout_height="220dp"
+        android:layout_below="@id/dialogNewsDetail"
         android:layout_margin="15dp"
         android:layout_marginBottom="5dp"
         android:scrollbars="none"
@@ -59,15 +71,27 @@
             android:id="@+id/dialogNewsDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/justification"
+            android:text="@string/project_detail"
             android:textColor="@android:color/white"
             android:textStyle="bold"/>
     </ScrollView>
     <TextView
+        android:id="@+id/dialogNewsObjecive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/informationScrollView"
+        android:text="@string/objectives"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginStart="15dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+    <TextView
         android:id="@+id/dialogNewsObjectives"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/informationScrollView"
+        android:layout_below="@id/dialogNewsObjecive"
         android:text="@string/objectives"
         android:textColor="@color/white"
         android:textStyle="bold"
