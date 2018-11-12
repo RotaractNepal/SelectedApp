@@ -43,7 +43,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         newsViewHolder.Type.setText(newsClasses.get(i).getType());
         newsViewHolder.ClubName.setText(newsClasses.get(i).getClubName());
         Picasso.get().load(newsClasses.get(i).getImage()).into(newsViewHolder.Image);
-        Picasso.get().load(newsClasses.get(i).getClub()).into(newsViewHolder.Club);
     }
 
     @Override
@@ -53,7 +52,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
 
     public class NewsViewHolder extends RecyclerView.ViewHolder {
         TextView Beneficiaries, Date, Location, Title, Type, ClubName;
-        ImageView Image, Club;
+        ImageView Image;
         public NewsViewHolder(@NonNull View itemView) {
             super(itemView);
             Beneficiaries = (TextView) itemView.findViewById(R.id.newsBeneficiaries);
@@ -63,7 +62,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
             Type = (TextView) itemView.findViewById(R.id.newsType);
             ClubName = (TextView) itemView.findViewById(R.id.newsClubName);
             Image = (ImageView) itemView.findViewById(R.id.newsImage);
-            Club = (ImageView) itemView.findViewById(R.id.newsClubLogo);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

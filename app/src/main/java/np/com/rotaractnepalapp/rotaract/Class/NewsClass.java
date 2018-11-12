@@ -3,7 +3,6 @@ package np.com.rotaractnepalapp.rotaract.Class;
 public class NewsClass {
 
     private String Beneficiaries;
-    private String Club;
     private String Date;
     private String Description;
     private String Image;
@@ -17,9 +16,8 @@ public class NewsClass {
     public NewsClass() {
     }
 
-    public NewsClass(String beneficiaries, String club, String date, String description, String image, String location, String objective, String title, String type, String clubName, String DImage) {
+    public NewsClass(String beneficiaries, String date, String description, String image, String location, String objective, String title, String type, String clubName, String DImage) {
         Beneficiaries = beneficiaries;
-        Club = club;
         Date = date;
         Description = description;
         Image = image;
@@ -37,14 +35,6 @@ public class NewsClass {
 
     public void setBeneficiaries(String beneficiaries) {
         Beneficiaries = beneficiaries;
-    }
-
-    public String getClub() {
-        return Club;
-    }
-
-    public void setClub(String club) {
-        Club = club;
     }
 
     public String getDate() {
