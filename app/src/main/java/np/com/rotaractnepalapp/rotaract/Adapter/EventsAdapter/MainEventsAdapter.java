@@ -93,7 +93,10 @@ public class MainEventsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     private void clubView(ClubEventViewHolder holder){
         ClubEventsAdapter clubEventsAdapter = new ClubEventsAdapter(getClubEventData());
-        holder.recyclerView.setLayoutManager(new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false);
+        linearLayoutManager.setReverseLayout(true);
+        linearLayoutManager.setStackFromEnd(true);
+        holder.recyclerView.setLayoutManager(linearLayoutManager);
         holder.recyclerView.setAdapter(clubEventsAdapter);
     }
 
@@ -123,6 +126,7 @@ public class MainEventsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         public ClubEventViewHolder(@NonNull View itemView) {
             super(itemView);
             recyclerView = (RecyclerView) itemView.findViewById(R.id.inner_recyclerView);
+            recyclerView.setHasFixedSize(true);
         }
     }
 }

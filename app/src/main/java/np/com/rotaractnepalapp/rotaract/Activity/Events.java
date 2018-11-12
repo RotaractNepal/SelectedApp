@@ -10,11 +10,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
-
 import np.com.rotaractnepalapp.rotaract.Adapter.EventImageSliderAdapter;
 import np.com.rotaractnepalapp.rotaract.Class.ClassEvents.ClubEventsClass;
 import np.com.rotaractnepalapp.rotaract.Class.ClassEvents.DistrictEventsClass;

@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 import np.com.rotaractnepalapp.rotaract.Class.NewsClass;
-import np.com.rotaractnepalapp.rotaract.NewsAdapter;
+import np.com.rotaractnepalapp.rotaract.Adapter.NewsAdapter;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class News extends AppCompatActivity {

@@ -182,6 +182,9 @@
     <string name="project_detail">Project Detail</string>
     <string name="venue">Venue</string>
     <string name="project_club_name">Club</string>
+    <string name="videos">Videos</string>
+    <string name="rotaract_clubs_of_nepal"><u>Rotaract Clubs of Nepal</u></string>
+    <string name="rotaract_software_tutorials">Rotaract Software Tutorials</string>
 
 
     <string-array name="monthList">

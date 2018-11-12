@@ -1,19 +1,12 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
-import android.app.DatePickerDialog;
-import android.app.Dialog;
-import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -22,33 +15,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.TimePicker;
-import android.widget.Toast;
 
 
-import com.rengwuxian.materialedittext.MaterialEditText;
-
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
 import np.com.rotaractnepalapp.rotaract.Adapter.ImageSliderAdapter;
 import np.com.rotaractnepalapp.rotaract.Adapter.IntroductionAdapter.MainIntroAdpater;
-import np.com.rotaractnepalapp.rotaract.Adapter.SpinnerAdapter;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro1Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro2Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro3Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro4Class;
 import np.com.rotaractnepalapp.rotaract.Class.ClassIntroduction.Intro5Class;
-import np.com.rotaractnepalapp.rotaract.Class.SpinnerItem;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class MainActivity extends AppCompatActivity
@@ -62,7 +43,7 @@ public class MainActivity extends AppCompatActivity
 
     private ArrayList<Object> objects = new ArrayList<>();
 
-    Dialog CreateNews;
+    /*Dialog CreateNews;
     MaterialEditText title, description, location, startDate, programTime;
     TextView close, showNews;
     DatePickerDialog datePickerDialog;
@@ -72,7 +53,7 @@ public class MainActivity extends AppCompatActivity
     private SpinnerAdapter mAdapter;
 
     private int REQUEST_CODE = 1;
-    ImageView newsSelectedImage;
+    ImageView newsSelectedImage;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -176,7 +157,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    private void CreatNewNews(View view) {
+    /*private void CreatNewNews(View view) {
         CreateNews = new Dialog(this);
         CreateNews.setContentView(R.layout.add_news_adapter);
 
@@ -241,8 +222,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 SpinnerItem clickedItem = (SpinnerItem) parent.getItemAtPosition(position);
-                /*String clickedClubName = clickedItem.getmClubName();
-                Toast.makeText(News.this, clickedClubName + " selected", Toast.LENGTH_SHORT).show();*/
+                *//*String clickedClubName = clickedItem.getmClubName();
+                Toast.makeText(News.this, clickedClubName + " selected", Toast.LENGTH_SHORT).show();*//*
             }
 
             @Override
@@ -299,9 +280,9 @@ public class MainActivity extends AppCompatActivity
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 
-    private void initList(){
+    /*private void initList(){
         mClubList = new ArrayList<>();
         mClubList.add(new SpinnerItem("Select your club", R.drawable.colorlogo_rotaractnepalapp));
         mClubList.add(new SpinnerItem("RAC Annapurna", R.drawable.colorlogo_rotaractnepalapp));
@@ -428,7 +409,7 @@ public class MainActivity extends AppCompatActivity
         mClubList.add(new SpinnerItem("Rotaract Club of Kantipur", R.drawable.colorlogo_rotaractnepalapp));
 
 
-    }
+    }*/
 
     private ArrayList<Object> getObject() {
         objects.add(getIntro1Data().get(0));
@@ -744,6 +725,11 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.nav_today_event) {
             intent = new Intent(this, Events.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_videos){
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/rotaract3292/playlists"));
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.setPackage("com.google.android.youtube");
             startActivity(intent);
         } else if (id == R.id.nav_about_us){
             intent = new Intent(this, AboutUs.class);

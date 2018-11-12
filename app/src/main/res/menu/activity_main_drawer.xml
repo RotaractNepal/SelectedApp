@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_home"
             android:title="@string/home"/>
         <item
+            android:id="@+id/nav_club_review"
+            android:icon="@drawable/ic_club_review"
+            android:title="@string/clubs" />
+        <item
             android:id="@+id/nav_learning_material"
             android:icon="@drawable/ic_learning_resources"
             android:title="@string/learning_resourcess"/>
@@ -17,13 +21,13 @@
             android:icon="@drawable/news"
             android:title="@string/news" />
         <item
-            android:id="@+id/nav_club_review"
-            android:icon="@drawable/ic_club_review"
-            android:title="@string/clubs" />
-        <item
             android:id="@+id/nav_today_event"
             android:icon="@drawable/events"
             android:title="@string/events" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_video"
+            android:title="@string/videos" />
         <item
             android:id="@+id/nav_about_us"
             android:icon="@drawable/about_us"

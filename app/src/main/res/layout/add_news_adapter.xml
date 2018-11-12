@@ -137,15 +137,18 @@
                     android:textSize="17.8sp"
                     android:textStyle="normal" />
 
-                <Spinner
-                    android:id="@+id/spinner_club"
-                    android:layout_width="355dp"
-                    android:layout_height="wrap_content"
+                <ImageView
+                    android:id="@+id/newsClubLogoSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image_upload" />
+
 
                 <TextView
                     android:layout_width="355dp"
@@ -172,32 +175,16 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/image_upload" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/button"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="right"
+                    android:textAlignment="@integer/google_play_services_version"
+                    android:background="@color/btn_color"
+                    android:text="@string/upload_news" />
 
-                    <TextView
-                        android:id="@+id/showNews"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="10dp"
-                        android:text="@string/show_the_news"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-                        android:textColor="@color/colorPrimaryLight"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <com.gc.materialdesign.views.ButtonRectangle
-                        android:id="@+id/button"
-                        android:layout_width="150dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="10dp"
-                        android:background="@color/btn_color"
-                        android:text="@string/upload_news" />
-                </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

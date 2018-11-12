@@ -1,4 +1,4 @@
-package np.com.rotaractnepalapp.rotaract;
+package np.com.rotaractnepalapp.rotaract.Adapter;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -16,6 +16,7 @@ import com.codesgood.views.JustifiedTextView;
 import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import np.com.rotaractnepalapp.rotaract.Class.NewsClass;
+import np.com.rotaractnepalapp.rotaract.R;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder> {
 
