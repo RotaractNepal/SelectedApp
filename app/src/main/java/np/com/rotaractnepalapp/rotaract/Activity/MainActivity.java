@@ -451,13 +451,13 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Understanding the value of individual responsibility and hard work" +
                 "\n\n•Advancing international understanding and goodwill" +
                 "\n\n\nAs one of the most significant and fastest-growing programs of Rotary service, with more than 33,000 clubs in more than 200 countries and geographical areas,[citation needed] Interact has become a worldwide phenomenon. Almost 340,000 young people are involved in Interact."));
-        intro1Classes.add(new Intro1Class(R.drawable.ic_join_us, R.drawable.end_polio,"How to Join ?", "Please note that membership in a Rotary club is by invitation. Often, a person being considered for membership is invited by a club member, or sponsor, to attend one or more club meetings to learn more about Rotary. In this case, the sponsor submits the candidate's name to the club's membership committee." +
+        intro1Classes.add(new Intro1Class(R.drawable.ic_join_us, R.drawable.logo,"How to Join ?", "Please note that membership in a Rotary club is by invitation. Often, a person being considered for membership is invited by a club member, or sponsor, to attend one or more club meetings to learn more about Rotary. In this case, the sponsor submits the candidate's name to the club's membership committee." +
                 "You may check with your university or contact a local Rotary club to find out if there’s a Rotaract club in your area. Contact the Rotaract club to find out how you can join its next meeting, service project, or social event." +
                 "\nAs a club member, you will be asked to:" +
                 "\n\n•Pay club dues" +
                 "\n\n•Attend meetings and events" +
                 "\n\n•Use your professional skills and talents to make a difference"));
-        intro1Classes.add(new Intro1Class(R.drawable.ic_oath, R.drawable.rotaract,"Rotaract Oath", "OATH: Board Members" +
+        intro1Classes.add(new Intro1Class(R.drawable.ic_oath, R.drawable.logo,"Rotaract Oath", "OATH: Board Members" +
                 "\n\nI DO SOLEMNLY SWEAR, THAT I WILL SINCERELY EXECUTE, THE OFFICE OF...THE ROTARACT CLUB OF ....AND SHALL DO MY BEST TO KEEP UP, THE DECORUM, OF OUR ROTARACT MOVEMENT, BY UPHOLDING, THE CONSTITUTION AND STATEMENT OF POLICY OF OUR ORGANIZATION" +
                 "\n\nMembers" +
                 "\n\nI DO SOLEMNLY PROMISE, THAT I WILL SINCERELY SERVE, AS A MEMBER OF THIS ROTARACT CLUB OF ...AND SHALL AT ALL TIMES UPHOLD THE IDEALS AND PRINCIPLES OF THIS ORGANISATION"));
@@ -467,7 +467,7 @@ public class MainActivity extends AppCompatActivity
 
     public static ArrayList<Intro2Class> getIntro2Data(){
         ArrayList<Intro2Class> intro2Classes = new ArrayList<>();
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.end_polio,"President", "As the club leader, the president helps members develop as leaders and works to ensure that the club's professional and leadership development activities and community and international service projects are successfully promoted and completed." +
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.logo,"President", "As the club leader, the president helps members develop as leaders and works to ensure that the club's professional and leadership development activities and community and international service projects are successfully promoted and completed." +
                 "\nUnder the leadership of the Rotaract club president, club members plan professional development activities, leadership training, community and international service projects, fundraisers, and social events. " +
                 "\n\nResponsibilities:" +
                 "\n\n•Identifies members' skills and interests and puts them to work in club projects." +
@@ -480,7 +480,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•District Rotaract representative through club participation in district activities and meetings" +
                 "\n\n•Rotary International through participation in the Rotaract Preconvention Meeting and annual reporting" +
                 "\n\n•To help facilitate communication, the above groups should also receive the club's bulletin or newsletter featuring the outstanding Rotaract club projects or activities."));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.end_polio,"Immediate Past President", "The Immediate Past President (IPP) remains on the board the year immediately following their tenure as President to ensure continuity in leadership and act as an advisor to the new President and board. The IPP serves in this capacity even if they reach the age of 30 during their year as President." +
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.logo,"Immediate Past President", "The Immediate Past President (IPP) remains on the board the year immediately following their tenure as President to ensure continuity in leadership and act as an advisor to the new President and board. The IPP serves in this capacity even if they reach the age of 30 during their year as President." +
                 "\nThe IPP must always support the actions of the President and the Board.The IPP’s role in the Board is to advice the Board and guide the Board in their decisions." +
                 "\nAs an IPP, the club members will listen to him/her and the IPP must capitalise on this to diffuse any dissension." +
                 "\n\nThe IPP can also play a vital role in the following club activities:" +
@@ -496,14 +496,14 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•use of district officer" +
                 "\n\n•club culture" +
                 "\n\n•general correspondence"));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.end_polio,"Vice President", "The club vice president can serve more effectively by understanding the year's goals, projects, and activities, and being well versed in community and Rotary resources. To that end, it is important that the club president and vice president work together as a team. " +
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.logo,"Vice President", "The club vice president can serve more effectively by understanding the year's goals, projects, and activities, and being well versed in community and Rotary resources. To that end, it is important that the club president and vice president work together as a team. " +
                 "\n\nResponsibilities:" +
                 "\n\n•Presides at all meetings when the president is absent and serves on the board of directors and as an ex-officio member of all committees." +
                 "\n\n•Acts as the officer at large, responsible for all assignments that are designated by the president." +
                 "\n\n•Liaises with the district committees whenever required" +
                 "\n\n•Assists the president in ensuring the club meets any required deadlines" +
                 "\n\nA well-organized and responsible vice president is often the key to a successful Rota year. The vice president can reduce the administrative load, allowing time for the president to develop new and exciting club projects and activities."));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.end_polio,"Secretary", "As club secretary you help your club run smoothly and effectively. You also monitor club trends to help identify strengths and areas for improvement, and share this information with club and district leaders." +
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.logo,"Secretary", "As club secretary you help your club run smoothly and effectively. You also monitor club trends to help identify strengths and areas for improvement, and share this information with club and district leaders." +
                 "\n\nResponsibilities:" +
                 "\n\n•Handles the club's communication with the public through correspondence to the Rotary club sponsor(s),  outside agencies, prospective members, Rotary International, and other Rotaract clubs" +
                 "\n\n•Maintains all club records" +
@@ -514,7 +514,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Must be very detail oriented and organized" +
                 "\n\n•Must have good communication skills" +
                 "\n\n•Ability to multi-task and me"));
-        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.end_polio,"Treasurer", "As club treasurer you play an important role in your club’s ability to carry out service projects, fundraise, and support The Rotary Foundation. Being collector and disburser of club funds, the treasurer is responsible for the club's solvency and financial stability. In preparing for this assignment, the treasurer should meet with the previous treasurer and consult the sponsoring Rotary club treasurer and a certified accountant." +
+        intro2Classes.add(new Intro2Class(R.drawable.ic_bod, R.drawable.logo,"Treasurer", "As club treasurer you play an important role in your club’s ability to carry out service projects, fundraise, and support The Rotary Foundation. Being collector and disburser of club funds, the treasurer is responsible for the club's solvency and financial stability. In preparing for this assignment, the treasurer should meet with the previous treasurer and consult the sponsoring Rotary club treasurer and a certified accountant." +
                 "\n\nResponsibilities:" +
                 "\n\n•Chairs the finance committee" +
                 "\n\n•Establish financial control" +
@@ -530,7 +530,7 @@ public class MainActivity extends AppCompatActivity
 
     public static ArrayList<Intro3Class> getIntro3Data(){
         ArrayList<Intro3Class> intro3Classes = new ArrayList<>();
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.end_polio,"Club Service", "Responsibilities:" +
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.logo,"Club Service", "Responsibilities:" +
                 "\n\n•strategies for membership development and retention" +
                 "\n\n•Monitors attendance" +
                 "\n\n•Oversees the productions and distribution of the club bulletin" +
@@ -540,7 +540,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Encourage joint meeting and programs" +
                 "\n\n•Be responsible towards guest and proposed/new member" +
                 "\n\n•Maintain clubs by-laws and constitution"));
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.end_polio,"International Service", "Responsibilities:" +
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.logo,"International Service", "Responsibilities:" +
                 "\n\n•Primarily responsibility for seeking opportunities to enhance knowledge and understanding of worldwide needs and problems" +
                 "\n\n•Promote rotary international events and calendar" +
                 "\n\n•Inform on international events and encourage for application" +
@@ -550,7 +550,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Try for joint project with international clubs" +
                 "\n\n•Developing activities to give service for promoting international understanding and goodwill toward all people." +
                 "\n\n•Responsible for initiating and planning one major activity each year which shall involve all or most of the club membership."));
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.end_polio,"Community Service", "Responsibilities:" +
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.logo,"Community Service", "Responsibilities:" +
                 "\n\n•Primarily responsible for seeking opportunities to enhance knowledge and understanding of local community needs and problems" +
                 "\n\n•Formulating and developing appropriate activities for serving the local community" +
                 "\n\n•Focus on district theme project if any" +
@@ -558,7 +558,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Special Area Project (SAP) is recommended to be adopted under this avenue. SAP co-ordinator may be assigned under this committee." +
                 "\n\n•Identifying financial resources and development partners, INGOs" +
                 "\n\n•Ensure that all focus areas of this committee are being effectively implemented and that strategic goals have been set for each focus area."));
-        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.end_polio,"Professional Development", "Responsibilities:" +
+        intro3Classes.add(new Intro3Class(R.drawable.ic_bod, R.drawable.logo,"Professional Development", "Responsibilities:" +
                 "\n\n•Reviews suggestions and develops plans to provide opportunities for professional development for the club's membership" +
                 "\n\n•Developing programs designed to provide information about a wide cross-section of businesses and professions" +
                 "\n\n•Developing programs to stimulate awareness and acceptance of high ethical standards in business and professional life." +
@@ -571,7 +571,7 @@ public class MainActivity extends AppCompatActivity
 
     public static ArrayList<Intro4Class> getIntro4Data(){
         ArrayList<Intro4Class> intro4Classes = new ArrayList<>();
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.end_polio,"Assistant Directors and officer", "Roles:" +
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.logo,"Assistant Directors and officer", "Roles:" +
                 "\n\n•reviewing suggestions and developing plans for the club's annual project(s)" +
                 "\n\n•taking a leadership role in facilitating programs and projects related to their avenue" +
                 "\n\n•coordinating all activities and project undertaken by his/her committee" +
@@ -579,7 +579,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•preparing a budget for all projects to be presented to the board" +
                 "\n\n•provide regular reports of all projects to the President and Secretary provide the Treasurer with receipts of all expenses incurred during a project" +
                 "\n\n•act as a liaison between the President, and by extension the board, and the members of his/her committee"));
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.end_polio,"Sergeant at arms", "This role is allow the President to concentrate on conducting the weekly meeting by ensuring that all duties are fulfilled and the meeting is conducted smoothly and in a timely way. " +
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.logo,"Sergeant at arms", "This role is allow the President to concentrate on conducting the weekly meeting by ensuring that all duties are fulfilled and the meeting is conducted smoothly and in a timely way. " +
                 "\n\nIn particular:" +
                 "\n\n•Help maintain orderly and effective weekly meetings and work to prevent any occurrence that might detract from the dignity or prestige of the Club." +
                 "\n\n•Be constantly on the alert to prevent any occurrence that might detract from the dignity and prestige associated with Rotary clubs." +
@@ -589,7 +589,7 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Run a tight Sergeant's session that serves a dual purpose of educating Club members and takes account of the need not to visitors." +
                 "\n\n•Ensure that, so far as possible, speakers know in advance the length of time they are expected to speak and take questions."));
 
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.end_polio,"Information Technology", "Responsibilities:" +
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.logo,"Information Technology", "Responsibilities:" +
                 "\n\n•To maintain and update website" +
                 "\n\n•Update club roster online and maintain digital records" +
                 "\n\n•Promote the club in digital and online platform" +
@@ -597,13 +597,13 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Maintain platform for social networking" +
                 "\n\n•Create club promotional materials i.e. promotional videos, websites." +
                 "\n\n•Maintaining logos and other designs"));
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.end_polio,"Fundraising Chair", "The major responsibility of the fundraising committee is to raise the amount needed to meet the proposed unit budget and to work cooperatively with the PTA president and treasurer in accounting for receipts and disbursements for the activity." +
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.logo,"Fundraising Chair", "The major responsibility of the fundraising committee is to raise the amount needed to meet the proposed unit budget and to work cooperatively with the PTA president and treasurer in accounting for receipts and disbursements for the activity." +
                 "\n\n•Ensure there’s a specific fundraising target." +
                 "\n\n•Ensure prospect reseaR.id.nav_chatrch occurs to identify how much money might be raised from different types of resources" +
                 "\n\n•identify specific, potential sources of funds from a diverse mix of sources" +
                 "\n\n•Develop an action plan of approach" +
                 "\n\n•Ensure effective administrative systems to track grants and donations"));
-        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.end_polio,"Public Relations officer", "\n\n•This role is to work with a variety of audiences, including civic dignitaries, to inform the community about the Club, its history, goals and accomplishments throughout the year. " +
+        intro4Classes.add(new Intro4Class(R.drawable.ic_bod, R.drawable.logo,"Public Relations officer", "\n\n•This role is to work with a variety of audiences, including civic dignitaries, to inform the community about the Club, its history, goals and accomplishments throughout the year. " +
                 "\n\n•To work with the media to secure proper publicity and sharing news about the Club's service initiatives so as to improve Rotarians' ability to provide service. Concentrate on stories that have a strong human-interest element and are pertinent to the larger community such as helping a scholar, the elderly, disadvantaged youth, etc." +
                 "\n\n•Keep RI and the DG informed about newsworthy Club projects and action photographs." +
                 "\n\n•Keep the media informed of important Club events." +
@@ -614,7 +614,7 @@ public class MainActivity extends AppCompatActivity
 
     public static ArrayList<Intro5Class> getIntro5Data(){
         ArrayList<Intro5Class> intro5Classes = new ArrayList<>();
-        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.end_polio,"District Conference", "A Rotaract district conference or DC as it is known is a meeting of all the Rotaract clubs in the given RI district" +
+        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.logo,"District Conference", "A Rotaract district conference or DC as it is known is a meeting of all the Rotaract clubs in the given RI district" +
                 "\n\nEach year, districts are asked to hold a conference for club members so they can learn about what's happening in club and their district and meet other Rotarians in the area. The conference usually lasts one to two days and includes:" +
                 "\n\n•A visit from a president's representative, who gives an update on Rotary International and inspires and motivates participants" +
                 "\n\n•A report on the district, including its successes and challenges" +
@@ -622,9 +622,9 @@ public class MainActivity extends AppCompatActivity
                 "\n\n•Local and international speakers giving information on topics relevant to district members" +
                 "\n\n•Time to network, reconnect with friends, and find inspiration for continuing service and community leadership" +
                 "\n\n•elect a new district Rotaract representative or DRR. He or she is the head of the district committee of that district."));
-        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.end_polio,"DLTS", "District Leadership Training Seminar(DLTS) is organized annually where representatives from all Rotaract Clubs throughtout the Rotary International District are gathered with the motive of strengthening the role of leadership, conducting social service with more visibility to the society, networking and collaborating with parties to enhance the Rotaract Movement. This training educated and trained the principal incoming Rotaract club presidents, secretaries, treasurers and officers for better understanding of their responsibilities and for better club leadership."));
-        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.end_polio,"PS-Meet", ""));
-        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.end_polio,"RYLA", "Rotary Youth Leadership Awards (RYLA) is an intensive leadership experience organized by Rotary clubs and districts where you develop your skills as a leader while having fun and making connections." +
+        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.logo,"DLTS", "District Leadership Training Seminar(DLTS) is organized annually where representatives from all Rotaract Clubs throughtout the Rotary International District are gathered with the motive of strengthening the role of leadership, conducting social service with more visibility to the society, networking and collaborating with parties to enhance the Rotaract Movement. This training educated and trained the principal incoming Rotaract club presidents, secretaries, treasurers and officers for better understanding of their responsibilities and for better club leadership."));
+        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.logo,"PS-Meet", ""));
+        intro5Classes.add(new Intro5Class(R.drawable.colorlogo_rotaractnepalapp, R.drawable.logo,"RYLA", "Rotary Youth Leadership Awards (RYLA) is an intensive leadership experience organized by Rotary clubs and districts where you develop your skills as a leader while having fun and making connections." +
                 "\n\nRYLA events are organized locally by Rotary clubs and districts for participants ages 14-30. Depending on community needs, RYLA may take the form of a one-day seminar, a three-day retreat, or a weeklong camp. Typically, events last 3-10 days and include presentations, activities, and workshops covering a variety of topics." +
                 "\n\nRYLA participants are nominated by their local Rotary clubs" +
                 "\n\nThe purpose of the program is to recognize young people who have demonstrated leadership skills or show the potential to be leaders, and provide them with an opportunity to explore and further develop these skills with other with similar capabilities." +
