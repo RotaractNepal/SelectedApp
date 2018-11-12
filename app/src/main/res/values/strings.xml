@@ -69,7 +69,7 @@
     <string name="itofficers">Information Technology</string>
     <string name="title">Title</string>
     <string name="cusHeadFeedTitle">Your Feedback</string>
-    <string name="club_name">Club_Name</string>
+    <string name="club_name">Club Name</string>
     <string name="call">Call</string>
     <string name="email">Email</string>
     <string name="thanks">We would like to said that thanks for using our Rotaract Nepal App.</string>
@@ -177,14 +177,18 @@
     <string name="strEmail">Email</string>
     <string name="your_name">Your Name</string>
     <string name="show_the_news"><u>Show the News</u></string>
-    <string name="objectives">Objectives</string>
+    <string name="objectives"><u>Objectives</u></string>
     <string name="beneficiaries">Beneficiaries</string>
-    <string name="project_detail">Project Detail</string>
+    <string name="project_detail"><u>Project Detail</u></string>
     <string name="venue">Venue</string>
     <string name="project_club_name">Club</string>
     <string name="videos">Videos</string>
     <string name="rotaract_clubs_of_nepal"><u>Rotaract Clubs of Nepal</u></string>
     <string name="rotaract_software_tutorials">Rotaract Software Tutorials</string>
+    <string name="create_your_recent_project_news"><u>Create Your Recent Project News</u></string>
+    <string name="recent_project">Recent Project :</string>
+    <string name="project_type">Project Type</string>
+    <string name="news_objective">Objective</string>
 
 
     <string-array name="monthList">

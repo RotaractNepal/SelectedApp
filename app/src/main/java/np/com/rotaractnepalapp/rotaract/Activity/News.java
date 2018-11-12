@@ -1,12 +1,18 @@
 package np.com.rotaractnepalapp.rotaract.Activity;
 
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -28,6 +34,8 @@ public class News extends AppCompatActivity {
     ArrayList<NewsClass> newsClasses;
     NewsAdapter newsAdapter;
 
+    private FloatingActionButton createProject;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +46,28 @@ public class News extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
+        createProject = (FloatingActionButton) findViewById(R.id.creatProject);
+        createProject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Dialog creatproject;
+                creatproject = new Dialog(v.getContext());
+                creatproject.setContentView(R.layout.create_news);
+
+                TextView close = (TextView) creatproject.findViewById(R.id.closeDialog);
+                close.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        creatproject.dismiss();
+                    }
+                });
+
+                creatproject.setCanceledOnTouchOutside(false);
+                creatproject.setCancelable(false);
+                creatproject.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                creatproject.show();
+            }
+        });
         recyclerView = (RecyclerView) findViewById(R.id.newsRecyclerView);
         recyclerView.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
