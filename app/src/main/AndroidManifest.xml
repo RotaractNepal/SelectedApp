@@ -73,7 +73,8 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".ClubEvents"></activity>
+        <activity android:name=".ClubEvents"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"></activity>
     </application>
 
 </manifest>

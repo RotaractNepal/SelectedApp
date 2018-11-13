@@ -22,6 +22,7 @@ public class Events extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clubs_events);
         this.setTitle("Events");
+
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -59,5 +60,6 @@ public class Events extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 }

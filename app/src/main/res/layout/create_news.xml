@@ -190,7 +190,7 @@
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/circlebutton"
                 android:layout_gravity="right"
-                android:text="Create News" />
+                android:text="@string/send_request" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

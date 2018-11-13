@@ -90,7 +90,7 @@
     <string name="project_detail"><u>Project Detail</u></string>
     <string name="project_club_name">Club</string>
     <string name="videos">Videos</string>
-    <string name="create_your_recent_project_news"><u>Create Your Recent Project News</u></string>
+    <string name="create_your_recent_project_news"><u>Request Your Recent Project News</u></string>
     <string name="recent_project">Recent Project :</string>
     <string name="news_objective">Objective</string>
     <string name="pick_your_an_image">Pick your an Image</string>
@@ -102,6 +102,8 @@
     <string name="venue">Venue</string>
     <string name="time">Time</string>
     <string name="event_highlights"><u>Event Highlights</u></string>
+    <string name="send_request">Send Request</string>
+    <string name="club_events">Club Events</string>
 
 
     <string-array name="monthList">
