@@ -46,7 +46,7 @@ public class News extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        createProject = (FloatingActionButton) findViewById(R.id.creatProject);
+        createProject = (FloatingActionButton) findViewById(R.id.creatNews);
         createProject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

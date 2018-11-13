@@ -15,7 +15,6 @@
     </ImageView>
 
     <ImageView
-        android:id="@+id/drrTheme2018_19"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignEnd="@+id/memImageBackground"
@@ -27,7 +26,6 @@
         android:src="@mipmap/ic_drr_theme_2018_19"
         android:tint="@android:color/white" />
     <ImageView
-        android:id="@+id/rotaractLogo"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:tint="@android:color/white"

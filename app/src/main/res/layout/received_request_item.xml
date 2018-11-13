@@ -9,8 +9,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/anItem1">
+        android:layout_height="wrap_content">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/thumbnail1"
@@ -19,7 +18,6 @@
             android:src="@drawable/ic_profile_male"/>
 
         <LinearLayout
-            android:id="@+id/aBlock"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"

@@ -1,6 +1,6 @@
-package np.com.rotaractnepalapp.rotaract.Class.ClassEvents;
+package np.com.rotaractnepalapp.rotaract;
 
-public class DistrictEventsClass {
+public class ClubEventsClass {
 
     private String month;
     private String day;
@@ -9,14 +9,17 @@ public class DistrictEventsClass {
     private String event;
     private String venue;
     private String time;
-    private String information;
     private String call;
     private String googlemap;
+    private String eventdetail;
+    private String eventhighlights;
 
-    public DistrictEventsClass() {
+
+
+    public ClubEventsClass() {
     }
 
-    public DistrictEventsClass(String month, String day, String year, String organizer, String event, String venue, String time, String information, String call, String googlemap) {
+    public ClubEventsClass(String month, String day, String year, String organizer, String event, String venue, String time, String call, String googlemap, String eventdetail, String eventhighlights) {
         this.month = month;
         this.day = day;
         this.year = year;
@@ -24,9 +27,10 @@ public class DistrictEventsClass {
         this.event = event;
         this.venue = venue;
         this.time = time;
-        this.information = information;
         this.call = call;
         this.googlemap = googlemap;
+        this.eventdetail = eventdetail;
+        this.eventhighlights = eventhighlights;
     }
 
     public String getMonth() {
@@ -85,14 +89,6 @@ public class DistrictEventsClass {
         this.time = time;
     }
 
-    public String getInformation() {
-        return information;
-    }
-
-    public void setInformation(String information) {
-        this.information = information;
-    }
-
     public String getCall() {
         return call;
     }
@@ -107,5 +103,21 @@ public class DistrictEventsClass {
 
     public void setGooglemap(String googlemap) {
         this.googlemap = googlemap;
+    }
+
+    public String getEventdetail() {
+        return eventdetail;
+    }
+
+    public void setEventdetail(String eventdetail) {
+        this.eventdetail = eventdetail;
+    }
+
+    public String getEventhighlights() {
+        return eventhighlights;
+    }
+
+    public void setEventhighlights(String eventhighlights) {
+        this.eventhighlights = eventhighlights;
     }
 }

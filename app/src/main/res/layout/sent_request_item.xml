@@ -19,7 +19,6 @@
             android:src="@drawable/ic_profile_male"/>
 
         <LinearLayout
-            android:id="@+id/aBlock1"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"

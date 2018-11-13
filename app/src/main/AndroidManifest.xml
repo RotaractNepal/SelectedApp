@@ -73,6 +73,7 @@
             </intent-filter>
         </service>
 
+        <activity android:name=".ClubEvents"></activity>
     </application>
 
 </manifest>

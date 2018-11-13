@@ -29,7 +29,6 @@
     tools:context=".SignUpActivity">
 
     <TextView
-        android:id="@+id/textLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
@@ -139,7 +138,6 @@
 
     </LinearLayout>
     <TextView
-        android:id="@+id/addressCaption"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Address Details"
@@ -221,7 +219,6 @@
 
 
     <TextView
-        android:id="@+id/heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/loginCredentials"
@@ -309,7 +306,6 @@
     </android.support.design.widget.TextInputLayout>
 
     <CheckBox
-        android:id="@+id/checkBoxConfirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
@@ -343,7 +339,6 @@
     <Button
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:id="@+id/btnSigntxtEmailUp"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_marginStart="10dp"
