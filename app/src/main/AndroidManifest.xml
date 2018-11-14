@@ -25,15 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activity.Chat"
-            android:parentActivityName=".Activity.MainActivity" />
-        <activity
-            android:name=".Activity.UserProfileActivity"
-            android:parentActivityName=".Activity.Chat" />
-        <activity
-            android:name=".Activity.ConversationActivity"
-            android:parentActivityName=".Activity.Chat" />
         <activity android:name=".Activity.News" />
         <activity android:name=".Activity.Events" />
         <activity android:name=".Activity.ClubActivity.ClubVIReview" />
@@ -52,29 +43,9 @@
         <activity android:name=".Activity.ClubActivity.ClubXIIIReview" />
         <activity android:name=".Activity.AboutUs" />
         <activity android:name=".Activity.BloodSearch" />
-        <activity
-            android:name=".Activity.Profile"
-            android:parentActivityName=".Activity.Chat" />
-        <activity
-            android:name=".Activity.loginActivity"
-            android:parentActivityName=".Activity.MainActivity" />
-        <activity
-            android:name=".Activity.SignUpActivity"
-            android:parentActivityName=".Activity.loginActivity" />
-
-        <service android:name=".Services.DeviceTokenService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-            </intent-filter>
-        </service>
-        <service android:name=".Services.MyAppNotificationService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
 
         <activity android:name=".ClubEvents"
-            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"></activity>
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"/>
     </application>
 
 </manifest>

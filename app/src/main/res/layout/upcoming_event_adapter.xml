@@ -21,7 +21,6 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/eventsDate"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
