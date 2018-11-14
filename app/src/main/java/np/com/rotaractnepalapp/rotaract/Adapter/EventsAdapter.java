@@ -8,12 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import np.com.rotaractnepalapp.rotaract.ClubEvents;
+import np.com.rotaractnepalapp.rotaract.Activity.EventActivity.ClubEvents;
+import np.com.rotaractnepalapp.rotaract.Activity.EventActivity.DistrictEvents;
 import np.com.rotaractnepalapp.rotaract.R;
+import np.com.rotaractnepalapp.rotaract.Activity.EventActivity.ZonalEvents;
 
 
 public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsViewHolder> {
@@ -66,10 +67,12 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
                             mContext.startActivity(openClubEventActivity);
                             break;
                         case 1:
-                            Toast.makeText(mContext, "District Events Clicked", Toast.LENGTH_SHORT).show();
+                            Intent openDistrictEventActivity = new Intent(mContext, DistrictEvents.class);
+                            mContext.startActivity(openDistrictEventActivity);
                             break;
                         case 2:
-                            Toast.makeText(mContext, "Zonal Events Clicked", Toast.LENGTH_SHORT).show();
+                            Intent openZonalEventActivity = new Intent(mContext, ZonalEvents.class);
+                            mContext.startActivity(openZonalEventActivity);
                             break;
                     }
 

@@ -1,6 +1,6 @@
-package np.com.rotaractnepalapp.rotaract;
+package np.com.rotaractnepalapp.rotaract.Class.ClassEvents;
 
-public class ClubEventsClass {
+public class DistrictEventsClass {
 
     private String month;
     private String day;
@@ -14,12 +14,10 @@ public class ClubEventsClass {
     private String eventdetail;
     private String eventhighlights;
 
-
-
-    public ClubEventsClass() {
+    public DistrictEventsClass() {
     }
 
-    public ClubEventsClass(String month, String day, String year, String organizer, String event, String venue, String time, String call, String googlemap, String eventdetail, String eventhighlights) {
+    public DistrictEventsClass(String month, String day, String year, String organizer, String event, String venue, String time, String call, String googlemap, String eventdetail, String eventhighlights) {
         this.month = month;
         this.day = day;
         this.year = year;

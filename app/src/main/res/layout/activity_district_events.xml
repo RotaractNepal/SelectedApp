@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.EventActivity.ClubEvents">
+    tools:context=".Activity.EventActivity.DistrictEvents">
 
     <android.support.v7.widget.RecyclerView
         android:layout_margin="5dp"
-        android:id="@+id/clubEventsRecyclerView"
+        android:id="@+id/districtEventsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
