@@ -14,7 +14,7 @@
     <string name="events">Events</string>
     <string name="title">Title</string>
     <string name="club_name">Club Name *</string>
-    <string name="call">Call</string>
+    <string name="call">Call *</string>
     <string name="email">Email</string>
     <string name="member_name">Member Name</string>
     <string name="member_designation">Member Designation</string>
@@ -34,9 +34,9 @@
     <string name="rotaract_club_of_kantipur">Rotaract Club of Kantipur</string>
     <string name="news_title">Title</string>
     <string name="news_description">Description *</string>
-    <string name="news_date">Date *</string>
+    <string name="news_date">Date (DD/MM/YY)*</string>
     <string name="news_type">Type *</string>
-    <string name="news_location">Location *</string>
+    <string name="news_location">Venue *</string>
     <string name="text_hint_title">Title *</string>
     <string name="x">X</string>
     <string name="zone_i">Zone I</string>
@@ -69,12 +69,19 @@
     <string name="month">Month</string>
     <string name="day">Day</string>
     <string name="year">Year</string>
-    <string name="organizer">Organizer</string>
-    <string name="event">Event</string>
-    <string name="venue">Venue</string>
-    <string name="time">Time</string>
+    <string name="organizer">Organizer *</string>
+    <string name="event">Event *</string>
+    <string name="venue">Venue *</string>
+    <string name="time">Time *</string>
     <string name="event_highlights"><u>Event Highlights</u></string>
     <string name="send_request">Send Request</string>
+    <string name="request_your_events">Request Your Events</string>
+    <string name="event_detail">Event Detail *</string>
+    <string name="google_map">Google Map*</string>
+    <string name="event_highlights_0">Event Highlights *</string>
+    <string name="up_coming_events_0">Up Coming Events</string>
+    <string name="back"><u><![CDATA[<< Back]]></u></string>
+    <string name="calendar">Calendar</string>
 
 
 </resources>

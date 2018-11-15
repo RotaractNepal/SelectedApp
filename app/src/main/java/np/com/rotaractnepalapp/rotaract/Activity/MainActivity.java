@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -425,6 +426,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_learning_material){
             intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/folders/11yzjhoznhASyo6IXVgITgoRp5kF_t4Qz"));
             startActivity(intent);
+        } else if (id == R.id.nav_calendar){
+            Toast.makeText(MainActivity.this, "Coming Soon", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_news) {
             intent = new Intent(this, News.class);
             startActivity(intent);
