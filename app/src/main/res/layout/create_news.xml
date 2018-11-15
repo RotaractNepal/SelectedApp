@@ -73,6 +73,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/text_hint_title"
@@ -87,6 +88,7 @@
                 app:met_baseColor="@color/white"
                 android:maxLines="1"/>
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/news_date"
@@ -101,6 +103,7 @@
                 app:met_baseColor="@color/white"
                 android:maxLines="1"/>
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/news_location"
@@ -115,6 +118,7 @@
                 app:met_baseColor="@color/white"
                 android:maxLines="1"/>
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ClubName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/club_name"
@@ -129,6 +133,7 @@
                 app:met_baseColor="@color/white"
                 android:maxLines="1"/>
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/news_type"
@@ -144,6 +149,7 @@
                 android:maxLines="1"
                 android:layout_marginEnd="15dp"/>
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Objective"
                 android:layout_width="match_parent"
                 android:gravity="start"
                 android:layout_height="250dp"
@@ -157,6 +163,7 @@
                 app:met_baseColor="@color/white"
                 android:inputType="textMultiLine"/>
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Description"
                 android:layout_width="match_parent"
                 android:gravity="start"
                 android:layout_height="250dp"
@@ -169,24 +176,13 @@
                 app:met_textColorHint="@color/white"
                 app:met_baseColor="@color/white"
                 android:inputType="textMultiLine"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="@string/pick_your_an_image"
-                android:layout_marginTop="4dp"
-                android:textSize="16sp"/>
-            <ImageView
-                android:id="@+id/newsImage"
-                android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:src="@drawable/gallery"
-                android:scaleType="fitXY"/>
             <Button
+                android:id="@+id/SendEmail"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16sp"
+                android:enabled="false"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/circlebutton"
                 android:layout_gravity="right"
