@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity.BloodSearch">
+
+    <include layout="@layout/actionbar" />
+
     <com.rengwuxian.materialedittext.MaterialEditText
         android:id="@+id/editTextSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/blood_donor_search_here"
         android:layout_margin="5dp"
-        app:met_textColorHint="@color/colorAccent"
+        android:drawableRight="@mipmap/ic_donor_search"
+        android:drawableTint="@color/colorPrimary"
+        android:hint="@string/blood_donor_search_here"
         android:textColorHighlight="@color/colorPrimaryDark"
         app:met_floatingLabel="highlight"
-        android:drawableRight="@mipmap/ic_donor_search"
-        android:drawableTint="@color/colorPrimary"/>
+        app:met_textColorHint="@color/colorAccent" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/bloodGroupDonorRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/editTextSearch"/>
-</RelativeLayout>
+        android:layout_below="@id/editTextSearch" />
+</LinearLayout>
