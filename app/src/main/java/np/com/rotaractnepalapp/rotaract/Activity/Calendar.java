@@ -1,4 +1,4 @@
-package np.com.rotaractnepalapp.rotaract.Activity.EventActivity;
+package np.com.rotaractnepalapp.rotaract.Activity;
 
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -7,8 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.TextView;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,24 +18,22 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import np.com.rotaractnepalapp.rotaract.Adapter.CalendarAdapter;
+import np.com.rotaractnepalapp.rotaract.Class.CalendarClass;
 import np.com.rotaractnepalapp.rotaract.R;
-import np.com.rotaractnepalapp.rotaract.Class.ClassEvents.ZonalEventsClass;
-import np.com.rotaractnepalapp.rotaract.Adapter.ZonalEventsAdapter;
 
-public class ZonalEvents extends AppCompatActivity {
+public class Calendar extends AppCompatActivity {
 
     DatabaseReference databaseReference;
     RecyclerView recyclerView;
-    ZonalEventsAdapter zonalEventsAdapter;
-    ArrayList<ZonalEventsClass> zonalEventsClasses;
+    ArrayList<CalendarClass> calendarClasses;
+    CalendarAdapter calendarAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zonal_events);
-
-        this.setTitle("District Events");
-
+        setContentView(R.layout.activity_calendar);
+        this.setTitle("Calendar");
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -44,48 +41,48 @@ public class ZonalEvents extends AppCompatActivity {
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(this.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-        if (networkInfo != null && networkInfo.isConnected()){
+        if (networkInfo != null && networkInfo.isConnected()) {
             Toast.makeText(this, "Loading Data", Toast.LENGTH_SHORT).show();
-            recyclerView = (RecyclerView) findViewById(R.id.zonalEventsRecyclerView);
+            recyclerView = (RecyclerView) findViewById(R.id.calendarRecyclerView);
             recyclerView.setHasFixedSize(true);
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
             linearLayoutManager.setReverseLayout(true);
             linearLayoutManager.setStackFromEnd(true);
             recyclerView.setLayoutManager(linearLayoutManager);
 
-            databaseReference = FirebaseDatabase.getInstance().getReference().child("ZonalEvents");
+            databaseReference = FirebaseDatabase.getInstance().getReference().child("Calendar");
             databaseReference.keepSynced(true);
             databaseReference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (dataSnapshot.exists()){
-                        zonalEventsClasses = new ArrayList<ZonalEventsClass>();
+                        calendarClasses = new ArrayList<CalendarClass>();
                         for (DataSnapshot dataSnapshot1: dataSnapshot.getChildren()){
-                            ZonalEventsClass zonalEventsClass = dataSnapshot1.getValue(ZonalEventsClass.class);
-                            zonalEventsClasses.add(zonalEventsClass);
+                            CalendarClass calendarClass = dataSnapshot1.getValue(CalendarClass.class);
+                            calendarClasses.add(calendarClass);
                         }
-                        zonalEventsAdapter = new ZonalEventsAdapter(ZonalEvents.this, zonalEventsClasses);
-                        recyclerView.setAdapter(zonalEventsAdapter);
+                        calendarAdapter = new CalendarAdapter(Calendar.this, calendarClasses);
+                        recyclerView.setAdapter(calendarAdapter);
                     } else {
-                        Toast.makeText(ZonalEvents.this, "There is no Zonal Event Available now !!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Calendar.this,"There is no Recent Project Available now !!", Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    Toast.makeText(ZonalEvents.this,"Opsss.......something is wrong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Calendar.this,"Opsss.......something is wrong", Toast.LENGTH_SHORT).show();
                 }
             });
-        } else {
+        }else {
             Toast.makeText(this, "Check Your Internet Connection", Toast.LENGTH_SHORT).show();
         }
+    }
 
-        TextView Back = (TextView) findViewById(R.id.Back);
-        Back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home){
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

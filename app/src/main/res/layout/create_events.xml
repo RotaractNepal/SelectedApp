@@ -119,6 +119,20 @@
                 app:met_baseColor="@color/white"
                 android:maxLines="1"/>
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/GoogleMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/google_map"
+                android:textColorHighlight="@color/white"
+                app:met_textColor="@color/white"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/white"
+                app:met_errorColor="@color/colorRotaract"
+                app:met_singleLineEllipsis="true"
+                app:met_textColorHint="@color/white"
+                app:met_baseColor="@color/white"
+                android:maxLines="1"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/Organizer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -149,25 +163,10 @@
                 app:met_baseColor="@color/white"
                 android:maxLines="1"/>
             <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/GoogleMap"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/google_map"
-                android:textColorHighlight="@color/white"
-                app:met_textColor="@color/white"
-                app:met_floatingLabel="highlight"
-                app:met_floatingLabelTextColor="@color/white"
-                app:met_maxCharacters="30"
-                app:met_errorColor="@color/colorRotaract"
-                app:met_singleLineEllipsis="true"
-                app:met_textColorHint="@color/white"
-                app:met_baseColor="@color/white"
-                android:maxLines="1"/>
-            <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/Call"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/call"
+                android:hint="@string/call_event"
                 android:textColorHighlight="@color/white"
                 app:met_textColor="@color/white"
                 app:met_floatingLabel="highlight"

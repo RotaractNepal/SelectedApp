@@ -1,4 +1,4 @@
-package np.com.rotaractnepalapp.rotaract;
+package np.com.rotaractnepalapp.rotaract.Adapter;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -18,46 +18,47 @@ import com.codesgood.views.JustifiedTextView;
 
 import java.util.ArrayList;
 
-import np.com.rotaractnepalapp.rotaract.Class.ClassEvents.DistrictEventsClass;
+import np.com.rotaractnepalapp.rotaract.Class.ClassEvents.ClubEventsClass;
+import np.com.rotaractnepalapp.rotaract.R;
 
-public class DistrictEventsAdapter extends RecyclerView.Adapter<DistrictEventsAdapter.DistrictEventViewHolder> {
+public class ClubEventsAdapter extends RecyclerView.Adapter<ClubEventsAdapter.ClubEventsViewHolder> {
 
     Context context;
-    ArrayList<DistrictEventsClass> districtEventsClasses;
+    ArrayList<ClubEventsClass> clubEventsClasses;
 
-    public DistrictEventsAdapter(Context context, ArrayList<DistrictEventsClass> districtEventsClasses) {
+    public ClubEventsAdapter(Context context, ArrayList<ClubEventsClass> clubEventsClasses) {
         this.context = context;
-        this.districtEventsClasses = districtEventsClasses;
+        this.clubEventsClasses = clubEventsClasses;
     }
 
     @NonNull
     @Override
-    public DistrictEventViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new DistrictEventViewHolder(LayoutInflater.from(context).inflate(R.layout.upcoming_event_adapter, viewGroup,false));
+    public ClubEventsViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        return new ClubEventsViewHolder(LayoutInflater.from(context).inflate(R.layout.upcoming_event_adapter, viewGroup,false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DistrictEventViewHolder districtEventViewHolder, int i) {
-        districtEventViewHolder.month.setText(districtEventsClasses.get(i).getMonth());
-        districtEventViewHolder.day.setText(districtEventsClasses.get(i).getDay());
-        districtEventViewHolder.year.setText(districtEventsClasses.get(i).getYear());
-        districtEventViewHolder.organizer.setText(districtEventsClasses.get(i).getOrganizer());
-        districtEventViewHolder.event.setText(districtEventsClasses.get(i).getEvent());
-        districtEventViewHolder.venue.setText(districtEventsClasses.get(i).getVenue());
-        districtEventViewHolder.time.setText(districtEventsClasses.get(i).getTime());
+    public void onBindViewHolder(@NonNull ClubEventsViewHolder clubEventsViewHolder, int i) {
+        clubEventsViewHolder.month.setText(clubEventsClasses.get(i).getMonth());
+        clubEventsViewHolder.day.setText(clubEventsClasses.get(i).getDay());
+        clubEventsViewHolder.year.setText(clubEventsClasses.get(i).getYear());
+        clubEventsViewHolder.organizer.setText(clubEventsClasses.get(i).getOrganizer());
+        clubEventsViewHolder.event.setText(clubEventsClasses.get(i).getEvent());
+        clubEventsViewHolder.venue.setText(clubEventsClasses.get(i).getVenue());
+        clubEventsViewHolder.time.setText(clubEventsClasses.get(i).getTime());
     }
 
     @Override
     public int getItemCount() {
-        return districtEventsClasses.size();
+        return clubEventsClasses.size();
     }
 
-    public class DistrictEventViewHolder extends RecyclerView.ViewHolder {
+    public class ClubEventsViewHolder extends RecyclerView.ViewHolder {
 
         TextView month, day, year, organizer, event, venue, time;
         ImageView call, googlemap;
 
-        public DistrictEventViewHolder(@NonNull View itemView) {
+        public ClubEventsViewHolder(@NonNull View itemView) {
             super(itemView);
             month = (TextView) itemView.findViewById(R.id.eventsMonth);
             day = (TextView) itemView.findViewById(R.id.eventsDay);
@@ -72,7 +73,7 @@ public class DistrictEventsAdapter extends RecyclerView.Adapter<DistrictEventsAd
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(Intent.ACTION_DIAL);
-                    String contactNo = districtEventsClasses.get(getAdapterPosition()).getCall();
+                    String contactNo = clubEventsClasses.get(getAdapterPosition()).getCall();
                     intent.setData(Uri.parse("tel:" + contactNo));
                     v.getContext().startActivity(intent);
                 }
@@ -81,7 +82,7 @@ public class DistrictEventsAdapter extends RecyclerView.Adapter<DistrictEventsAd
             googlemap.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    String uri = districtEventsClasses.get(getAdapterPosition()).getGooglemap();
+                    String uri = clubEventsClasses.get(getAdapterPosition()).getGooglemap();
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                     intent.setPackage("com.google.android.apps.maps");
                     v.getContext().startActivity(intent);
@@ -93,7 +94,7 @@ public class DistrictEventsAdapter extends RecyclerView.Adapter<DistrictEventsAd
                 public void onClick(View v) {
                     int position = getAdapterPosition();
                     if (position != RecyclerView.NO_POSITION){
-                        final DistrictEventsClass clickedDataItem = districtEventsClasses.get(position);
+                        final ClubEventsClass clickedDataItem = clubEventsClasses.get(position);
                         final Dialog Information;
                         Information = new Dialog(v.getContext());
 

@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 import np.com.rotaractnepalapp.rotaract.Class.ClassEvents.ClubEventsClass;
-import np.com.rotaractnepalapp.rotaract.ClubEventsAdapter;
+import np.com.rotaractnepalapp.rotaract.Adapter.ClubEventsAdapter;
 import np.com.rotaractnepalapp.rotaract.R;
 
 

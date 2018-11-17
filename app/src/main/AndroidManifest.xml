@@ -49,8 +49,10 @@
         <activity
             android:name=".Activity.EventActivity.DistrictEvents"
             android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
-        <activity android:name=".Activity.EventActivity.ZonalEvents"
-            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"/>
+        <activity
+            android:name=".Activity.EventActivity.ZonalEvents"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+        <activity android:name=".Activity.Calendar"></activity>
     </application>
 
 </manifest>

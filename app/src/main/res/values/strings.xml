@@ -14,7 +14,7 @@
     <string name="events">Events</string>
     <string name="title">Title</string>
     <string name="club_name">Club Name *</string>
-    <string name="call">Call *</string>
+    <string name="call">Call</string>
     <string name="email">Email</string>
     <string name="member_name">Member Name</string>
     <string name="member_designation">Member Designation</string>
@@ -82,6 +82,12 @@
     <string name="up_coming_events_0">Up Coming Events</string>
     <string name="back"><u><![CDATA[<< Back]]></u></string>
     <string name="calendar">Calendar</string>
+    <string name="call_event">Call *</string>
+    <string name="calenter_month">Month</string>
+    <string name="calendar_31">31</string>
+    <string name="host">Host</string>
+    <string name="calendar_venue">Venue</string>
+    <string name="district_calendar">District Calendar</string>
 
 
 </resources>

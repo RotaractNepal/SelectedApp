@@ -25,6 +25,7 @@ import android.widget.TextView;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -135,6 +136,15 @@ public class Events extends AppCompatActivity {
                 Call.addTextChangedListener(CreatEventProject);
                 EventDetial.addTextChangedListener(CreatEventProject);
                 EventHighlights.addTextChangedListener(CreatEventProject);
+
+                GoogleMap.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String uri = String.format(Locale.ENGLISH, "geo:%f,%f", 5.1, 2.1);
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                        startActivity(intent);
+                    }
+                });
 
                 SendEmail = (Button) creatEvents.findViewById(R.id.SendEmail);
                 SendEmail.setOnClickListener(new View.OnClickListener() {

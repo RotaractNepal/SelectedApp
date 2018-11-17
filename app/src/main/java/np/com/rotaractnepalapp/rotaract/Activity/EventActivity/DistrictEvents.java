@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 import np.com.rotaractnepalapp.rotaract.Class.ClassEvents.DistrictEventsClass;
-import np.com.rotaractnepalapp.rotaract.DistrictEventsAdapter;
+import np.com.rotaractnepalapp.rotaract.Adapter.DistrictEventsAdapter;
 import np.com.rotaractnepalapp.rotaract.R;
 
 public class DistrictEvents extends AppCompatActivity {
