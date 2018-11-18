@@ -60,189 +60,189 @@ public class ClubVIIReview extends AppCompatActivity {
 
     public static ArrayList<ClubVII1Class> getClub1Data(){
         ArrayList<ClubVII1Class> clubVII1Classes = new ArrayList<>();
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII1Classes.add(new ClubVII1Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII1Classes.add(new ClubVII1Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII1Classes;
 
     }
 
     public static ArrayList<ClubVII2Class> getClub2Data(){
         ArrayList<ClubVII2Class> clubVII2Classes = new ArrayList<>();
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII2Classes.add(new ClubVII2Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII2Classes.add(new ClubVII2Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII2Classes;
 
     }
 
     public static ArrayList<ClubVII3Class> getClub3Data(){
         ArrayList<ClubVII3Class> clubVII3Classes = new ArrayList<>();
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII3Classes.add(new ClubVII3Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII3Classes.add(new ClubVII3Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII3Classes;
 
     }
 
     public static ArrayList<ClubVII4Class> getClub4Data(){
         ArrayList<ClubVII4Class> clubVII4Classes = new ArrayList<>();
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII4Classes.add(new ClubVII4Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII4Classes.add(new ClubVII4Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII4Classes;
 
     }
 
     public static ArrayList<ClubVII5Class> getClub5Data(){
         ArrayList<ClubVII5Class> clubVII5Classes = new ArrayList<>();
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII5Classes.add(new ClubVII5Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII5Classes.add(new ClubVII5Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII5Classes;
 
     }
 
     public static ArrayList<ClubVII6Class> getClub6Data(){
         ArrayList<ClubVII6Class> clubVII6Classes = new ArrayList<>();
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII6Classes.add(new ClubVII6Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII6Classes.add(new ClubVII6Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII6Classes;
 
     }
 
     public static ArrayList<ClubVII7Class> getClub7Data(){
         ArrayList<ClubVII7Class> clubVII7Classes = new ArrayList<>();
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII7Classes.add(new ClubVII7Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII7Classes.add(new ClubVII7Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII7Classes;
 
     }
 
     public static ArrayList<ClubVII8Class> getClub8Data(){
         ArrayList<ClubVII8Class> clubVII8Classes = new ArrayList<>();
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII8Classes.add(new ClubVII8Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII8Classes.add(new ClubVII8Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII8Classes;
 
     }
 
     public static ArrayList<ClubVII9Class> getClub9Data(){
         ArrayList<ClubVII9Class> clubVII9Classes = new ArrayList<>();
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"RACB", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Immediate Past", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Vice President", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Secretary", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Treasurer", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Club Service Director", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"International Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Community Service", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Profession Development", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Assistant Directors", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Sergeant-At-Arms", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Fundraising Chair", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Public Relations", R.mipmap.ic_app, "", "", "", ""));
-        clubVII9Classes.add(new ClubVII9Class(R.mipmap.ic_app,"Information Technology", R.mipmap.ic_app, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"RACB", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Immediate Past", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Vice President", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Secretary", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Treasurer", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Club Service Director", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"International Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Community Service", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Profession Development", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Assistant Directors", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Sergeant-At-Arms", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Fundraising Chair", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Public Relations", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
+        clubVII9Classes.add(new ClubVII9Class(R.drawable.colorlogo_rotaractnepalapp,"Information Technology", R.drawable.colorlogo_rotaractnepalapp, "", "", "", ""));
         return clubVII9Classes;
 
     }

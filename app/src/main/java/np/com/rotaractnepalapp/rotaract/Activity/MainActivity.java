@@ -442,9 +442,6 @@ public class MainActivity extends AppCompatActivity
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.setPackage("com.google.android.youtube");
             startActivity(intent);
-        } else if (id == R.id.nav_about_us){
-            intent = new Intent(this, AboutUs.class);
-            startActivity(intent);
         } else if (id == R.id.nav_feed_back){
             intent = new Intent(Intent.ACTION_SEND);
             intent.setData(Uri.parse("mailto:"));

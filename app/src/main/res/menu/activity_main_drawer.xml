@@ -33,10 +33,6 @@
             android:icon="@drawable/ic_video"
             android:title="@string/videos" />
         <item
-            android:id="@+id/nav_about_us"
-            android:icon="@drawable/about_us"
-            android:title="@string/about_us" />
-        <item
             android:id="@+id/nav_feed_back"
             android:icon="@drawable/feedback"
             android:title="@string/feedback" />
