@@ -9,21 +9,22 @@
 
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:src="@mipmap/ic_rotaract_nepal_app_logo"/>
-    
-    <TextView
+        android:src="@drawable/splash_img01"/>
+
+    <ImageView
         android:id="@+id/txtLogo"
-        android:layout_below="@id/imgLogo"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:fontFamily="sans-serif-thin"
-        android:textStyle="bold"
-        android:text="@string/app_name"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_img02"/>
+
+
+    <ImageView
+        android:id="@+id/finalDelay"
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
 
 </RelativeLayout>
